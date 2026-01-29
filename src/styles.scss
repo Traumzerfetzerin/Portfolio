@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Anta';
+    src: url('assets/fonts/Anta/Anta-Regular.ttf');
+}
