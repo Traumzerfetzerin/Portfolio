@@ -1,0 +1,71 @@
+.imprintContainer {
+    width: 1440px;
+    height: 1357px;
+    top: 169px;
+    gap: 64px;
+    display: flex;
+    flex-direction: column;
+    background-color: #262E34;
+    padding-left: 200px;
+
+    p,
+    h1,
+    ul {
+        margin: 0;
+    }
+
+    h1 {
+        width: 519px;
+        height: 65px;
+        gap: 10px;
+        font-family: 'Anta';
+        font-weight: 400;
+        font-style: regular;
+        font-size: 54px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #89BCD9;
+    }
+
+    h2 {
+        width: 346px;
+        height: 29px;
+        font-family: 'Josefin Sans';
+        font-weight: 700;
+        font-style: bold;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #89BCD9;
+    }
+
+    h3 {
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-style: regular;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #89BCD9;
+        margin: 16px 0 0 0;
+    }
+
+    li,
+    p {
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-style: regular;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0%;
+        color: #F8F5EC;
+    }
+}
+
+.developerInfo {
+    width: 1032px;
+    height: 179px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
