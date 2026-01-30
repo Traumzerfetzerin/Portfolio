@@ -1,5 +1,5 @@
 .imprintContainer {
-    width: 1440px;
+    min-width: 1440px;
     height: 1357px;
     top: 169px;
     gap: 64px;
@@ -60,6 +60,12 @@
         letter-spacing: 0%;
         color: #F8F5EC;
     }
+}
+
+
+.imprintContent {
+    width: 968px;
+    height: 155px;
 }
 
 .developerInfo {
