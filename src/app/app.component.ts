@@ -5,12 +5,13 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ImprintComponent } from './shared/imprint/imprint.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { PoliceComponent } from './shared/police/police.component';
+import { SkillsComponent } from './content/skills/skills.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FooterComponent, ImprintComponent, MenuComponent, PoliceComponent],
+  imports: [CommonModule, RouterOutlet, FooterComponent, ImprintComponent, MenuComponent, PoliceComponent, SkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
