@@ -83,7 +83,8 @@
     align-items: center;
     justify-content: space-between;
 
-    p {
+    p,
+    span {
         width: 27px;
         height: 24px;
         top: 6px;
@@ -97,8 +98,22 @@
         letter-spacing: 0%;
     }
 
-    p:hover {
+    p:hover,
+    span:hover {
         color: #F8F5EC;
         cursor: pointer;
+    }
+
+    span:hover {
+        background-image: url('/assets/img/shape/languageShape.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 37.2px;
+        height: 24.77px;
+        top: 3.1px;
+        left: 51.55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
