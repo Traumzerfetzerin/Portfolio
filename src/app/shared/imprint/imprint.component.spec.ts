@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ImprintComponent } from './imprint.component';
+
 
 describe('ImprintComponent', () => {
   let component: ImprintComponent;
@@ -10,6 +10,7 @@ describe('ImprintComponent', () => {
     await TestBed.configureTestingModule({
       imports: [ImprintComponent]
     })
+    
     .compileComponents();
     
     fixture = TestBed.createComponent(ImprintComponent);

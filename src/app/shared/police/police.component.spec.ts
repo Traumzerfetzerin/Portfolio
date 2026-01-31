@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PoliceComponent } from './police.component';
+
 
 describe('PoliceComponent', () => {
   let component: PoliceComponent;
@@ -10,6 +10,7 @@ describe('PoliceComponent', () => {
     await TestBed.configureTestingModule({
       imports: [PoliceComponent]
     })
+    
     .compileComponents();
     
     fixture = TestBed.createComponent(PoliceComponent);
