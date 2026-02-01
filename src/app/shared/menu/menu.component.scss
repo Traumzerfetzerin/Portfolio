@@ -108,7 +108,7 @@
         background-image: url('/assets/img/shape/languageShape.png');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center left;
+        background-position: center;
         width: 36.8px;
         height: 24px;
         top: 3px;
@@ -118,7 +118,7 @@
         justify-content: center;
     }
 
-    .english:hover {
+    p:hover + .english, .english:hover {
         background-image: none;
     }
 }
