@@ -79,11 +79,11 @@
 .currentlyLearning {
     width: 380px;
     height: 380px;
-    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
+    position: relative;
+    overflow: hidden;
 
     p {
         // width: 194px;
@@ -98,6 +98,40 @@
         top: 196px;
         left: 34px;
     }
+}
+
+
+.currentlyLearning::before,
+.currentlyLearning::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.currentlyLearning::before {
+    background-image: url('/assets/img/shape/learningShape.png');
+    opacity: 1;
+}
+
+
+.currentlyLearning::after {
+    background-image: url('/assets/img/shape/learningShapeAcross.png');
+    opacity: 0;
+}
+
+
+.currentlyLearning:hover::before {
+    opacity: 0;
+}
+
+
+.currentlyLearning:hover::after {
+    opacity: 1;
 }
 
 
