@@ -1,31 +1,31 @@
 <div class="skills">
-    <h1>My Skills</h1>
+    <h1 class="AntaRegular400 flexCenter color89BCD9">My Skills</h1>
 
-    <div class="skillsContent">
-        <div class="skillsIcons">
+    <div class="skillsContent flex flexCenter">
+        <div class="skillsIcons flex">
             @for (skill of skills; track skill.name) {
-            <div>
+            <div class="flexColumn">
                 <img [src]="skill.img" [alt]="skill.name">
-                <p>{{ skill.name }}</p>
+                <p class="josefinSansRegular400 color89BCD9">{{ skill.name }}</p>
             </div>
             }
         </div>
 
         <div class="currentlyLearning">
-            <div class="learningContent">
-                <p>I am currently learning</p>
-                <div class="currentlyLearningIcons">
-                    <div>
+            <div class="learningContent flexCenter flexColumn">
+                <p class="josefinSansRegular400 colorF8F5EC">I am currently learning</p>
+                <div class="currentlyLearningIcons flex flexCenter">
+                    <div class="flex flexCenter flexColumn">
                         <img src="assets/img/skills/react.png" alt="React">
-                        <p>React</p>
+                        <p class="josefinSansRegular400 colorF8F5EC">React</p>
                     </div>
-                    <div>
+                    <div class="flex flexCenter flexColumn">
                         <img src="assets/img/skills/Vue Js.png" alt="Vue Js">
-                        <p>Vue Js</p>
+                        <p class="josefinSansRegular400 colorF8F5EC">Vue Js</p>
                     </div>
                 </div>
-                <span>Show that you are motivated to continually improve your skills, implement innovative solutions and
-                    stay abreast of new technologies.</span>
+                <p class="josefinSansRegular400 colorF8F5EC">Show that you are motivated to continually improve your skills, implement innovative solutions and
+                    stay abreast of new technologies.</p>
             </div>
         </div>
     </div>

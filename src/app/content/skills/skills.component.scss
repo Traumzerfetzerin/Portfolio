@@ -7,37 +7,16 @@
     display: contents;
 
     h1 {
-        // width: 869px;
-        // height: 72px;
-        font-family: 'Anta';
-        font-weight: 400;
-        font-style: regular;
         font-size: 60px;
-        line-height: 120%;
-        letter-spacing: 0%;
-        color: #89BCD9;
-        display: flex;
-        justify-content: center;
     }
 
-    p,
-    span {
-        font-family: 'Josefin Sans';
-        font-style: regular;
-        font-weight: 400;
+    p {
         font-size: 18px;
-        line-height: 120%;
-        letter-spacing: 0%;
-        color: #FFFFFF;
     }
 }
 
 
 .skillsContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
     gap: 40px;
 }
 
@@ -46,15 +25,12 @@
     max-width: 409px;
     max-height: 404px;
     gap: 40px;
-    display: flex;
     flex-wrap: wrap;
 
     div {
         max-width: 80px;
         max-height: 100px;
         gap: 10px;
-        display: flex;
-        flex-direction: column;
     }
 
     img {
@@ -65,13 +41,7 @@
     p {
         width: 66px;
         height: 22px;
-        font-family: 'Josefin Sans';
-        font-weight: 400;
-        font-style: regular;
         font-size: 18px;
-        line-height: 120%;
-        letter-spacing: 0%;
-        color: #89BCD9
     }
 }
 
@@ -79,25 +49,14 @@
 .currentlyLearning {
     width: 380px;
     height: 380px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     overflow: hidden;
     padding: 40px;
 
     p {
-        // width: 194px;
         height: 23px;
         top: 81px;
         left: 91px;
-    }
-
-    span {
-        width: 307px;
-        height: 105px;
-        top: 196px;
-        left: 34px;
     }
 }
 
@@ -136,29 +95,16 @@
 }
 
 
-.learningContent {
-    display: flex;
-    flex-direction: column;
-}
-
-
 .currentlyLearningIcons {
     width: 96px;
     min-height: 54px;
     top: 123px;
     left: 135px;
     gap: 24px;
-    display: flex;
 
     div {
         min-width: 100px;
         min-height: 100px;
         gap: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        align-self: center;
-        justify-content: center;
     }
 }
