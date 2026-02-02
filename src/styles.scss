@@ -13,3 +13,108 @@ body {
     font-family: 'Anta';
     src: url('assets/fonts/Anta/Anta-Regular.ttf');
 }
+
+
+.josefinSansLight300 {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-style: light;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+
+.josefinSansRegular400 {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-style: regular;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #F8F5EC;
+}
+
+
+.josefinSansMedium500 {
+    font-family: 'Josefin Sans';
+    font-weight: 500;
+    font-style: medium;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+
+.josefinSansBold700 {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-style: bold;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+
+.AntaRegular400 {
+    font-family: 'Anta';
+    font-weight: 400;
+    font-style: regular;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+
+.colorF8F5EC {
+    color: #F8F5EC;
+}
+
+
+.color89BCD9 {
+    color: #89BCD9;
+}
+
+
+.color262E34 {
+    color: #262E34;
+}
+
+
+.margin0 {
+    margin: 0;
+}
+
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.minWidth1440px {
+    min-width: 1440px;
+}
+
+
+.maxWidth1440px {
+    max-width: 1440px;
+}
