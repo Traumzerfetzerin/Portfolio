@@ -1,25 +1,17 @@
 .menu {
-    min-width: 1440px;
     height: 104px;
     padding-top: 16px;
     padding-right: 109px;
     padding-bottom: 16px;
     padding-left: 109px;
     background-color: #89BCD9;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 
 .developerInfo {
     width: 58px;
     height: 72px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 
     img {
         width: 52px;
@@ -27,25 +19,9 @@
         left: 3px;
     }
 
-    p {
-        margin: 0;
-        font-family: 'Anta';
-        font-weight: 400;
-        font-style: regular;
-        font-size: 14px;
-        line-height: 120%;
-        letter-spacing: 0%;
-        color: #F8F5EC;
-    }
-
+    p,
     span {
-        font-family: 'Josefin Sans';
-        font-weight: 300;
-        font-style: light;
         font-size: 14px;
-        line-height: 120%;
-        letter-spacing: 0%;
-        color: #262E34;
     }
 }
 
@@ -53,27 +29,18 @@
 .navigationLinks {
     width: 677px;
     height: 26px;
-    display: flex;
     gap: 32px;
-    justify-content: space-between;
 
     a {
         width: 100px;
         height: 31px;
         gap: 32px;
-        font-family: 'Josefin Sans';
-        font-weight: 500;
-        font-style: medium;
         font-size: 26px;
-        line-height: 120%;
-        letter-spacing: 0%;
-        color: #262E34;
         text-decoration: none;
     }
 
     a:hover {
         color: #F8F5EC;
-        cursor: pointer;
     }
 }
 
@@ -81,27 +48,17 @@
 .languageSwitcher {
     width: 92px;
     height: 31px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     p {
         width: 27px;
         height: 24px;
         top: 6px;
         left: 14px;
-        margin: 0;
-        font-family: 'Josefin Sans';
-        font-weight: 400;
-        font-style: regular;
         font-size: 18px;
-        line-height: 120%;
-        letter-spacing: 0%;
     }
 
     p:hover {
         color: #F8F5EC;
-        cursor: pointer;
     }
 
     .english {
@@ -113,12 +70,10 @@
         height: 24px;
         top: 3px;
         left: 51px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
-    p:hover + .english, .english:hover {
+    p:hover+.english,
+    .english:hover {
         background-image: none;
     }
 }
