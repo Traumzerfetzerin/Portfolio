@@ -3,46 +3,12 @@
 
     <div class="skillsContent">
         <div class="skillsIcons">
+            @for (skill of skills; track skill.name) {
             <div>
-                <img src="assets/img/skills/Angular.png" alt="Angular">
-                <p>Angular</p>
+                <img [src]="skill.img" [alt]="skill.name">
+                <p>{{ skill.name }}</p>
             </div>
-            <div>
-                <img src="assets/img/skills/TypeScript.png" alt="TypeScript">
-                <p>TypeScript</p>
-            </div>
-            <div>
-                <img src="assets/img/skills/Javascript.png" alt="Javascript">
-                <p>Javascript</p>
-            </div>
-            <div>
-                <img src="assets/img/skills/html.png" alt="html">
-                <p>HTML</p>
-            </div>
-            <div>
-                <img src="assets/img/skills/css.png" alt="css">
-                <p>CSS</p>
-            </div>
-            <div>
-                <img src="assets/img/skills/api.png" alt="api">
-                <p>REST-API</p>
-            </div>
-            <div>
-                <img src="assets/img/skills/Firebase.png" alt="Firebase">
-                <p>Firebase</p>
-            </div>
-            <div>
-                <img src="assets/img/skills/git.png" alt="git">
-                <p>Git</p>
-            </div>
-            <div>
-                <img src="assets/img/skills/MaterialDesign.png" alt="Material Design">
-                <p>Material Design</p>
-            </div>
-            <div>
-                <img src="assets/img/skills/Scrum.png" alt="Scrum">
-                <p>Scrum</p>
-            </div>
+            }
         </div>
 
         <div class="currentlyLearning">
