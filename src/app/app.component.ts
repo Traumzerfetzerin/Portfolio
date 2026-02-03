@@ -9,6 +9,7 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { PoliceComponent } from './shared/police/police.component';
 
 // content
+import { HeroComponent } from './content/hero/hero.component';
 import { MeComponent } from './content/me/me.component';
 import { SkillsComponent } from './content/skills/skills.component';
 
@@ -16,7 +17,7 @@ import { SkillsComponent } from './content/skills/skills.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FooterComponent, ImprintComponent, MenuComponent, PoliceComponent, MeComponent, SkillsComponent],
+  imports: [CommonModule, RouterOutlet, FooterComponent, ImprintComponent, MenuComponent, PoliceComponent, MeComponent, SkillsComponent, HeroComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
