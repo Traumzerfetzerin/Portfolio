@@ -1,3 +1,11 @@
+.hero {
+    width: 1214px;
+    height: 705px;
+    top: 41px;
+    left: 114px;
+}
+
+
 .bigMe {
     position: relative;
     width: 535px;
@@ -5,12 +13,11 @@
 
     img {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 80%;
+        left: 70%;
+        transform: translate(-50%, -50%) rotate(-10deg);
         z-index: 10;
-        max-width: 100%;
-        height: auto;
+        width: 170%;
     }
 }
 
@@ -50,4 +57,67 @@
 
 .bigMe:hover::after {
     opacity: 1;
+}
+
+
+.developerInfo {
+    width: 66px;
+    height: 73px;
+    top: 121px;
+    left: 892px;
+    position: absolute;
+
+    img {
+        width: 56px;
+        height: 38px;
+        left: 5px;
+    }
+}
+
+
+.socialMediaIcons {
+    width: 30px;
+    height: 122px;
+    top: 68px;
+    left: 1182px;
+    gap: 16px;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+.developer {
+    width: 610px;
+    height: 81px;
+    top: 230px;
+    left: 607px;
+    font-size: 88px;
+}
+
+
+.learned {
+    width: 501px;
+    height: 53px;
+    top: 347px;
+    left: 662px;
+}
+
+
+.arrowDown {
+    width: 38px;
+    height: 89px;
+    top: 540px;
+    left: 906px;
+    border-radius: 30px;
+    border: 1px #89BCD9 solid;
+    background-color: transparent;
+    position: absolute;
+
+    img {
+        width: 22px;
+        height: 50px;
+        top: 20px;
+        left: 8px;
+    }
 }
