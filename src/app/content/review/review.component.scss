@@ -1,0 +1,57 @@
+.review {
+    width: 1209px;
+    height: 479px;
+    top: 2902px;
+    left: 116px;
+    gap: 56px;
+    padding-left: 200px;
+}
+
+
+.individuallyReview {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+
+.individuallyReview::before,
+.individuallyReview::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 1;
+}
+
+
+.individuallyReview::before {
+    background-image: url('/assets/img/shape/reviewShape.png');
+    opacity: 1;
+}
+
+
+.individuallyReview::after {
+    background-image: url('/assets/img/shape/reviewShapeAcross.png');
+    opacity: 0;
+}
+
+
+.individuallyReview:hover::before {
+    opacity: 0;
+}
+
+
+.individuallyReview:hover::after {
+    opacity: 1;
+}
+
+
+.individuallyReviewContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}

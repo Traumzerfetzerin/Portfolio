@@ -1,1 +1,28 @@
-<p>review works!</p>
+<div class="review">
+    <h1 class="josefinSansRegular400 color89BCD9">
+        Need a teamplayer? Here what my colleagues said about me
+    </h1>
+
+    <div class="flex flexCenter gap56">
+
+        @for (review of reviews; track review.name) {
+        <div class="individuallyReview flex flexCenter">
+
+            <div class="individuallyReviewContent flexColumn flexCenter">
+                <h2 class="josefinSansSemiBold600 colorF8F5EC">{{ review.name }}</h2>
+                <p class="josefinSansRegular400 colorF8F5EC">
+                    Project <span class="color89BCD9">{{ review.project }}</span>
+                </p>
+                <p class="josefinSansRegular400 colorF8F5EC">
+                    "{{ review.text }}"
+                </p>
+                <a class="josefinSansRegular400 color89BCD9" [href]="review.linkedin" target="_blank">
+                    LinkedIn Profile
+                </a>
+            </div>
+
+        </div>
+        }
+
+    </div>
+</div>
