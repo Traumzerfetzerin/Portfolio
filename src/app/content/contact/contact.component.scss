@@ -18,7 +18,7 @@
     border: 1px #89BCD9 solid;
     background-color: transparent;
     position: absolute;
-    right: 0;
+    right: 200px;
 
     img {
         width: 22px;
@@ -31,4 +31,40 @@
 
 .arrowUp:hover {
     background-color: #394B55;
+}
+
+
+.contactContent {
+    width: 911px;
+    height: 124px;
+    gap: 36px;
+}
+
+
+.description {
+    width: 429px;
+    height: 124px;
+    font-size: 18px;
+}
+
+
+.mail,
+.phone {
+    width: 26.19px;
+    height: 30px;
+}
+
+
+.mailSection,
+.phoneSection {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.mailSection,
+.phoneSection,
+p:hover {
+    color: #89BCD9;
 }
