@@ -13,12 +13,13 @@ import { HeroComponent } from './content/hero/hero.component';
 import { MeComponent } from './content/me/me.component';
 import { SkillsComponent } from './content/skills/skills.component';
 import { ReviewComponent } from './content/review/review.component';
+import { ContactComponent } from './content/contact/contact.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FooterComponent, ImprintComponent, MenuComponent, PoliceComponent, HeroComponent, MeComponent, SkillsComponent, ReviewComponent],
+  imports: [CommonModule, RouterOutlet, FooterComponent, ImprintComponent, MenuComponent, PoliceComponent, HeroComponent, MeComponent, SkillsComponent, ReviewComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
