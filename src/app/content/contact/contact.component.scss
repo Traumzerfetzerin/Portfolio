@@ -48,7 +48,7 @@
 }
 
 
-.mail,
+.mailImg,
 .phone {
     width: 26.19px;
     height: 30px;
@@ -57,6 +57,8 @@
 
 .mailSection,
 .phoneSection {
+    min-width: 445px;
+    height: 124px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -67,4 +69,94 @@
 .phoneSection,
 p:hover {
     color: #89BCD9;
+}
+
+
+.contactField {
+    width: 911px;
+    height: 356px;
+    gap: 21px;
+}
+
+
+.formField {
+    gap: 21px;
+}
+
+
+.name,
+.mail {
+    width: 445px;
+    height: 80px;
+
+    input {
+        min-width: 445px;
+        height: 60px;
+        top: 20px;
+        border-radius: 30px;
+        border: 1px #89BCD9 solid;
+        background-color: transparent;
+    }
+}
+
+
+.name {
+    p {
+        width: 68px;
+        height: 17px;
+        top: 3px;
+        left: 27px;
+        font-size: 14px;
+    }
+}
+
+
+.mail {
+    p {
+        width: 70px;
+        height: 17px;
+        top: 3px;
+        left: 27px;
+        font-size: 14px;
+    }
+}
+
+
+.message {
+    p {
+        width: 89px;
+        height: 18.06px;
+        top: 0.44px;
+        left: 27px;
+        font-size: 14px;
+    }
+
+    input {
+        min-width: 911px;
+        height: 146.63px;
+        top: 17.38px;
+        border-radius: 30px;
+        border: 1px #89BCD9 solid;
+        background-color: transparent;
+    }
+}
+
+
+.policy {
+    width: 911px;
+    height: 80px;
+    align-items: center;
+}
+
+
+.send button {
+    width: 101px;
+    height: 48px;
+    top: 32px;
+    left: 810px;
+    border-radius: 30px;
+    border: 1px #89BCD9 solid;
+    background-color: transparent;
+    font-size: 18px;
+    position: relative;
 }
