@@ -96,6 +96,16 @@ p:hover {
         border-radius: 30px;
         border: 1px #89BCD9 solid;
         background-color: transparent;
+        padding-left: 8px;
+    }
+
+    input:focus {
+        border: 1px #89BCD9 solid;
+        background-color: #313F48;
+        caret-color: #F8F5EC;
+        outline: none;
+        border: 1px solid #89BCD9;
+        padding-left: 8px;
     }
 }
 
@@ -131,13 +141,23 @@ p:hover {
         font-size: 14px;
     }
 
-    input {
-        min-width: 911px;
+    textarea {
+        width: 911px;
         height: 146.63px;
         top: 17.38px;
         border-radius: 30px;
         border: 1px #89BCD9 solid;
         background-color: transparent;
+        padding: 16px 8px;
+    }
+
+    textarea:focus {
+        border: 1px #89BCD9 solid;
+        background-color: #313F48;
+        caret-color: #F8F5EC;
+        outline: none;
+        border: 1px solid #89BCD9;
+        padding: 16px 8px;
     }
 }
 
