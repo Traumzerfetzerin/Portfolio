@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { MatTabsModule } from '@angular/material/tabs';
 
 
 // shared
@@ -22,7 +21,7 @@ import { ProjectsComponent } from './content/projects/projects.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatTabsModule, FooterComponent, ImprintComponent, MenuComponent, PoliceComponent, HeroComponent, MeComponent, SkillsComponent, ReviewComponent, ContactComponent, ProjectsComponent],
+  imports: [CommonModule, RouterOutlet, FooterComponent, ImprintComponent, MenuComponent, PoliceComponent, HeroComponent, MeComponent, SkillsComponent, ReviewComponent, ContactComponent, ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
