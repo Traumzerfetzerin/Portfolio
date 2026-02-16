@@ -112,7 +112,7 @@ p:hover {
 
 .name {
     p {
-        width: 68px;
+        min-width: 68px;
         height: 17px;
         top: 3px;
         left: 27px;
@@ -123,7 +123,7 @@ p:hover {
 
 .mail {
     p {
-        width: 70px;
+        min-width: 70px;
         height: 17px;
         top: 3px;
         left: 27px;
@@ -134,7 +134,7 @@ p:hover {
 
 .message {
     p {
-        width: 89px;
+        min-width: 89px;
         height: 18.06px;
         top: 0.44px;
         left: 27px;
