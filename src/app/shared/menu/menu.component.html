@@ -6,10 +6,12 @@
     </div>
 
     <div class="navigationLinks josefinSansMedium500 cursorPointer flexSpaceBetween">
-        <a class="color262E34" href="#whyMe">Why me</a>
-        <a class="color262E34" href="#skills">Skills</a>
-        <a class="color262E34" href="#projects">Projects</a>
-        <a class="color262E34" href="#contact">Contact</a>
+        <div class="navigationLinks">
+            <a (click)="scrollTo('whyMe')">Why me</a>
+            <a (click)="scrollTo('skills')">Skills</a>
+            <a (click)="scrollTo('projects')">Projects</a>
+            <a (click)="scrollTo('contact')">Contact</a>
+        </div>
     </div>
 
     <div class="languageSwitcher cursorPointer flex flexSpaceBetween">

@@ -4,6 +4,11 @@ body {
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 @font-face {
     font-family: 'Josefin Sans';
     src: url('assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
@@ -127,5 +132,13 @@ body {
 .maxWidth1440px {
     max-width: 1440px;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

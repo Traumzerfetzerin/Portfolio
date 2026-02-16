@@ -2,12 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
-
 // shared
 import { FooterComponent } from './shared/footer/footer.component';
-import { ImprintComponent } from './shared/imprint/imprint.component';
 import { MenuComponent } from './shared/menu/menu.component';
-import { PoliceComponent } from './shared/police/police.component';
 
 // content
 import { HeroComponent } from './content/hero/hero.component';
@@ -21,7 +18,7 @@ import { ProjectsComponent } from './content/projects/projects.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FooterComponent, ImprintComponent, MenuComponent, PoliceComponent, HeroComponent, MeComponent, SkillsComponent, ReviewComponent, ContactComponent, ProjectsComponent],
+  imports: [CommonModule, RouterOutlet, FooterComponent, MenuComponent, HeroComponent, MeComponent, SkillsComponent, ReviewComponent, ContactComponent, ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
