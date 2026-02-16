@@ -10,8 +10,6 @@ import { Component } from '@angular/core';
 
 
 export class MenuComponent {
-
-
   /**
    * Scroll to the given element with the given id.
    * @param {string} sectionId - The id of the element to scroll to.
