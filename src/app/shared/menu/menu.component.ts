@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,14 +11,26 @@ import { Component } from '@angular/core';
 
 
 export class MenuComponent {
+
+  
+  constructor(private router: Router) { }
+
+
   /**
-   * Scroll to the given element with the given id.
+   * Scrolls to the given element with the given id.
+   * If the current URL is not the root URL, navigates to the root URL and sets the fragment to 'hero'.
+   * If the current URL is the root URL, scrolls into view the element with the id 'hero' if it exists.
    * @param {string} sectionId - The id of the element to scroll to.
    */
   scrollTo(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    if (this.router.url !== '/') {
+      this.router.navigate(['/'], { fragment: 'hero' });
+    } else {
+      const hero = document.getElementById('hero');
+      if (hero) {
+        hero.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   }
 }
