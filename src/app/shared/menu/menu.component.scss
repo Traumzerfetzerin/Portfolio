@@ -5,7 +5,7 @@
     padding-bottom: 16px;
     padding-left: 109px;
     background-color: #89BCD9;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
 }
@@ -44,6 +44,18 @@
         color: #F8F5EC;
     }
 }
+
+
+.navLink.active {
+    background-image: url('/assets/img/shape/menuShape.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    inset: 0;
+    width: 83.8px;
+    height: 56.16px;
+}
+
 
 
 .languageSwitcher {
