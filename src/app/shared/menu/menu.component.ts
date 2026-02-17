@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-menu',
   standalone: true,
@@ -11,25 +10,24 @@ import { Router } from '@angular/router';
 
 
 export class MenuComponent {
-
-  
   constructor(private router: Router) { }
 
-
   /**
-   * Scrolls to the given element with the given id.
-   * If the current URL is not the root URL, navigates to the root URL and sets the fragment to 'hero'.
-   * If the current URL is the root URL, scrolls into view the element with the id 'hero' if it exists.
+   * Scroll to the given element with the given id.
+   * If the current router URL is not '/', navigate to '/' with the given sectionId as the fragment.
+   * Otherwise, get the element with the given id and scroll it into view with a smooth animation and block set to 'start'.
    * @param {string} sectionId - The id of the element to scroll to.
    */
   scrollTo(sectionId: string) {
 
     if (this.router.url !== '/') {
-      this.router.navigate(['/'], { fragment: 'hero' });
+
+      this.router.navigate(['/'], { fragment: sectionId });
     } else {
-      const hero = document.getElementById('hero');
-      if (hero) {
-        hero.scrollIntoView({ behavior: 'smooth' });
+
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
   }
