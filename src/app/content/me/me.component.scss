@@ -1,9 +1,12 @@
 .me {
-    width: 860px;
+    max-width: 860px;
     height: 307px;
-    top: 954px;
+    // top: 954px;
+    top: 200px;
     left: 290px;
     gap: 80px;
+    position: relative;
+    display: grid;
 
     h1 {
         width: 860px;
