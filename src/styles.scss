@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     background-color: #262E34;
 }
 
@@ -7,6 +6,14 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 
 
 @font-face {
@@ -121,24 +128,4 @@ html {
 .flexColumn {
     display: flex;
     flex-direction: column;
-}
-
-
-.minWidth1440px {
-    min-width: 1440px;
-}
-
-
-.maxWidth1440px {
-    max-width: 1440px;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
