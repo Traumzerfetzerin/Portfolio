@@ -3,7 +3,7 @@
     height: 661px;
     top: 3485px;
     left: 265px;
-    padding-left: 200px;
+    position: relative;
 
     h1 {
         font-size: 54px;
@@ -14,11 +14,11 @@
 .arrowUp {
     width: 38px;
     height: 89px;
+    left: 1290px;
     border-radius: 30px;
     border: 1px #89BCD9 solid;
     background-color: transparent;
-    position: absolute;
-    right: 200px;
+    position: relative;
 
     img {
         width: 22px;
