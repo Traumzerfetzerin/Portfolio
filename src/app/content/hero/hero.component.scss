@@ -1,8 +1,9 @@
 .hero {
-    width: 1214px;
-    height: 705px;
+    max-width: 1214px;
+    min-height: 705px;
     top: 41px;
     left: 114px;
+    position: relative;
 }
 
 
@@ -135,7 +136,6 @@
     border-radius: 30px;
     border: 1px #89BCD9 solid;
     background-color: transparent;
-    position: absolute;
 
     img {
         width: 22px;
