@@ -131,7 +131,67 @@ body {
 }
 
 
-// Project Tabs
+// Project Tab
+.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
+    background-color: #262E34;
+}
+
+
+.mdc-tab__text-label {
+    font-family: 'Josefin Sans';
+    font-weight: 500;
+    font-style: medium;
+    line-height: 120%;
+    letter-spacing: 0%;
+    font-size: 30px;
+    color: #89BCD9 !important;
+}
+
+
+.mat-mdc-tab-group {
+    --mdc-tab-indicator-active-indicator-color: #394B55;
+    --mat-tab-header-active-label-text-color: #F8F5EC;
+    --mat-tab-header-active-focus-label-text-color: #F8F5EC;
+    --mat-tab-header-inactive-focus-label-text-color: #F8F5EC;
+    --mat-tab-header-active-ripple-color: transparent;
+    --mat-tab-header-inactive-ripple-color: transparent;
+}
+
+
+.mat-mdc-tab.mdc-tab--active {
+    background-color: #394B55 !important;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+.mat-mdc-tab .mat-mdc-focus-indicator {
+    display: none !important;
+}
+
+
+.mat-mdc-tab .mdc-tab__ripple::before {
+    background-color: transparent !important;
+}
+
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab-indicator__content--underline {
+    border-color: #394B55 !important;
+}
+
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+    color: #F8F5EC !important;
+}
+
+
+.mat-mdc-tab:not(.mdc-tab--active) {
+    border-radius: 0;
+    background-color: transparent;
+    color: #89BCD9;
+}
+
+
 .mat-mdc-tab {
   width: 248px;
   height: 97px;
@@ -144,12 +204,11 @@ body {
   background-color: transparent;
   color: #89BCD9;
   font-size: 20px;
-  cursor: pointer;
 }
 
 
 .mat-mdc-tab.mdc-tab--active {
-  background-color: #394B55 !important;
+  background-color: #394B55;
   color: #F8F5EC !important;
   border-radius: 12px 12px 0 0;
 }
@@ -162,26 +221,4 @@ body {
 
 .mat-mdc-tab:hover {
   background-color: #2f3f48;
-}
-
-
-.mat-mdc-tab .mat-mdc-focus-indicator {
-  display: none !important;
-}
-
-
-.mat-mdc-tab .mdc-tab__ripple::before {
-  background-color: transparent !important;
-}
-
-
-.mat-mdc-tab.mdc-tab--active .mdc-tab-indicator__content--underline {
-  border-color: #394B55 !important;
-}
-
-
-.mat-mdc-tab:not(.mdc-tab--active) {
-  background-color: transparent;
-  border-radius: 0;
-  color: #89BCD9;
 }
