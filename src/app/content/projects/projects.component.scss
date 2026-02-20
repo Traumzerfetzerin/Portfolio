@@ -85,7 +85,7 @@ h3 {
     padding-top: 13px;
     padding-bottom: 13px;
     gap: 10px;
-    border-color: #89BCD9;
+    border: 1px #89BCD9 solid;
 }
 
 
@@ -98,4 +98,15 @@ h3 {
 .git {
     background-color: transparent;
     font-size: 18px;
+}
+
+
+.live:hover {
+    background-color: #F8F5EC;
+        border: 1px #F8F5EC solid;
+}
+
+
+.git:hover {
+    background-color: #394B55;
 }
