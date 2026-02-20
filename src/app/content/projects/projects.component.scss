@@ -76,15 +76,26 @@ h3 {
     justify-content: space-between;
 }
 
+
 .live,
 .git {
     width: 132px;
     height: 48px;
     border-radius: 30px;
     padding-top: 13px;
-    padding-right: 30px;
     padding-bottom: 13px;
-    padding-left: 30px;
     gap: 10px;
+    border-color: #89BCD9;
+}
+
+
+.live {
+    background-color: #89BCD9;
+    font-size: 18px;
+}
+
+
+.git {
     background-color: transparent;
+    font-size: 18px;
 }
