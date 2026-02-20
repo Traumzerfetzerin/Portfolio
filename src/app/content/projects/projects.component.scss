@@ -66,3 +66,25 @@ h3 {
     left: 746px;
     border-radius: 30px;
 }
+
+
+.button {
+    width: 292px;
+    height: 48px;
+    top: 441px;
+    left: 827px;
+    justify-content: space-between;
+}
+
+.live,
+.git {
+    width: 132px;
+    height: 48px;
+    border-radius: 30px;
+    padding-top: 13px;
+    padding-right: 30px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    gap: 10px;
+    background-color: transparent;
+}
