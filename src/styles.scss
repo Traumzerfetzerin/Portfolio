@@ -1,5 +1,7 @@
 body {
     background-color: #262E34;
+    max-width: 1440px;
+    max-height: 4533px;
 }
 
 
@@ -155,6 +157,16 @@ body {
     --mat-tab-header-inactive-focus-label-text-color: #F8F5EC;
     --mat-tab-header-active-ripple-color: transparent;
     --mat-tab-header-inactive-ripple-color: transparent;
+    background-color: #394B55 !important;
+    height: 700px;
+}
+
+
+.mat-mdc-tab-body-wrapper {
+    width: 1199px;
+    height: 517px;
+    top: 128px;
+    left: 123px;
 }
 
 
@@ -193,32 +205,32 @@ body {
 
 
 .mat-mdc-tab {
-  width: 248px;
-  height: 97px;
-  min-width: 248px;
-  min-height: 97px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px 12px 0 0;
-  background-color: transparent;
-  color: #89BCD9;
-  font-size: 20px;
+    width: 248px;
+    height: 97px;
+    min-width: 248px;
+    min-height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px 12px 0 0;
+    background-color: transparent;
+    color: #89BCD9;
+    font-size: 20px;
 }
 
 
 .mat-mdc-tab.mdc-tab--active {
-  background-color: #394B55;
-  color: #F8F5EC !important;
-  border-radius: 12px 12px 0 0;
+    background-color: #394B55;
+    color: #F8F5EC !important;
+    border-radius: 12px 12px 0 0;
 }
 
 
 .mat-mdc-tab .mdc-tab__text-label {
-  line-height: 97px;
+    line-height: 97px;
 }
 
 
 .mat-mdc-tab:hover {
-  background-color: #2f3f48;
+    background-color: #2f3f48;
 }
