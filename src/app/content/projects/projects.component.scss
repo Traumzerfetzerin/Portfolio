@@ -10,7 +10,7 @@ h1 {
 
 .projects {
     width: 1199px;
-    height: 517px;
+    // height: 517px;
     top: 2177px;
     left: 123px;
     position: relative;
@@ -34,13 +34,15 @@ h3 {
 }
 
 .technologies {
-    width: 183px;
-    height: 70px;
     top: 9px;
     left: 881px;
     padding-right: 2px;
     padding-left: 2px;
     gap: 12px;
+
+    h3 {
+        font-size: 18px;
+    }
 
     .techImg {
         width: 179px;
