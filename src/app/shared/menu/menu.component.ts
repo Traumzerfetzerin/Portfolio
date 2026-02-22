@@ -15,8 +15,6 @@ export class MenuComponent {
   sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
 
   constructor(private router: Router) { }
-
-
   /**
    * Scroll to the given element with the given id.
    * @param {string} sectionId - The id of the element to scroll to.
