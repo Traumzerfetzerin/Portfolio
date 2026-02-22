@@ -1,5 +1,16 @@
 .hero {
-    width: 1214px;
+    width: 100%;
+}
+
+
+.heroInfo {
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.heroContent {
+    flex: 1;
 }
 
 
@@ -28,7 +39,7 @@
     background-size: contain;
     background-position: center;
     transition: opacity 0.5s ease-in-out;
-    z-index: 1;
+    z-index: -1;
 }
 
 
@@ -42,7 +53,11 @@
     background-image: url('/assets/img/shape/heroShapeAcross.png');
     opacity: 0;
     rotate: 45deg;
+    transform: translate(50%);
+    top: 0;
+    left: 0;
 }
+
 
 
 .bigMe:hover::before {
@@ -63,10 +78,6 @@
 
 .developerInfoContent {
     width: 66px;
-    height: 73px;
-    top: 121px;
-    left: 892px;
-    position: absolute;
 
     img {
         width: 56px;
@@ -84,8 +95,7 @@
 .socialMediaIcons {
     width: 30px;
     height: 122px;
-    top: 68px;
-    left: 1182px;
+    top: -65px;
     gap: 16px;
     right: 0;
     position: absolute
