@@ -137,11 +137,6 @@ body {
 
 
 // Project Tab
-.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
-    background-color: #262E34;
-}
-
-
 .mdc-tab__text-label {
     font-family: 'Josefin Sans';
     font-weight: 500;
@@ -153,23 +148,8 @@ body {
 }
 
 
-.mat-mdc-tab-group {
-    --mdc-tab-indicator-active-indicator-color: #394B55;
-    --mat-tab-header-active-label-text-color: #F8F5EC;
-    --mat-tab-header-active-focus-label-text-color: #F8F5EC;
-    --mat-tab-header-inactive-focus-label-text-color: #F8F5EC;
-    --mat-tab-header-active-ripple-color: transparent;
-    --mat-tab-header-inactive-ripple-color: transparent;
-    background-color: #394B55 !important;
-    height: 700px;
-}
-
-
 .mat-mdc-tab-body-wrapper {
-    width: 1199px;
-    height: 517px;
-    top: 128px;
-    left: 123px;
+    background-color: #262E34 !important;
 }
 
 
@@ -236,4 +216,18 @@ body {
 
 .mat-mdc-tab:hover {
     background-color: #2f3f48;
+}
+
+
+.mat-mdc-tab.mdc-tab--active {
+    border-top-left-radius: 19px !important;
+    border-top-right-radius: 19px !important;
+    background-color: #394B55 !important;
+}
+
+
+.mat-mdc-tab-ripple--active {
+    border-top-left-radius: 19px !important;
+    border-top-right-radius: 19px !important;
+    background-color: #394B55 !important;
 }
