@@ -96,6 +96,11 @@ h3 {
 }
 
 
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+
 .live {
     background-color: #89BCD9;
     font-size: 18px;
