@@ -4,7 +4,6 @@
 
 
 .bigMe {
-    position: relative;
     width: 535px;
     height: 683px;
 
@@ -44,8 +43,6 @@
 .bigMe::after {
     background-image: url('/assets/img/shape/heroShapeAcross.png');
     opacity: 0;
-    // width: 594px;
-    // height: 710px;
     rotate: 45deg;
 }
 
@@ -59,8 +56,12 @@
     opacity: 1;
 }
 
-
 .developerInfo {
+    position: relative;
+}
+
+
+.developerInfoContent {
     width: 66px;
     height: 73px;
     top: 121px;
