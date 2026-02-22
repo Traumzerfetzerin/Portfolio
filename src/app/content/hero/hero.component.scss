@@ -8,7 +8,7 @@
     height: 683px;
 
     img {
-        position: absolute;
+        position: relative;
         top: 22px;
         left: 25px;
         z-index: 10;
@@ -22,8 +22,6 @@
 .bigMe::after {
     content: "";
     position: absolute;
-    top: 22px;
-    left: 25px;
     width: 535px;
     height: 683px;
     background-repeat: no-repeat;
@@ -56,8 +54,10 @@
     opacity: 1;
 }
 
+
 .developerInfo {
     position: relative;
+    width: 100%;
 }
 
 
@@ -87,9 +87,8 @@
     top: 68px;
     left: 1182px;
     gap: 16px;
-    position: absolute;
     right: 0;
-    transform: translateY(-50%);
+    position: absolute
 }
 
 
