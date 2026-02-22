@@ -10,21 +10,22 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 110px;
     display: block;
+    margin: 0;
 }
 
 
 html,
 body {
     height: 100%;
-    margin: 0;
 }
 
 
-
+// FONT
 @font-face {
     font-family: 'Josefin Sans';
     src: url('assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
 }
+
 
 @font-face {
     font-family: 'Anta';
@@ -86,6 +87,7 @@ body {
 }
 
 
+// COLOR
 .colorF8F5EC {
     color: #F8F5EC;
 }
@@ -111,6 +113,7 @@ body {
 }
 
 
+// FLEX
 .flex {
     display: flex;
 }
