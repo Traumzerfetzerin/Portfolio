@@ -24,6 +24,7 @@ import { ContactComponent } from '../content/contact/contact.component';
     <app-projects id="projects"></app-projects>
     <app-review id="review"></app-review>
     <app-contact id="contact"></app-contact>
-  `
+  `,
+  styleUrls: ['./main.component.scss']
 })
 export class MainComponent { }
