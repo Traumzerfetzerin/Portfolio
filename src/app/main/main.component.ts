@@ -25,11 +25,13 @@ import { MenuComponent } from '../shared/menu/menu.component';
   template: `
     <app-hero id="hero"></app-hero>
     <app-menu></app-menu>
-    <app-me id="whyMe"></app-me>
-    <app-skills id="skills"></app-skills>
-    <app-projects id="projects"></app-projects>
-    <app-review id="review"></app-review>
-    <app-contact id="contact"></app-contact>
+      <div class="gap">  
+      <app-me id="whyMe"></app-me>
+      <app-skills id="skills"></app-skills>
+      <app-projects id="projects"></app-projects>
+      <app-review id="review"></app-review>
+      <app-contact id="contact"></app-contact>
+    </div>
   `,
 
   styleUrls: ['./main.component.scss']
