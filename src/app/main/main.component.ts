@@ -26,11 +26,11 @@ import { MenuComponent } from '../shared/menu/menu.component';
     <app-hero id="hero"></app-hero>
     <app-menu></app-menu>
       <div class="gap">  
-      <app-me id="whyMe"></app-me>
-      <app-skills id="skills"></app-skills>
-      <app-projects id="projects"></app-projects>
-      <app-review id="review"></app-review>
-      <app-contact id="contact"></app-contact>
+        <app-me id="whyMe"></app-me>
+        <app-skills id="skills"></app-skills>
+        <app-projects id="projects"></app-projects>
+        <app-review id="review"></app-review>
+        <app-contact id="contact"></app-contact>
     </div>
   `,
 
