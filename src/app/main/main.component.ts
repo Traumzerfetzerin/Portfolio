@@ -21,7 +21,6 @@ import { MenuComponent } from '../shared/menu/menu.component';
     MenuComponent
   ],
 
-
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
