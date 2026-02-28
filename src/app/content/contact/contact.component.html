@@ -4,14 +4,17 @@
         <button (click)="scrollTo('hero')" class="arrowUp flexCenter cursorPointer">
             <img src="assets/img/Arrow Up.png" alt="">
         </button>
+
         <h1 class="AntaRegular400 color89BCD9 flexCenter">Contact Me</h1>
 
         <div class="contactContent flex">
             <div>
-                <span class="description josefinSansRegular400 colorF8F5EC flexCenter">I’d love to hear from you! I work in both
-                    front- and back-end development and enjoy bringing ideas to life while adding value to
-                    projects.</span>
+                <span class="description josefinSansRegular400 colorF8F5EC flexCenter">
+                    I’d love to hear from you! I work in both front- and back-end development and enjoy bringing ideas
+                    to life while adding value to projects.
+                </span>
             </div>
+
             <div class="flexColumn flexCenter">
                 <div class="mailSection cursorPointer">
                     <img class="mailImg" src="assets/img/contact/emailWhite.png" alt="">
@@ -26,25 +29,37 @@
             </div>
         </div>
 
-        <div class="contactField flexColumn">
+        <!-- Reactive Form -->
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactField flexColumn">
+
             <div class="formField flex">
                 <div class="name">
-                    <p class="josefinSansRegular400 color89BCD9">Your name</p>
-                    <input class="cursorPointer" type="text">
+                    <p class="josefinSansRegular400 color89BCD9">Your Name</p>
+                    <input type="text" formControlName="name" class="cursorPointer">
+                    <small *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
+                        Name is required
+                    </small>
                 </div>
+
                 <div class="mail">
                     <p class="josefinSansRegular400 color89BCD9">Your Email</p>
-                    <input class="cursorPointer" type="text">
+                    <input type="email" formControlName="email" class="cursorPointer">
+                    <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+                        Valid email is required
+                    </small>
                 </div>
             </div>
 
             <div class="message">
                 <p class="josefinSansRegular400 color89BCD9">Your Message</p>
-                <textarea class="cursorPointer" type="text"></textarea>
+                <textarea formControlName="message" class="cursorPointer"></textarea>
+                <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+                    Message is required
+                </small>
             </div>
 
             <div class="policy flex">
-                <img class="cursorPointer" src="assets/img/checkBox.png" alt="">
+                <input type="checkbox" formControlName="acceptPolicy" class="cursorPointer">
                 <span class="josefinSansRegular400 colorF8F5EC flex">
                     I've read the
                     <a [routerLink]="'/police'" class="flexCenter josefinSansRegular400 color89BCD9 cursorPointer">
@@ -52,10 +67,15 @@
                     </a>
                     and agree to the processing of my data as outlined.
                 </span>
-                <div class="send flexCenter">
-                    <button class="josefinSansRegular400 color89BCD9 cursorPointer">Send</button>
-                </div>
             </div>
-        </div>
+
+            <div class="send flexCenter">
+                <button type="submit" class="josefinSansRegular400 color89BCD9 cursorPointer"
+                    [disabled]="contactForm.invalid">
+                    Send
+                </button>
+            </div>
+
+        </form>
     </div>
 </div>
