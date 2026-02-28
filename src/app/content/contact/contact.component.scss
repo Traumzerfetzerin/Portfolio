@@ -163,6 +163,14 @@ p:hover {
 }
 
 
+.fieldWrapper small {
+    color: #FF5A5A;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 .policy {
     width: 911px;
     height: 80px;
@@ -174,9 +182,26 @@ p:hover {
     width: 101px;
     height: 48px;
     border-radius: 30px;
-    border: 1px #89BCD9 solid;
+    border: 1px #F8F5EC solid;
     background-color: transparent;
     font-size: 18px;
     position: absolute;
     right: 0;
+    color: #F8F5EC;
+    cursor: not-allowed;
+    transition: all 0.3s ease;
+}
+
+
+.send button.active {
+    width: 101px;
+    height: 48px;
+    border-radius: 30px;
+    border: 1px #89BCD9 solid;
+    background-color: transparent;
+    font-size: 18px;
+    position: absolute;
+    color: #89BCD9;
+    right: 0;
+    cursor: pointer;
 }

@@ -32,7 +32,7 @@
         <!-- Reactive Form -->
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactField flexColumn">
 
-            <div class="formField flex">
+            <div class="formField flex fieldWrapper">
                 <div class="name">
                     <p class="josefinSansRegular400 color89BCD9">Your Name</p>
                     <input type="text" formControlName="name" class="cursorPointer">
@@ -41,7 +41,7 @@
                     </small>
                 </div>
 
-                <div class="mail">
+                <div class="mail fieldWrapper">
                     <p class="josefinSansRegular400 color89BCD9">Your Email</p>
                     <input type="email" formControlName="email" class="cursorPointer">
                     <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="message">
+            <div class="message fieldWrapper">
                 <p class="josefinSansRegular400 color89BCD9">Your Message</p>
                 <textarea formControlName="message" class="cursorPointer"></textarea>
                 <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
@@ -70,8 +70,7 @@
             </div>
 
             <div class="send flexCenter">
-                <button type="submit" class="josefinSansRegular400 color89BCD9 cursorPointer"
-                    [disabled]="contactForm.invalid">
+                <button type="submit" [disabled]="!contactForm.valid" [class.active]="contactForm.valid">
                     Send
                 </button>
             </div>
