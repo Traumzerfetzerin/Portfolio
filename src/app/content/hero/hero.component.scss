@@ -86,6 +86,11 @@
         height: 38px;
         left: 5px;
     }
+
+    img:hover {
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.1);
+    }
 }
 
 
