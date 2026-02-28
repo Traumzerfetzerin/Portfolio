@@ -59,14 +59,17 @@
             </div>
 
             <div class="policy flex">
-                <input type="checkbox" formControlName="acceptPolicy" class="cursorPointer">
-                <span class="josefinSansRegular400 colorF8F5EC flex">
-                    I've read the
-                    <a [routerLink]="'/police'" class="flexCenter josefinSansRegular400 color89BCD9 cursorPointer">
-                        privacy policy
-                    </a>
-                    and agree to the processing of my data as outlined.
-                </span>
+                <label class="customCheckbox flexCenter">
+                    <input type="checkbox" formControlName="acceptPolicy">
+                    <span class="checkmark"></span>
+                    <span class="josefinSansRegular400 colorF8F5EC flex">
+                        I've read the
+                        <a [routerLink]="'/police'" class="flexCenter josefinSansRegular400 color89BCD9 cursorPointer">
+                            privacy policy
+                        </a>
+                        and agree to the processing of my data as outlined.
+                    </span>
+                </label>
             </div>
 
             <div class="send flexCenter">

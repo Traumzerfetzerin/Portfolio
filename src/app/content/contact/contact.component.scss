@@ -205,3 +205,60 @@ p:hover {
     right: 0;
     cursor: pointer;
 }
+
+
+.customCheckbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+
+    .checkmark {
+        position: relative;
+        width: 22px;
+        height: 19.1px;
+        top: -1.87px;
+        left: -2.36px;
+        border: 2px solid #89BCD9;
+        border-radius: 50% / 40%;
+        background-color: transparent;
+        transition: 0.3s;
+        flex-shrink: 0;
+    }
+
+
+    .checkmark::after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 6px;
+        top: 2px;
+        width: 6px;
+        height: 12px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
+
+    input:checked~.checkmark {
+        background-color: #89BCD9;
+        border-color: #89BCD9;
+    }
+
+
+    input:checked~.checkmark::after {
+        display: block;
+    }
+}
