@@ -262,3 +262,31 @@ p:hover {
         display: block;
     }
 }
+
+
+
+// MEDIA QUERIES
+@media (max-width: 1050px) {
+    .arrowUp {
+        top: -32px;
+    }
+
+    .contactField {
+        width: 767px;
+    }
+
+    .contact {
+        width: 767px;
+    }
+
+    .name input,
+    .mail input {
+        min-width: auto;
+        width: 360px;
+    }
+
+    .message textarea {
+        min-width: auto;
+        width: 749px;
+    }
+}

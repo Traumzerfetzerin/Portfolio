@@ -92,3 +92,27 @@
         background-image: none;
     }
 }
+
+
+
+// media queries
+@media (max-width: 1455px) {
+    .menu {
+        gap: 0;
+        width: 928px;
+    }
+}
+
+
+@media (max-width: 1160px) {
+    .menu {
+        width: 818px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .menu {
+        width: 683px;
+    }
+}

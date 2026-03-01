@@ -72,3 +72,42 @@
 .linkedIn:hover {
     content: url('/assets/img/socialMedia/linkedInWhite.png');
 }
+
+
+
+// MEDIA QUERIES
+@media (max-width: 1455px) {
+    .footer {
+        width: 1145px;
+    }
+
+
+    .footerContent {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 1160px) {
+    .footer {
+        width: 1035px;
+    }
+
+
+    .footerContent {
+        gap: 310px;
+    }
+}
+
+
+@media (max-width: 1050px){
+        .footer {
+        width: 900px;
+    }
+
+
+        .footerContent {
+        gap: 210px;
+    }
+}

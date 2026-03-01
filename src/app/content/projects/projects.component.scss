@@ -133,3 +133,19 @@ a:-webkit-any-link {
     background-color: #F8F5EC;
     font-size: 30px;
 }
+
+
+
+// MEDIA QUERIES
+@media (max-width: 1455px) {
+    .projects {
+        width: 1000px;
+    }
+}
+
+
+@media (max-width: 1050px){
+    .projects {
+        width: 767px;
+    }
+}

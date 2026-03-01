@@ -1,4 +1,6 @@
 .imprintContainer {
+    height: calc(100vh - 350px);
+
     h1 {
         width: 519px;
         height: 65px;
@@ -27,4 +29,10 @@
 .developerInfo {
     width: 1032px;
     gap: 16px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #89BCD9;
 }

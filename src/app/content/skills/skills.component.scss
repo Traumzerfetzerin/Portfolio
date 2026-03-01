@@ -59,7 +59,7 @@
 }
 
 
-.learningContent{
+.learningContent {
     height: 300px;
 }
 
@@ -109,5 +109,14 @@
         min-width: 100px;
         min-height: 100px;
         gap: 10px;
+    }
+}
+
+
+
+// MEDIA QUERIES
+@media (max-width: 1050px) {
+    .skillsContainer {
+        width: 900px;
     }
 }

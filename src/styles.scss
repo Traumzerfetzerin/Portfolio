@@ -233,3 +233,19 @@ html {
     border-top-right-radius: 19px !important;
     background-color: #394B55 !important;
 }
+
+
+
+// MEDIA QUERIES
+@media (max-width: 1455px) {
+    .mat-mdc-tab-header {
+        width: 1000px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .mat-mdc-tab-header {
+        width: 767px;
+    }
+}

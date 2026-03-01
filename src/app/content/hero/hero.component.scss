@@ -157,3 +157,33 @@
 .arrowDown:hover {
     background-color: #394B55;
 }
+
+
+
+// media queries
+@media (max-width: 1455px) {
+    .heroContent {
+        flex: 0;
+    }
+}
+
+
+@media (max-width: 1160px) {
+    .developer {
+        font-size: 60px;
+        width: auto;
+    }
+
+    .bigMe img {
+        top: 100px;
+        width: 400px;
+        height: 600px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .bigMe {
+        width: auto;
+    }
+}
