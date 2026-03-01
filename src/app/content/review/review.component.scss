@@ -82,3 +82,15 @@
         }
     }
 }
+
+
+@media (max-width: 920px) {
+    .review {
+        width: 600px;
+    }
+
+
+    .reviewContainer {
+        flex-direction: column;
+    }
+}

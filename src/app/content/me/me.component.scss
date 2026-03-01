@@ -74,3 +74,33 @@
         width: 900px;
     }
 }
+
+
+@media (max-width: 920px) {
+    .me {
+        width: 750px;
+        height: auto;
+    }
+
+    .meContainer {
+        width: 750px;
+    }
+
+
+    .location {
+        p {
+            font-size: 25px;
+        }
+    }
+
+
+    .meContent {
+        width: 750px;
+        flex-direction: column;
+    }
+
+
+    .motivation {
+        height: auto;
+    }
+}

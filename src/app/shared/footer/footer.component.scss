@@ -101,13 +101,25 @@
 }
 
 
-@media (max-width: 1050px){
-        .footer {
+@media (max-width: 1050px) {
+    .footer {
         width: 900px;
     }
 
 
-        .footerContent {
+    .footerContent {
         gap: 210px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .footer {
+        width: 750px;
+    }
+
+
+    .footerContent {
+        gap: 150px;
     }
 }

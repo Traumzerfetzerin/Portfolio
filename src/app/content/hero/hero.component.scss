@@ -187,3 +187,12 @@
         width: auto;
     }
 }
+
+
+@media (max-width: 920px){
+        .bigMe img {
+        top: 250px;
+        width: 250px;
+        height: 450px;
+    }
+}
