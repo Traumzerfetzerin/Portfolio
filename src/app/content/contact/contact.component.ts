@@ -32,19 +32,28 @@ export class ContactComponent {
 
 
   /**
-   * Handles the submission of the contact form.
-   * If the form is valid, logs the submitted data to the console,
-   * displays an alert to the user, and resets the form.
-   * If the form is invalid, marks all form controls as touched.
+   * Submit the contact form
+   * If the form is invalid, mark all form controls as touched
+   * If the form is valid, create a mailto link with the form values and open it in a new window
+   * Reset the contact form after submitting
    */
   onSubmit() {
-    if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-      alert('Message sent!');
-      this.contactForm.reset();
-    } else {
+    if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
+      return;
     }
+
+    const email = 'nadjaparadiesvogel@gmail.com';
+    const subject = encodeURIComponent('Contact Form Message');
+    const body = encodeURIComponent(
+      `Name: ${this.contactForm.value.name}\n
+      Email: ${this.contactForm.value.email}\n
+      Message: ${this.contactForm.value.message}`
+    );
+
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+
+    this.contactForm.reset();
   }
 
 
