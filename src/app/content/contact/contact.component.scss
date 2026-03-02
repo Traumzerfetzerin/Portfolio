@@ -289,13 +289,6 @@ p:hover {
         min-width: auto;
         width: 749px;
     }
-}
-
-
-@media (max-width: 920px) {
-    .arrowUp {
-        right: 83px;
-    }
 
 
     .contactContent {
@@ -316,17 +309,6 @@ p:hover {
     }
 
 
-    .name input,
-    .mail input {
-        width: 319px;
-    }
-
-
-    .message textarea {
-        width: 666px;
-    }
-
-
     .policy {
         width: 683px;
     }
@@ -335,4 +317,9 @@ p:hover {
     .send button {
         left: 583px;
     }
+}
+
+
+@media (max-width: 920px) {
+
 }
