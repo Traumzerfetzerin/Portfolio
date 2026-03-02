@@ -290,3 +290,49 @@ p:hover {
         width: 749px;
     }
 }
+
+
+@media (max-width: 920px) {
+    .arrowUp {
+        right: 83px;
+    }
+
+
+    .contactContent {
+        height: auto;
+        flex-direction: column;
+        gap: 0;
+        width: 601px;
+    }
+
+
+    .contactInfo {
+        align-items: baseline;
+    }
+
+
+    .contactField {
+        width: 683px;
+    }
+
+
+    .name input,
+    .mail input {
+        width: 319px;
+    }
+
+
+    .message textarea {
+        width: 666px;
+    }
+
+
+    .policy {
+        width: 683px;
+    }
+
+
+    .send button {
+        left: 583px;
+    }
+}
