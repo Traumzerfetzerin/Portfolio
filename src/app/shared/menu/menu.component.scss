@@ -1,21 +1,17 @@
 .menu {
-    max-width: 1440px;
     height: 104px;
-    top: 0;
     padding-top: 16px;
     padding-right: 109px;
     padding-bottom: 16px;
     padding-left: 109px;
-    gap: 196px;
     background-color: #89BCD9;
     z-index: 100;
     position: sticky;
+    top: 0;
 }
 
 
 .developerInfo {
-    width: 58px;
-
     img {
         width: 52px;
         height: 38px;
@@ -33,7 +29,6 @@
     gap: 32px;
 
     a {
-        width: 100px;
         font-size: 26px;
         text-decoration: none;
     }
@@ -50,16 +45,14 @@
     background-position: center;
     background-repeat: no-repeat;
     inset: 0;
-    width: 83.8px;
     height: 56.16px;
 }
 
 
 .languageSwitcher {
-    width: 92px;
+    gap: 32px;
 
     p {
-        width: 27px;
         font-size: 18px;
     }
 
