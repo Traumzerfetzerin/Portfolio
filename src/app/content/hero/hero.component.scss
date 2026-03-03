@@ -164,7 +164,6 @@
     }
 
     .bigMe img {
-        top: 100px;
         width: 400px;
         height: 600px;
     }
@@ -178,9 +177,8 @@
 }
 
 
-@media (max-width: 920px){
-        .bigMe img {
-        top: 250px;
+@media (max-width: 920px) {
+    .bigMe img {
         width: 250px;
         height: 450px;
     }
