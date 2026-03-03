@@ -1,5 +1,4 @@
 .contact {
-    width: 911px;
     position: relative;
 
     h1 {
@@ -32,15 +31,12 @@
 
 
 .contactContent {
-    width: 911px;
-    height: 124px;
     gap: 36px;
 }
 
 
 .description {
     width: 429px;
-    height: 124px;
     font-size: 18px;
 }
 
@@ -73,7 +69,6 @@ p:hover {
 
 
 .contactField {
-    width: 911px;
     gap: 21px;
 }
 
@@ -85,13 +80,9 @@ p:hover {
 
 .name,
 .mail {
-    width: 445px;
-    height: 80px;
-
     input {
         min-width: 432px;
         height: 60px;
-        top: 20px;
         border-radius: 30px;
         border: 1px #89BCD9 solid;
         background-color: transparent;
@@ -112,10 +103,6 @@ p:hover {
 
 .name {
     p {
-        min-width: 68px;
-        height: 17px;
-        top: 3px;
-        left: 27px;
         font-size: 14px;
     }
 }
@@ -123,10 +110,6 @@ p:hover {
 
 .mail {
     p {
-        min-width: 70px;
-        height: 17px;
-        top: 3px;
-        left: 27px;
         font-size: 14px;
     }
 }
@@ -134,17 +117,12 @@ p:hover {
 
 .message {
     p {
-        min-width: 89px;
-        height: 18.06px;
-        top: 0.44px;
-        left: 27px;
         font-size: 14px;
     }
 
     textarea {
         min-width: 892px;
         height: 146.63px;
-        top: 17.38px;
         border-radius: 30px;
         border: 1px #89BCD9 solid;
         background-color: transparent;
@@ -172,8 +150,6 @@ p:hover {
 
 
 .policy {
-    width: 911px;
-    height: 80px;
     align-items: center;
 }
 
@@ -223,7 +199,6 @@ p:hover {
         width: 0;
     }
 
-
     .checkmark {
         position: relative;
         width: 22px;
@@ -236,7 +211,6 @@ p:hover {
         transition: 0.3s;
         flex-shrink: 0;
     }
-
 
     .checkmark::after {
         content: "";
@@ -251,12 +225,10 @@ p:hover {
         transform: rotate(45deg);
     }
 
-
     input:checked~.checkmark {
         background-color: #89BCD9;
         border-color: #89BCD9;
     }
-
 
     input:checked~.checkmark::after {
         display: block;
@@ -266,60 +238,3 @@ p:hover {
 
 
 // MEDIA QUERIES
-@media (max-width: 1050px) {
-    .arrowUp {
-        top: -32px;
-    }
-
-    .contactField {
-        width: 767px;
-    }
-
-    .contact {
-        width: 767px;
-    }
-
-    .name input,
-    .mail input {
-        min-width: auto;
-        width: 360px;
-    }
-
-    .message textarea {
-        min-width: auto;
-        width: 749px;
-    }
-
-
-    .contactContent {
-        height: auto;
-        flex-direction: column;
-        gap: 0;
-        width: 601px;
-    }
-
-
-    .contactInfo {
-        align-items: baseline;
-    }
-
-
-    .contactField {
-        width: 683px;
-    }
-
-
-    .policy {
-        width: 683px;
-    }
-
-
-    .send button {
-        left: 583px;
-    }
-}
-
-
-@media (max-width: 920px) {
-
-}
