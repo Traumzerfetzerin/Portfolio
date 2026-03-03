@@ -1,9 +1,4 @@
 .skills {
-    width: 869px;
-    top: 1365px;
-    left: 286px;
-    gap: 80px;
-
     h1 {
         font-size: 60px;
     }
@@ -21,13 +16,10 @@
 
 .skillsIcons {
     max-width: 409px;
-    max-height: 404px;
     gap: 40px;
     flex-wrap: wrap;
 
     div {
-        max-width: 80px;
-        max-height: 100px;
         gap: 10px;
     }
 
@@ -38,7 +30,7 @@
 
     p {
         width: 66px;
-        height: 22px;
+        // height: 22px;
         font-size: 18px;
     }
 }
@@ -50,12 +42,6 @@
     position: relative;
     overflow: hidden;
     padding: 40px;
-
-    p {
-        height: 23px;
-        top: 81px;
-        left: 91px;
-    }
 }
 
 
@@ -99,10 +85,6 @@
 
 
 .currentlyLearningIcons {
-    width: 96px;
-    min-height: 54px;
-    top: 123px;
-    left: 135px;
     gap: 24px;
 
     div {
@@ -115,13 +97,6 @@
 
 
 // MEDIA QUERIES
-@media (max-width: 1050px) {
-    .skillsContainer {
-        width: 900px;
-    }
-}
-
-
 @media (max-width: 920px) {
     .skillsContent {
         flex-direction: column;
