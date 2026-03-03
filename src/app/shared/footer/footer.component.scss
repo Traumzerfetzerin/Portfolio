@@ -1,5 +1,4 @@
 .footer {
-    max-width: 1440px;
     height: 214px;
     background-color: #89BCD9;
 }
@@ -76,50 +75,3 @@
 
 
 // MEDIA QUERIES
-@media (max-width: 1455px) {
-    .footer {
-        width: 1145px;
-    }
-
-
-    .footerContent {
-        width: 100%;
-        justify-content: space-around;
-    }
-}
-
-
-@media (max-width: 1160px) {
-    .footer {
-        width: 1035px;
-    }
-
-
-    .footerContent {
-        gap: 310px;
-    }
-}
-
-
-@media (max-width: 1050px) {
-    .footer {
-        width: 900px;
-    }
-
-
-    .footerContent {
-        gap: 210px;
-    }
-}
-
-
-@media (max-width: 920px) {
-    .footer {
-        width: 750px;
-    }
-
-
-    .footerContent {
-        gap: 150px;
-    }
-}
