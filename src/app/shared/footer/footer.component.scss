@@ -5,15 +5,11 @@
 
 
 .footerContent {
-    max-width: 1216px;
-    height: 72px;
     gap: 417px;
 }
 
 
 .legalInfo {
-    width: 202px;
-    height: 57px;
     gap: 16px;
 
     a,
@@ -29,13 +25,9 @@
 
 
 .developerInfo {
-    width: 58px;
-    height: 72px;
-
     img {
         width: 52px;
         height: 38px;
-        left: 3px;
     }
 
     p {
@@ -45,8 +37,6 @@
 
 
 .socialMediaIcons {
-    width: 122px;
-    height: 30px;
     gap: 16px;
     align-self: flex-end;
 
