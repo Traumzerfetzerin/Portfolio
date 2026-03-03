@@ -1,6 +1,5 @@
 .hero {
     width: 100%;
-    height: 705px;
 }
 
 
@@ -17,7 +16,6 @@
 
 .bigMe {
     width: 535px;
-    height: 683px;
 
     img {
         position: relative;
@@ -96,7 +94,6 @@
 
 .socialMediaIcons {
     width: 30px;
-    height: 122px;
     top: -65px;
     gap: 16px;
     right: 0;
@@ -121,26 +118,18 @@
 
 .developer {
     width: 610px;
-    height: 81px;
-    top: 230px;
-    left: 607px;
     font-size: 88px;
 }
 
 
 .learned {
     width: 501px;
-    height: 53px;
-    top: 347px;
-    left: 662px;
 }
 
 
 .arrowDown {
     width: 38px;
     height: 89px;
-    top: 540px;
-    left: 906px;
     border-radius: 30px;
     border: 1px #89BCD9 solid;
     background-color: transparent;
@@ -160,7 +149,7 @@
 
 
 
-// media queries
+// MEDIA QUERIES
 @media (max-width: 1455px) {
     .heroContent {
         flex: 0;
