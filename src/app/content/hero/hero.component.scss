@@ -150,36 +150,3 @@
 
 
 // MEDIA QUERIES
-@media (max-width: 1455px) {
-    .heroContent {
-        flex: 0;
-    }
-}
-
-
-@media (max-width: 1160px) {
-    .developer {
-        font-size: 60px;
-        width: auto;
-    }
-
-    .bigMe img {
-        width: 400px;
-        height: 600px;
-    }
-}
-
-
-@media (max-width: 1050px) {
-    .bigMe {
-        width: auto;
-    }
-}
-
-
-@media (max-width: 920px) {
-    .bigMe img {
-        width: 250px;
-        height: 450px;
-    }
-}
