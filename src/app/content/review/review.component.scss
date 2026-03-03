@@ -66,31 +66,3 @@
 
 
 // MEDIA QUERIES
-@media (max-width: 1455px) {
-    .review {
-        width: 1000px;
-    }
-}
-
-
-@media (max-width: 1050px) {
-    .review {
-        width: 767px;
-
-        h1 {
-            font-size: 24px;
-        }
-    }
-}
-
-
-@media (max-width: 920px) {
-    .review {
-        width: 600px;
-    }
-
-
-    .reviewContainer {
-        flex-direction: column;
-    }
-}
