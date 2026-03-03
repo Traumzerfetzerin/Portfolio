@@ -1,41 +1,15 @@
 .me {
-    max-width: 860px;
-    height: 307px;
-    top: 954px;
-    left: 290px;
-
     h1 {
-        width: 860px;
-        height: 51px;
         font-size: 60px;
     }
 }
 
 
-.meContent {
-    width: 860px;
-    height: 176px;
-}
-
-
 .location {
-    width: 572px;
-    height: 65px;
-    left: -6px;
     gap: 16px;
-
-    img {
-        width: 74.43px;
-        height: 63.28px;
-        top: 2px;
-        left: 0.13px;
-    }
 
     p {
         width: 458px;
-        height: 38px;
-        top: 15px;
-        left: 82.55px;
         font-size: 30px;
     }
 }
@@ -43,7 +17,6 @@
 
 .motivation {
     width: 379px;
-    height: 104px;
 
     p {
         font-size: 18px;
@@ -68,39 +41,16 @@
 }
 
 
+
 // MEDIA QUERIES
-@media (max-width: 1050px) {
-    .meContainer {
-        width: 900px;
-    }
-}
-
-
 @media (max-width: 920px) {
-    .me {
-        width: 750px;
-        height: auto;
-    }
-
-    .meContainer {
-        width: 750px;
-    }
-
-
     .location {
         p {
             font-size: 25px;
         }
     }
 
-
     .meContent {
-        width: 750px;
         flex-direction: column;
-    }
-
-
-    .motivation {
-        height: auto;
     }
 }
