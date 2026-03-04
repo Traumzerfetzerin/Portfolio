@@ -66,3 +66,12 @@
 
 
 // MEDIA QUERIES
+@media (max-width: 1145px) {
+    .reviewContent {
+        width: 1005px;
+    }
+
+    .review {
+        width: 100%;
+    }
+}
