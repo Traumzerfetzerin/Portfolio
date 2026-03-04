@@ -15,14 +15,11 @@
 
 
 .bigMe {
-    width: 535px;
-
     img {
         position: relative;
         top: 22px;
         left: 25px;
         z-index: 10;
-        width: 535px;
         height: 683px;
     }
 }
@@ -150,3 +147,8 @@
 
 
 // MEDIA QUERIES
+@media (max-width: 1145px) {
+    .heroContent {
+        flex: 0;
+    }
+}
