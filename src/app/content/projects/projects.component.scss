@@ -120,3 +120,8 @@ a:-webkit-any-link {
 
 
 // MEDIA QUERIES
+@media (max-width: 1145px) {
+    .projectsContainer {
+        width: 1005px;
+    }
+}
