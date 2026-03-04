@@ -48,3 +48,14 @@
         width: 1005px;
     }
 }
+
+
+@media (max-width: 1020px) {
+    .meContainer {
+        width: 887px;
+    }
+
+    .me {
+        width: inherit;
+    }
+}
