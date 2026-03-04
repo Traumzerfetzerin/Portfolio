@@ -78,3 +78,12 @@
 
 
 // MEDIA QUERIES
+@media (max-width: 1145px) {
+    .menu {
+        width: 787px;
+    }
+
+    .navigationLinks {
+        width: auto;
+    }
+}
