@@ -87,3 +87,14 @@
         width: auto;
     }
 }
+
+
+@media (max-width: 1020px) {
+    .menu {
+        width: 669px;
+    }
+
+    .languageSwitcher {
+        gap: 16px;
+    }
+}
