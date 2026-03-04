@@ -243,3 +243,23 @@ p:hover {
         width: 1005px;
     }
 }
+
+
+@media (max-width: 1020px) {
+    .contactContainer {
+        width: 887px;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .name input,
+    .mail input {
+        min-width: 421px;
+    }
+
+    .message textarea {
+        min-width: 869px;
+    }
+}
