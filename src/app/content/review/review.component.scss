@@ -78,7 +78,18 @@
 
 
 @media (max-width: 1020px) {
-        .reviewContent {
+    .reviewContent {
         width: 887px;
+    }
+}
+
+
+@media (max-width: 910px) {
+    .review {
+        width: 773px;
+
+        h1 {
+            font-size: 24px;
+        }
     }
 }
