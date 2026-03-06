@@ -263,3 +263,10 @@ p:hover {
         min-width: 869px;
     }
 }
+
+
+@media (max-width: 950px) {
+    .contactContent {
+        gap: 16px;
+    }
+}
