@@ -128,7 +128,14 @@ a:-webkit-any-link {
 
 
 @media (max-width: 1020px) {
-        .projectsContainer {
+    .projectsContainer {
         width: 887px;
+    }
+}
+
+
+@media (max-width: 910px) {
+    .projectsContainer {
+        width: 773px;
     }
 }
