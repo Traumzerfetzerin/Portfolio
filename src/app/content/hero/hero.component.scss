@@ -160,3 +160,24 @@
         font-size: 70px;
     }
 }
+
+
+@media (max-width: 1000px) {
+    .bigMe {
+        img {
+            height: 583px;
+        }
+    }
+
+    .bigMe::before,
+    .bigMe::after {
+        width: 430px;
+    }
+
+
+    .bigMe:after {
+        translate: -21% 10%;
+        top: -30px;
+        left: 160px;
+    }
+}
