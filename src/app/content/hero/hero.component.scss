@@ -151,6 +151,11 @@
     .heroContent {
         flex: 0;
     }
+
+    .bigMe:after {
+        top: 30px;
+        left: -45px;
+    }
 }
 
 
