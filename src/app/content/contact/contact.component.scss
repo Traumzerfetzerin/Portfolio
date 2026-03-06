@@ -270,3 +270,24 @@ p:hover {
         gap: 16px;
     }
 }
+
+
+@media (max-width: 910px) {
+    .contactContainer {
+        width: 773px;
+    }
+
+    .arrowUp {
+        right: -58px;
+    }
+
+
+    .name input,
+    .mail input {
+        min-width: 364px;
+    }
+
+    .message textarea {
+        min-width: 755px;
+    }
+}
