@@ -286,6 +286,7 @@ p:hover {
 
     .contactContent {
         flex-wrap: wrap;
+        width: min-content;
     }
 
     .name input,
@@ -295,5 +296,10 @@ p:hover {
 
     .message textarea {
         min-width: 755px;
+    }
+
+    .formField {
+        flex-direction: column;
+        width: min-content;
     }
 }
