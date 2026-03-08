@@ -196,6 +196,9 @@
 
 
 @media (max-width: 910px) {
+    .hero {
+        width: auto;
+    }
 
     .bigMe::before,
     .bigMe::after {
