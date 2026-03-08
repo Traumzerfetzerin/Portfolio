@@ -71,6 +71,7 @@
 @media (max-width: 910px) {
     .meContent {
         width: 830px;
+        flex-direction: column;
     }
 
     .me {
