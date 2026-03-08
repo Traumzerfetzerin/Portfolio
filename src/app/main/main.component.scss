@@ -11,14 +11,14 @@
 
 // MEDIA QUERIES
 @media (max-width: 910px) {
-    :host .gap {
-        width: 820px;
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-}
 
-
-@media (max-width: 895px) {
     :host .gap {
-        width: 800px;
+        width: 650px;
     }
 }
