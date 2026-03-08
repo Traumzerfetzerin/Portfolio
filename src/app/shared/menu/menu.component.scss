@@ -101,6 +101,15 @@
 
 
 @media (max-width: 910px) {
+    :host {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        position: sticky;
+        top: 0;
+    }
+
     .menu {
         width: 613px;
     }
