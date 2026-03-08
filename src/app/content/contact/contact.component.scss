@@ -281,7 +281,7 @@ p:hover {
 
 @media (max-width: 910px) {
     .contactContainer {
-        width: 773px;
+        width: 650px;
     }
 
     .contactContent {
@@ -295,11 +295,19 @@ p:hover {
     }
 
     .message textarea {
-        min-width: 755px;
+        min-width: 358px;
     }
 
     .formField {
         flex-direction: column;
         width: min-content;
+    }
+
+    .message {
+        width: min-content;
+    }
+
+    .contactField {
+        width: max-content;
     }
 }
