@@ -186,7 +186,6 @@
         width: 430px;
     }
 
-
     .bigMe:after {
         translate: -21% 10%;
         top: -30px;
@@ -213,5 +212,25 @@
 
     .bigMe:after {
         translate: 9% 5%
+    }
+}
+
+
+@media (max-width: 850px) {
+    .bigMe {
+        img {
+            height: 420px;
+        }
+    }
+
+    .bigMe::before,
+    .bigMe::after {
+        width: 261px;
+        top: -36px;
+        left: 145px;
+    }
+
+    .socialMediaIcons {
+        top: 0;
     }
 }
