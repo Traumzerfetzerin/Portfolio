@@ -311,3 +311,18 @@ p:hover {
         width: max-content;
     }
 }
+
+
+@media (max-width: 850px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: auto;
+    }
+
+    .contactField {
+        align-items: center;
+        gap: 32px;
+    }
+}
