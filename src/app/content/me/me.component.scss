@@ -69,6 +69,10 @@
 
 
 @media (max-width: 910px) {
+    :host {
+        width: inherit;
+    }
+
     .meContent {
         width: 650px;
         flex-direction: column;
