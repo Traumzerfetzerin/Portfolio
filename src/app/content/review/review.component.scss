@@ -92,6 +92,10 @@
 
 
 @media (max-width: 910px) {
+    :host {
+        width: inherit;
+    }
+
     .review {
         width: 650px;
 
