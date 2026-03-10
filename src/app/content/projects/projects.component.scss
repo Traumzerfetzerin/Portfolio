@@ -127,26 +127,26 @@ a:-webkit-any-link {
 
 
 // MEDIA QUERIES
-@media (max-width: 1225px) {
+@media (max-width: 1085px) {
     .projectsContainer {
         width: 1005px;
     }
 }
 
 
-@media (max-width: 1020px) {
-    .projectsContainer {
-        width: 887px;
-    }
-}
+// @media (max-width: 1020px) {
+//     .projectsContainer {
+//         width: 887px;
+//     }
+// }
 
 
-@media (max-width: 910px) {
-    .projectsContainer {
-        width: 650px;
-    }
+// @media (max-width: 910px) {
+//     .projectsContainer {
+//         width: 650px;
+//     }
 
-    .projectsContent {
-        flex-direction: column;
-    }
-}
+//     .projectsContent {
+//         flex-direction: column;
+//     }
+// }

@@ -242,11 +242,11 @@ html {
 
 
 // MEDIA QUERIES
-// @media (max-width: 1455px) {
-//     .mat-mdc-tab-header {
-//         width: 1000px;
-//     }
-// }
+@media (max-width: 1085px) {
+    .mat-mdc-tab-header {
+        width: 1000px;
+    }
+}
 
 
 // @media (max-width: 1050px) {
