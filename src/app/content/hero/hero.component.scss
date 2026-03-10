@@ -166,71 +166,71 @@
 }
 
 
-@media (max-width: 1020px) {
-    .developer {
-        width: auto;
-        font-size: 70px;
-    }
-}
+// @media (max-width: 1020px) {
+//     .developer {
+//         width: auto;
+//         font-size: 70px;
+//     }
+// }
 
 
-@media (max-width: 1000px) {
-    .bigMe {
-        img {
-            height: 583px;
-        }
-    }
+// @media (max-width: 1000px) {
+//     .bigMe {
+//         img {
+//             height: 583px;
+//         }
+//     }
 
-    .bigMe::before,
-    .bigMe::after {
-        width: 430px;
-    }
+//     .bigMe::before,
+//     .bigMe::after {
+//         width: 430px;
+//     }
 
-    .bigMe:after {
-        translate: -21% 10%;
-        top: -30px;
-        left: 160px;
-    }
-}
-
-
-@media (max-width: 910px) {
-    .hero {
-        width: auto;
-    }
-
-    .developerSocial {
-        width: 325px;
-    }
-
-    .bigMe::before,
-    .bigMe::after {
-        width: 344px;
-        top: 80px;
-        left: 28px;
-    }
-
-    .bigMe:after {
-        translate: 9% 5%
-    }
-}
+//     .bigMe:after {
+//         translate: -21% 10%;
+//         top: -30px;
+//         left: 160px;
+//     }
+// }
 
 
-@media (max-width: 850px) {
-    .bigMe {
-        img {
-            height: 420px;
-        }
-    }
+// @media (max-width: 910px) {
+//     .hero {
+//         width: auto;
+//     }
 
-    .bigMe::before,
-    .bigMe::after {
-        width: 261px;
-        top: -36px;
-        left: 145px;
-    }
+//     .developerSocial {
+//         width: 325px;
+//     }
 
-    .socialMediaIcons {
-        top: 0;
-    }
-}
+//     .bigMe::before,
+//     .bigMe::after {
+//         width: 344px;
+//         top: 80px;
+//         left: 28px;
+//     }
+
+//     .bigMe:after {
+//         translate: 9% 5%
+//     }
+// }
+
+
+// @media (max-width: 850px) {
+//     .bigMe {
+//         img {
+//             height: 420px;
+//         }
+//     }
+
+//     .bigMe::before,
+//     .bigMe::after {
+//         width: 261px;
+//         top: -36px;
+//         left: 145px;
+//     }
+
+//     .socialMediaIcons {
+//         top: 0;
+//     }
+// }
