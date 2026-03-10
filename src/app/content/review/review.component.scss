@@ -6,8 +6,6 @@
 
 
 .review {
-    width: 1209px;
-
     h1 {
         font-size: 32px;
     }
@@ -74,37 +72,33 @@
 
 // MEDIA QUERIES
 @media (max-width: 1225px) {
-    .reviewContent {
-        width: 1005px;
-    }
-
-    .review {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 1020px) {
-    .reviewContent {
-        width: 887px;
-    }
-}
-
-
-@media (max-width: 910px) {
-    :host {
+    .individuallyReview {
         width: inherit;
     }
-
-    .review {
-        width: 650px;
-
-        h1 {
-            font-size: 24px;
-        }
-    }
-
-    .reviewContainer {
-        flex-direction: column;
-    }
 }
+
+
+// @media (max-width: 1020px) {
+//     .reviewContent {
+//         width: 887px;
+//     }
+// }
+
+
+// @media (max-width: 910px) {
+//     :host {
+//         width: inherit;
+//     }
+
+//     .review {
+//         width: 650px;
+
+//         h1 {
+//             font-size: 24px;
+//         }
+//     }
+
+//     .reviewContainer {
+//         flex-direction: column;
+//     }
+// }
