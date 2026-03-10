@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #262E34;
     max-width: 1440px;
@@ -238,22 +242,22 @@ html {
 
 
 // MEDIA QUERIES
-@media (max-width: 1455px) {
-    .mat-mdc-tab-header {
-        width: 1000px;
-    }
-}
+// @media (max-width: 1455px) {
+//     .mat-mdc-tab-header {
+//         width: 1000px;
+//     }
+// }
 
 
-@media (max-width: 1050px) {
-    .mat-mdc-tab-header {
-        width: 767px;
-    }
-}
+// @media (max-width: 1050px) {
+//     .mat-mdc-tab-header {
+//         width: 767px;
+//     }
+// }
 
 
-@media (max-width: 910px) {
-        .mat-mdc-tab-header {
-        width: 650px;
-    }
-}
+// @media (max-width: 910px) {
+//     .mat-mdc-tab-header {
+//         width: 650px;
+//     }
+// }
