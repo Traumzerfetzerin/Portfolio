@@ -104,27 +104,27 @@
 
 
 // MEDIA QUERIES
-@media (max-width: 1225px) {
-    .skillsContainer {
-        width: 1005px;
-    }
-}
+// @media (max-width: 1225px) {
+//     .skillsContainer {
+//         width: 1005px;
+//     }
+// }
 
 
-@media (max-width: 1020px) {
-    .skillsContainer {
-        width: 887px;
-    }
-}
+// @media (max-width: 1020px) {
+//     .skillsContainer {
+//         width: 887px;
+//     }
+// }
 
 
-@media (max-width: 910px) {
-    :host {
-        width: inherit;
-    }
+// @media (max-width: 910px) {
+//     :host {
+//         width: inherit;
+//     }
 
-    .skillsContent {
-        width: 650px;
-        flex-direction: column;
-    }
-}
+//     .skillsContent {
+//         width: 650px;
+//         flex-direction: column;
+//     }
+// }

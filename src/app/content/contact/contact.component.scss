@@ -245,84 +245,84 @@ p:hover {
 
 
 // MEDIA QUERIES
-@media (max-width: 1225px) {
-    .contactContainer {
-        width: 1005px;
-    }
-}
+// @media (max-width: 1225px) {
+//     .contactContainer {
+//         width: 1005px;
+//     }
+// }
 
 
-@media (max-width: 1020px) {
-    .contactContainer {
-        width: 887px;
-    }
+// @media (max-width: 1020px) {
+//     .contactContainer {
+//         width: 887px;
+//     }
 
-    .contact {
-        width: 100%;
-    }
+//     .contact {
+//         width: 100%;
+//     }
 
-    .name input,
-    .mail input {
-        min-width: 421px;
-    }
+//     .name input,
+//     .mail input {
+//         min-width: 421px;
+//     }
 
-    .message textarea {
-        min-width: 869px;
-    }
-}
-
-
-@media (max-width: 950px) {
-    .contactContent {
-        gap: 16px;
-    }
-}
+//     .message textarea {
+//         min-width: 869px;
+//     }
+// }
 
 
-@media (max-width: 910px) {
-    .contactContainer {
-        width: 650px;
-    }
-
-    .contactContent {
-        flex-wrap: wrap;
-        width: min-content;
-    }
-
-    .name input,
-    .mail input {
-        min-width: 364px;
-    }
-
-    .message textarea {
-        min-width: 358px;
-    }
-
-    .formField {
-        flex-direction: column;
-        width: min-content;
-    }
-
-    .message {
-        width: min-content;
-    }
-
-    .contactField {
-        width: max-content;
-    }
-}
+// @media (max-width: 950px) {
+//     .contactContent {
+//         gap: 16px;
+//     }
+// }
 
 
-@media (max-width: 850px) {
-    .contact {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        width: auto;
-    }
+// @media (max-width: 910px) {
+//     .contactContainer {
+//         width: 650px;
+//     }
 
-    .contactField {
-        align-items: center;
-        gap: 32px;
-    }
-}
+//     .contactContent {
+//         flex-wrap: wrap;
+//         width: min-content;
+//     }
+
+//     .name input,
+//     .mail input {
+//         min-width: 364px;
+//     }
+
+//     .message textarea {
+//         min-width: 358px;
+//     }
+
+//     .formField {
+//         flex-direction: column;
+//         width: min-content;
+//     }
+
+//     .message {
+//         width: min-content;
+//     }
+
+//     .contactField {
+//         width: max-content;
+//     }
+// }
+
+
+// @media (max-width: 850px) {
+//     .contact {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 32px;
+//         width: auto;
+//     }
+
+//     .contactField {
+//         align-items: center;
+//         gap: 32px;
+//     }
+// }

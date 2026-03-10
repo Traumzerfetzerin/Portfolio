@@ -50,35 +50,35 @@
 
 
 // MEDIA QUERIES
-@media (max-width: 1225px) {
-    .meContainer {
-        width: 1005px;
-    }
-}
+// @media (max-width: 1225px) {
+//     .meContainer {
+//         width: 1005px;
+//     }
+// }
 
 
-@media (max-width: 1020px) {
-    .meContainer {
-        width: 887px;
-    }
+// @media (max-width: 1020px) {
+//     .meContainer {
+//         width: 887px;
+//     }
 
-    .me {
-        width: inherit;
-    }
-}
+//     .me {
+//         width: inherit;
+//     }
+// }
 
 
-@media (max-width: 910px) {
-    :host {
-        width: inherit;
-    }
+// @media (max-width: 910px) {
+//     :host {
+//         width: inherit;
+//     }
 
-    .meContent {
-        width: 650px;
-        flex-direction: column;
-    }
+//     .meContent {
+//         width: 650px;
+//         flex-direction: column;
+//     }
 
-    .me {
-        width: auto;
-    }
-}
+//     .me {
+//         width: auto;
+//     }
+// }
