@@ -12,12 +12,23 @@
 }
 
 
+// .location {
+//     gap: 16px;
+
+//     p {
+//         width: 458px;
+//         font-size: 30px;
+//     }
+// }
+
+
 .location {
-    gap: 16px;
+    gap: clamp(8px, 1.5vw, 16px);
 
     p {
-        width: 458px;
-        font-size: 30px;
+        max-width: 458px;
+        margin-right: clamp(16px, 3vw, 48px);
+        font-size: clamp(20px, 2vw, 30px);
     }
 }
 
