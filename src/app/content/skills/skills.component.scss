@@ -23,22 +23,21 @@
 
 .skillsIcons {
     max-width: 409px;
-    gap: 40px;
+    gap: clamp(20px, 4vw, 40px);
     flex-wrap: wrap;
 
     div {
-        gap: 10px;
+        gap: clamp(6px, 1.5vw, 10px);
     }
 
     img {
-        width: 60px;
-        height: 60px;
+        width: clamp(40px, 6vw, 60px);
+        height: clamp(40px, 6vw, 60px);
     }
 
     p {
-        width: 66px;
-        // height: 22px;
-        font-size: 18px;
+        width: clamp(50px, 8vw, 66px);
+        font-size: clamp(14px, 2vw, 18px);
     }
 }
 
