@@ -21,12 +21,29 @@
 }
 
 
+// .navigationLinks {
+//     justify-content: space-around;
+//     width: 677px;
+//     gap: 32px;
+
+//     a {
+//         font-size: 26px;
+//         text-decoration: none;
+//     }
+
+//     a:hover {
+//         color: #F8F5EC;
+//     }
+// }
+
+
 .navigationLinks {
-    width: 677px;
-    gap: 32px;
+    justify-content: space-around;
+    width: clamp(320px, 60vw, 677px);
+    gap: clamp(12px, 2vw, 32px);
 
     a {
-        font-size: 26px;
+        font-size: clamp(16px, 2vw, 26px);
         text-decoration: none;
     }
 
@@ -75,11 +92,7 @@
 
 
 // MEDIA QUERIES
-// @media (max-width: 1225px) {
-//     .menu {
-//         width: 787px;
-//     }
-
+// @media (max-width: 950px) {
 //     .navigationLinks {
 //         width: auto;
 //     }
