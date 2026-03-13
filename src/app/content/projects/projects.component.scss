@@ -141,12 +141,12 @@ a:-webkit-any-link {
 }
 
 
-// @media (max-width: 910px) {
-//     .projectsContainer {
-//         width: 650px;
-//     }
+@media (max-width: 900px) {
+    .projectsContainer {
+        width: 650px;
+    }
 
-//     .projectsContent {
-//         flex-direction: column;
-//     }
-// }
+    .projectsContent {
+        flex-direction: column;
+    }
+}
