@@ -7,7 +7,7 @@
 
 .me {
     h1 {
-        font-size: 60px;
+        font-size: clamp(32px, 5vw, 60px);
     }
 }
 
