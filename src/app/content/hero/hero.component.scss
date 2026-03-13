@@ -32,12 +32,26 @@
 }
 
 
+// .bigMe::before,
+// .bigMe::after {
+//     content: "";
+//     position: absolute;
+//     width: 535px;
+//     height: 683px;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: center;
+//     transition: opacity 0.5s ease-in-out;
+//     z-index: -1;
+// }
+
+
 .bigMe::before,
 .bigMe::after {
     content: "";
     position: absolute;
-    width: 535px;
-    height: 683px;
+    width: clamp(300px, 40vw, 535px);
+    height: clamp(380px, 50vw, 683px);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -52,16 +66,25 @@
 }
 
 
+// .bigMe::after {
+//     background-image: url('/assets/img/shape/heroShapeAcross.png');
+//     opacity: 0;
+//     rotate: 45deg;
+//     translate: (15% 10%);
+//     transform-origin: center;
+//     top: 85px;
+//     left: 202px;
+// }
+
+
 .bigMe::after {
     background-image: url('/assets/img/shape/heroShapeAcross.png');
     opacity: 0;
-    rotate: 45deg;
-    translate: (15% 10%);
+    transform: translate(clamp(20px, 5vw, 80px), clamp(10px, 4vw, 60px)) rotate(45deg);
     transform-origin: center;
-    top: 85px;
-    left: 202px;
+    top: clamp(40px, 6vw, 85px);
+    left: clamp(100px, 12vw, 202px);
 }
-
 
 
 .bigMe:hover::before {
