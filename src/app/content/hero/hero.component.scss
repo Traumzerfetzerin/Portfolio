@@ -33,20 +33,6 @@
 }
 
 
-// .bigMe::before,
-// .bigMe::after {
-//     content: "";
-//     position: absolute;
-//     width: 535px;
-//     height: 683px;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: center;
-//     transition: opacity 0.5s ease-in-out;
-//     z-index: -1;
-// }
-
-
 .bigMe::before,
 .bigMe::after {
     content: "";
@@ -65,17 +51,6 @@
     background-image: url('/assets/img/shape/heroShape.png');
     opacity: 1;
 }
-
-
-// .bigMe::after {
-//     background-image: url('/assets/img/shape/heroShapeAcross.png');
-//     opacity: 0;
-//     rotate: 45deg;
-//     translate: (15% 10%);
-//     transform-origin: center;
-//     top: 85px;
-//     left: 202px;
-// }
 
 
 .bigMe::after {
@@ -188,73 +163,3 @@
         left: -45px;
     }
 }
-
-
-// @media (max-width: 1020px) {
-//     .developer {
-//         width: auto;
-//         font-size: 70px;
-//     }
-// }
-
-
-// @media (max-width: 1000px) {
-//     .bigMe {
-//         img {
-//             height: 583px;
-//         }
-//     }
-
-//     .bigMe::before,
-//     .bigMe::after {
-//         width: 430px;
-//     }
-
-//     .bigMe:after {
-//         translate: -21% 10%;
-//         top: -30px;
-//         left: 160px;
-//     }
-// }
-
-
-// @media (max-width: 910px) {
-//     .hero {
-//         width: auto;
-//     }
-
-//     .developerSocial {
-//         width: 325px;
-//     }
-
-//     .bigMe::before,
-//     .bigMe::after {
-//         width: 344px;
-//         top: 80px;
-//         left: 28px;
-//     }
-
-//     .bigMe:after {
-//         translate: 9% 5%
-//     }
-// }
-
-
-// @media (max-width: 850px) {
-//     .bigMe {
-//         img {
-//             height: 420px;
-//         }
-//     }
-
-//     .bigMe::before,
-//     .bigMe::after {
-//         width: 261px;
-//         top: -36px;
-//         left: 145px;
-//     }
-
-//     .socialMediaIcons {
-//         top: 0;
-//     }
-// }
