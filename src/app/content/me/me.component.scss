@@ -12,16 +12,6 @@
 }
 
 
-// .location {
-//     gap: 16px;
-
-//     p {
-//         width: 458px;
-//         font-size: 30px;
-//     }
-// }
-
-
 .location {
     gap: clamp(8px, 1.5vw, 16px);
 
@@ -57,39 +47,3 @@
         background-color: #394B55;
     }
 }
-
-
-
-// MEDIA QUERIES
-// @media (max-width: 1225px) {
-//     .meContainer {
-//         width: 1005px;
-//     }
-// }
-
-
-// @media (max-width: 1020px) {
-//     .meContainer {
-//         width: 887px;
-//     }
-
-//     .me {
-//         width: inherit;
-//     }
-// }
-
-
-// @media (max-width: 910px) {
-//     :host {
-//         width: inherit;
-//     }
-
-//     .meContent {
-//         width: 650px;
-//         flex-direction: column;
-//     }
-
-//     .me {
-//         width: auto;
-//     }
-// }
