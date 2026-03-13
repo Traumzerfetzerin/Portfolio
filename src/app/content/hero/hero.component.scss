@@ -121,8 +121,8 @@
 
 
 .developer {
-    width: 610px;
-    font-size: 88px;
+    width: clamp(320px, 50vw, 610px);
+    font-size: clamp(36px, 6vw, 88px);
 }
 
 
