@@ -24,10 +24,11 @@
 .bigMe {
     img {
         position: relative;
-        top: 22px;
-        left: 25px;
+        top: clamp(10px, 2vw, 22px);
+        left: clamp(10px, 2vw, 25px);
         z-index: 10;
-        height: 683px;
+        height: clamp(300px, 50vw, 683px);
+        width: auto;
     }
 }
 
