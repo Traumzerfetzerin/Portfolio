@@ -6,7 +6,9 @@
 
 
 .projectsContainer {
-    gap: 80px;
+    width: 100%;
+    max-width: 1005px;
+    margin: 0 auto;
 }
 
 
@@ -16,27 +18,27 @@
 
 
 p {
-    font-size: 18px;
+    font-size: clamp(14px, 1.5vw, 18px);
 }
 
 
 h1 {
-    font-size: 60px;
+    font-size: clamp(32px, 5vw, 60px);
 }
 
 
 h2 {
-    font-size: 28px;
+    font-size: clamp(20px, 3vw, 28px);
 }
 
 
 h3 {
-    font-size: 18px;
+    font-size: clamp(16px, 1.8vw, 18px);
 }
 
 
 .bulletPoint {
-    height: 26px;
+    height: clamp(16px, 2vw, 26px);
 }
 
 
@@ -127,25 +129,7 @@ a:-webkit-any-link {
 
 
 // MEDIA QUERIES
-@media (max-width: 1085px) {
-    .projectsContainer {
-        width: 1005px;
-    }
-}
-
-
-@media (max-width: 1050px) {
-    .projectsContainer {
-        width: 887px;
-    }
-}
-
-
 @media (max-width: 900px) {
-    .projectsContainer {
-        width: 650px;
-    }
-
     .projectsContent {
         flex-direction: column;
     }
