@@ -43,8 +43,8 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    height: clamp(40px, 6vw, 56.16px);
     inset: 0;
-    height: 56.16px;
 }
 
 
