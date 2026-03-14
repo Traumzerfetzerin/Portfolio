@@ -85,9 +85,6 @@
     img {
         width: clamp(32px, 5vw, 56px);
         height: auto;
-    }
-
-    img {
         transition: transform 0.3s ease-in-out;
     }
 
@@ -149,12 +146,12 @@
     border: 1px solid #89BCD9;
     background-color: transparent;
     position: relative;
-}
 
-.arrowDown img {
-    width: clamp(14px, 2vw, 22px);
-    height: auto;
-    position: absolute;
+    img {
+        width: clamp(14px, 2vw, 22px);
+        height: auto;
+        position: absolute;
+    }
 }
 
 
