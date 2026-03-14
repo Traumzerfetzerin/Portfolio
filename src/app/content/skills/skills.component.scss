@@ -99,3 +99,11 @@
         gap: 10px;
     }
 }
+
+
+// MEDIA QUERIES
+@media (max-width: 630px) {
+    .skillsContent {
+        flex-direction: column;
+    }
+}
