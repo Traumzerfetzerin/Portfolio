@@ -43,11 +43,11 @@
 
 
 .currentlyLearning {
-    width: 380px;
-    height: 380px;
+    width: clamp(240px, 90vw, 380px);
+    height: clamp(240px, 90vw, 380px);
     position: relative;
     overflow: hidden;
-    padding: 40px;
+    padding: clamp(20px, 4vw, 40px);
 }
 
 
