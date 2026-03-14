@@ -24,23 +24,23 @@
 
 
 .motivation {
-    width: 379px;
+    width: clamp(220px, 90%, 379px);
 
     p {
-        font-size: 18px;
+        font-size: clamp(14px, 1.6vw, 18px);
     }
 
     button {
-        height: 48px;
+        height: clamp(40px, 5vw, 48px);
         border-radius: 30px;
-        border: 1px #89BCD9 solid;
-        padding-top: 13px;
-        padding-right: 30px;
-        padding-bottom: 13px;
-        padding-left: 30px;
-        gap: 10px;
-        font-size: 18px;
+        border: 1px solid #89BCD9;
+        padding: clamp(10px, 1.5vw, 13px) clamp(18px, 3vw, 30px);
+        font-size: clamp(14px, 1.6vw, 18px);
         background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(6px, 1vw, 10px);
     }
 
     button:hover {
