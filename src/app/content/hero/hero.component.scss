@@ -80,27 +80,39 @@
 
 
 .developerInfoContent {
-    width: 66px;
+    width: clamp(40px, 6vw, 66px);
 
     img {
-        width: 56px;
-        height: 38px;
-        left: 5px;
+        width: clamp(32px, 5vw, 56px);
+        height: auto;
+    }
+
+    img {
+        transition: transform 0.3s ease-in-out;
     }
 
     img:hover {
-        transition: transform 0.3s ease-in-out;
         transform: scale(1.1);
     }
 }
 
 
 .socialMediaIcons {
-    width: 30px;
-    top: -65px;
-    gap: 16px;
+    top: clamp(-40px, -5vw, -65px);
+    gap: clamp(8px, 2vw, 16px);
     right: 0;
-    position: absolute
+    position: absolute;
+    display: flex;
+
+    img {
+        width: clamp(20px, 3vw, 30px);
+        height: auto;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
 }
 
 
@@ -126,23 +138,25 @@
 
 
 .learned {
-    width: 501px;
+    width: clamp(260px, 90%, 501px);
 }
 
 
 .arrowDown {
-    width: 38px;
-    height: 89px;
+    width: clamp(26px, 4vw, 38px);
+    height: clamp(60px, 8vw, 89px);
     border-radius: 30px;
-    border: 1px #89BCD9 solid;
+    border: 1px solid #89BCD9;
     background-color: transparent;
+    position: relative;
+}
 
-    img {
-        width: 22px;
-        height: 50px;
-        top: 20px;
-        left: 8px;
-    }
+.arrowDown img {
+    width: clamp(14px, 2vw, 22px);
+    height: auto;
+    position: absolute;
+    top: clamp(12px, 2.5vw, 20px);
+    left: clamp(4px, 1vw, 8px);
 }
 
 
