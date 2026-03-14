@@ -47,3 +47,11 @@
         background-color: #394B55;
     }
 }
+
+
+// MEDIA QUERIES
+@media (max-width: 630px) {
+    .meContent {
+        flex-direction: column;
+    }
+}
