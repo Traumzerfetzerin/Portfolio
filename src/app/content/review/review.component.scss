@@ -14,8 +14,8 @@
 
 .individuallyReview {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: clamp(240px, 90vw, 400px);
+    height: clamp(240px, 90vw, 400px);
 }
 
 
@@ -74,5 +74,16 @@
 @media (max-width: 1225px) {
     .individuallyReview {
         width: inherit;
+    }
+}
+
+
+@media (max-width: 630px) {
+    .reviewContainer {
+        flex-direction: column;
+    }
+
+    .individuallyReview {
+        width: clamp(240px, 90vw, 400px);
     }
 }
