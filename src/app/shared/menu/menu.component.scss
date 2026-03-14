@@ -52,27 +52,31 @@
     gap: clamp(12px, 3vw, 32px);
     display: flex;
     align-items: center;
-}
 
-.languageSwitcher p {
-    font-size: clamp(14px, 1.5vw, 18px);
-    cursor: pointer;
-}
+    p {
+        font-size: clamp(14px, 1.5vw, 18px);
+        cursor: pointer;
+    }
 
-.languageSwitcher p:hover {
-    color: #F8F5EC;
-}
+    p:hover {
+        color: #F8F5EC;
+    }
 
-.languageSwitcher .english {
-    background-image: url('/assets/img/shape/languageShape.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: clamp(24px, 3vw, 36.8px);
-    height: clamp(16px, 2vw, 24px);
-}
+    .english {
+        background-image: url('/assets/img/shape/languageShape.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: clamp(24px, 3vw, 36.8px);
+        height: clamp(16px, 2vw, 24px);
+    }
 
-.languageSwitcher p:hover+.english,
-.languageSwitcher .english:hover {
-    background-image: none;
+    .english:hover {
+        background-image: none;
+    }
+
+    p:hover+.english,
+    .english:hover {
+        background-image: none;
+    }
 }
