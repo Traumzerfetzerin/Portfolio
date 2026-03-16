@@ -83,7 +83,7 @@
 .name,
 .mail {
     input {
-        min-width: 432px;
+        width: clamp(540px, 100%, 892px);
         height: 60px;
         border-radius: 30px;
         border: 1px #89BCD9 solid;
@@ -223,7 +223,6 @@
 
 // MEDIA QUERIES
 @media (max-width: 930px) {
-
     .contactContent,
     .formField {
         flex-direction: column;
