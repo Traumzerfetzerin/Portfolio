@@ -172,3 +172,26 @@
         left: -45px;
     }
 }
+
+
+@media (max-width: 505px) {
+    .hero {
+        width: auto;
+    }
+
+    .heroInfo {
+        flex-direction: column;
+    }
+
+    .socialMediaIcons {
+        display: none;
+    }
+
+    .developerSocial,
+    .bigMe,
+    .developer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
