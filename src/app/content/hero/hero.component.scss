@@ -179,19 +179,42 @@
         width: auto;
     }
 
-    .heroInfo {
-        flex-direction: column;
-    }
-
     .socialMediaIcons {
         display: none;
     }
 
-    .developerSocial,
-    .bigMe,
+    .heroInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developerSocial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developerInfoContent {
+        order: 1;
+        align-self: flex-start;
+    }
+
+    .bigMe {
+        order: 2;
+    }
+
     .developer {
+        order: 3;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .learned {
+        order: 4;
+    }
+
+    .arrowDown {
+        order: 5;
     }
 }
