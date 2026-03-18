@@ -12,7 +12,7 @@
 }
 
 
-.footerContent  {
+.footerContent {
     width: 100%;
     justify-content: space-between;
 }
@@ -69,4 +69,29 @@
 
 .linkedIn:hover {
     content: url('/assets/img/socialMedia/linkedInWhite.png');
+}
+
+
+
+// MEDIA QUERIES
+@media (max-width: 600px) {
+    .developerInfo {
+        order: 1;
+    }
+
+    .socialMediaIcons {
+        order: 2;
+        align-self: center;
+    }
+
+    .legalInfo {
+        order: 3;
+        flex-direction: row;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
 }
