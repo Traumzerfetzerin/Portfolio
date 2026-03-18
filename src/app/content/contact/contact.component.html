@@ -7,11 +7,14 @@
         <h1 class="AntaRegular400 color89BCD9 flexCenter">Contact Me</h1>
 
         <div class="contactContent flex">
-            <div>
+            <div class="contactDescription">
                 <span class="description josefinSansRegular400 colorF8F5EC flexCenter">
                     I’d love to hear from you! I work in both front- and back-end development and enjoy bringing ideas
                     to life while adding value to projects.
                 </span>
+            </div>
+            <div class="contactWork">
+                <span class="josefinSansRegular400 colorF8F5EC flexCenter">Let us work together!</span>
             </div>
 
             <div class="flexColumn flexCenter contactInfo">
@@ -32,7 +35,7 @@
             <div class="formField flex fieldWrapper">
                 <div class="name">
                     <p class="josefinSansRegular400 color89BCD9">Your Name</p>
-                    <input type="text" formControlName="name" class="cursorPointer">
+                    <input type="text" formControlName="name" placeholder="Your Name" class="cursorPointer">
                     <small *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
                         Name is required
                     </small>
@@ -40,7 +43,7 @@
 
                 <div class="mail fieldWrapper">
                     <p class="josefinSansRegular400 color89BCD9">Your Email</p>
-                    <input type="email" formControlName="email" class="cursorPointer">
+                    <input type="email" formControlName="email" placeholder="Your Email" class="cursorPointer">
                     <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
                         Valid email is required
                     </small>
@@ -49,7 +52,7 @@
 
             <div class="message fieldWrapper">
                 <p class="josefinSansRegular400 color89BCD9">Your Message</p>
-                <textarea formControlName="message" class="cursorPointer"></textarea>
+                <textarea formControlName="message" placeholder="Your Message" class="cursorPointer"></textarea>
                 <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
                     Message is required
                 </small>

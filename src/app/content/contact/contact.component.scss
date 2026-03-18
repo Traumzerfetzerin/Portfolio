@@ -142,6 +142,10 @@
 
 .policy {
     align-items: center;
+
+    span {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -220,12 +224,62 @@
 }
 
 
+.contactWork {
+    display: none;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: transparent;
+}
+
+
 
 // MEDIA QUERIES
 @media (max-width: 1130px) {
+
     .contactContent,
     .formField {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .contactWork {
+        display: inline;
+        order: 4;
+
+        span {
+            color: #89BCD9;
+        }
+    }
+
+    .name,
+    .mail,
+    .message {
+        p {
+            display: none;
+        }
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #F8F5EC;
+    }
+
+
+    .phoneSection {
+        order: 1;
+    }
+
+    .mailSection {
+        order: 2;
+    }
+
+    .contactDescription {
+        order: 3;
     }
 }
