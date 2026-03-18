@@ -112,7 +112,7 @@
 
 .message {
     textarea {
-        width: clamp(260px, 100%, 892px);
+        width: clamp(260px, 100%, 1100px);
         height: 146.63px;
         border-radius: 30px;
         border: 1px #89BCD9 solid;
@@ -222,7 +222,7 @@
 
 
 // MEDIA QUERIES
-@media (max-width: 930px) {
+@media (max-width: 1130px) {
     .contactContent,
     .formField {
         flex-direction: column;
