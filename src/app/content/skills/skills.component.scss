@@ -101,10 +101,23 @@
 }
 
 
+.currentlyLearningResponse {
+    display: none;
+}
+
+
 
 // MEDIA QUERIES
 @media (max-width: 630px) {
     .skillsContent {
         flex-direction: column;
+    }
+
+    .currentlyLearningResponse {
+        display: inline;
+    }
+
+    .currentLearning {
+        display: none;
     }
 }
