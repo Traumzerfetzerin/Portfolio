@@ -1,5 +1,6 @@
 .menuWrapper {
-    width: 100vw;
+    width: 100%;
+    max-width: 100vw;
     background-color: #89BCD9;
     z-index: 100;
     position: sticky;
@@ -7,7 +8,7 @@
 }
 
 .menu {
-    width: 1140px;
+    width: 1440px;
     height: 104px;
     padding: 16px clamp(20px, 5vw, 109px);
     margin: auto;
