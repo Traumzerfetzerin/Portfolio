@@ -22,4 +22,16 @@ export class SkillsComponent {
     { img: 'assets/img/skills/MaterialDesign.png', name: 'Material Design' },
     { img: 'assets/img/skills/Scrum.png', name: 'Scrum' }
   ];
+
+  
+  /**
+ * Scroll to the given element with the given id.
+ * @param {string} sectionId - The id of the element to scroll to.
+ */
+  scrollTo(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
