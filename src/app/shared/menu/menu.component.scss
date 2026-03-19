@@ -1,10 +1,16 @@
-.menu {
-    height: 104px;
-    padding: 16px clamp(20px, 5vw, 109px);
+.menuWrapper {
+    width: 100vw;
     background-color: #89BCD9;
     z-index: 100;
     position: sticky;
     top: 0;
+}
+
+.menu {
+    width: 1140px;
+    height: 104px;
+    padding: 16px clamp(20px, 5vw, 109px);
+    margin: auto;
 }
 
 
