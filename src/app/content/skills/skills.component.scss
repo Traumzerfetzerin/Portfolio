@@ -107,7 +107,7 @@
 
 
 button {
-    display: none;
+    display: none !important;
     height: clamp(40px, 5vw, 48px);
     border-radius: 30px;
     border: 1px solid #89BCD9;
@@ -141,6 +141,6 @@ button:hover {
     }
 
     button {
-        display: inline;
+        display: inline !important;
     }
 }
