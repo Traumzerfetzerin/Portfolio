@@ -160,6 +160,11 @@
 }
 
 
+.heroMobile {
+    display: none;
+}
+
+
 
 // MEDIA QUERIES
 @media (max-width: 1225px) {
@@ -175,6 +180,14 @@
 
 
 @media (max-width: 600px) {
+    .heroDesktop {
+        display: none;
+    }
+
+    .heroMobile {
+        display: inline;
+    }
+
     .hero {
         width: auto;
     }
@@ -183,7 +196,8 @@
         display: none;
     }
 
-    .heroInfo {
+    .heroInfo,
+    .developerInfo {
         flex-direction: column;
         align-items: center;
     }
@@ -197,6 +211,8 @@
     .developerInfoContent {
         order: 1;
         align-self: flex-start;
+        top: 0;
+        position: absolute;
     }
 
     .bigMe {
