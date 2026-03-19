@@ -72,10 +72,12 @@
 // MEDIA QUERIES
 @media (max-width: 1225px) {
     .individuallyReview {
-        min-width: 340px;
+        min-width: 360px;
     }
 
     .reviewContainer {
+        gap: 16px;
+        padding: 0 16px;
         width: 100vw;
         overflow-x: scroll;
     }
