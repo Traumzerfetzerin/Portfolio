@@ -12,6 +12,11 @@
 }
 
 
+.reviewContainer {
+    gap: 16px;
+}
+
+
 .individuallyReview {
     position: relative;
     height: clamp(240px, 90vw, 400px);
