@@ -234,10 +234,17 @@
 }
 
 
+.arrowUpforMobile {
+    height: 200px;
+    display: none;
+}
+
+
 .arrowUpMobile {
     bottom: 0;
     left: 50%;
     right: 50%;
+
 }
 
 .contactWork {
@@ -266,6 +273,10 @@ textarea::placeholder {
 @media (max-width: 600px) {
     .arrowUpDesktop {
         display: none;
+    }
+
+    .arrowUpforMobile {
+        display: flex;
     }
 
     .formField {
