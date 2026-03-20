@@ -73,6 +73,7 @@
 .formField {
     gap: clamp(10px, 2vw, 21px);
     flex-direction: column;
+    display: block;
 }
 
 
@@ -233,6 +234,12 @@
 }
 
 
+.arrowUpMobile {
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+}
+
 .contactWork {
     display: none;
 }
@@ -247,6 +254,7 @@ textarea::placeholder {
 
 // MEDIA QUERIES
 @media (max-width: 1130px) {
+
     .contactContent,
     .formField {
         flex-direction: column;
@@ -256,6 +264,14 @@ textarea::placeholder {
 
 
 @media (max-width: 600px) {
+    .arrowUpDesktop {
+        display: none;
+    }
+
+    .formField {
+        display: flex;
+    }
+
     .contactWork {
         display: inline;
         order: 4;

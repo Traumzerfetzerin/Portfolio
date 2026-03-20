@@ -1,12 +1,12 @@
 <div class="flexColumn flexCenter contactContainer">
     <div class="contact">
-        <button (click)="scrollTo('hero')" class="arrowUp flexCenter cursorPointer">
-            <img src="assets/img/Arrow Up.png" alt="">
-        </button>
-
-        <h1 class="AntaRegular400 color89BCD9 flexCenter">Contact Me</h1>
 
         <div class="contactContent flex">
+            <h1 class="AntaRegular400 color89BCD9 flexCenter">Contact Me</h1>
+            <button (click)="scrollTo('hero')" class="arrowUp flexCenter cursorPointer arrowUpDesktop">
+                <img src="assets/img/Arrow Up.png" alt="">
+            </button>
+
             <div class="contactDescription">
                 <span class="description josefinSansRegular400 colorF8F5EC flexCenter">
                     I’d love to hear from you! I work in both front- and back-end development and enjoy bringing ideas
@@ -58,8 +58,6 @@
                 </div>
             </div>
 
-
-
             <div class="policy flex">
                 <label class="customCheckbox flexCenter">
                     <input type="checkbox" formControlName="acceptPolicy">
@@ -80,5 +78,9 @@
                 </button>
             </div>
         </form>
+
+        <button (click)="scrollTo('hero')" class="arrowUp flexCenter cursorPointer arrowUpMobile">
+            <img src="assets/img/Arrow Up.png" alt="">
+        </button>
     </div>
 </div>
