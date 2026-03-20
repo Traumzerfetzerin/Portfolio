@@ -48,15 +48,17 @@
                         Valid email is required
                     </small>
                 </div>
+
+                <div class="message fieldWrapper">
+                    <p class="josefinSansRegular400 color89BCD9">Your Message</p>
+                    <textarea formControlName="message" placeholder="Your Message" class="cursorPointer"></textarea>
+                    <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+                        Message is required
+                    </small>
+                </div>
             </div>
 
-            <div class="message fieldWrapper">
-                <p class="josefinSansRegular400 color89BCD9">Your Message</p>
-                <textarea formControlName="message" placeholder="Your Message" class="cursorPointer"></textarea>
-                <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
-                    Message is required
-                </small>
-            </div>
+
 
             <div class="policy flex">
                 <label class="customCheckbox flexCenter">
