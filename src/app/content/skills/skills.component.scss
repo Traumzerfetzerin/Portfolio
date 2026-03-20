@@ -101,7 +101,7 @@
 }
 
 
-.currentlyLearningResponse {
+.currentlyLearningMobile {
     display: none;
 }
 
@@ -132,11 +132,33 @@ button:hover {
         flex-direction: column;
     }
 
-    .currentlyLearningResponse {
-        display: inline;
+    .learning {
+        width: 50%;
     }
 
-    .currentLearning {
+    .learningContent {
+        height: auto;
+    }
+
+    .currentlyLearningIcons {
+        div {
+            min-width: auto;
+            min-height: auto;
+        }
+
+    }
+
+    .currentlyLearning {
+        width: auto;
+        height: min-content;
+        ;
+    }
+
+    .currentlyLearningMobile {
+        display: flex;
+    }
+
+    .currentlyLearningDesktop {
         display: none;
     }
 
