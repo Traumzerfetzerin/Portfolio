@@ -6,7 +6,8 @@
 
 
 .hero {
-    width: 1440px;
+    width: clamp(320px, 100%, 1440px);
+    margin: 0 auto;
 }
 
 
@@ -189,7 +190,7 @@
     }
 
     .hero {
-        width: auto;
+        width: inherit;
     }
 
     .socialMediaIcons {
