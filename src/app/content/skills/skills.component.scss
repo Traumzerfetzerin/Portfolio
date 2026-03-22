@@ -94,6 +94,11 @@
 }
 
 
+.skillsMobile {
+    display: none;
+}
+
+
 .currentlyLearningMobile {
     display: none;
 }
@@ -121,6 +126,10 @@ button:hover {
 
 // MEDIA QUERIES
 @media (max-width: 630px) {
+    .skillsMobile {
+        display: inline;
+    }
+
     .skillsContent {
         flex-direction: column;
     }
