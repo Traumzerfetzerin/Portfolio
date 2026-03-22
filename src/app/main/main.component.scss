@@ -1,9 +1,11 @@
-:host .gap {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    justify-content: center;
-    align-items: center;
+.main {
+    .gap {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        justify-content: center;
+        align-items: center;
+    }
 }
