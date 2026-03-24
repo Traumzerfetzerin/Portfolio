@@ -186,6 +186,55 @@
     background-position: center;
     transition: opacity 0.5s ease-in-out;
     align-items: center;
+    width: 100%;
+    height: 370px;
+    gap: 32px;
+    top: 0;
+    position: absolute;
+
+    a {
+        font-size: 22px
+    }
+}
+
+
+.links {
+    gap: 16px;
+}
+
+
+.languageSwitcher {
+    gap: clamp(12px, 3vw, 32px);
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .german:hover {
+        color: #F8F5EC;
+    }
+
+    .english {
+        background-image: url('/assets/img/shape/languageShape.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: clamp(24px, 3vw, 36.8px);
+        height: clamp(16px, 2vw, 24px);
+    }
+
+    .english:hover {
+        background-image: none;
+    }
+
+    p:hover+.english,
+    .english:hover {
+        background-image: none;
+        color: #262E34;
+    }
 }
 
 
