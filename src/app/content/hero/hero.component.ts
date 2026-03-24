@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
@@ -7,15 +8,35 @@ import { Component } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
+
+
 export class HeroComponent {
+  activeSection: string = '';
+  sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
+
+  constructor(private router: Router) { }
+
   /**
-   * Scroll to the given element with the given id.
+   * Scrolls to the given section with the given id.
+   * If the router's current url is not '/', it will first navigate to '/' and then scroll to the element.
    * @param {string} sectionId - The id of the element to scroll to.
    */
   scrollTo(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    if (this.router.url !== '/') {
+
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          const el = document.getElementById(sectionId);
+          el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      });
+
+    } else {
+      const el = document.getElementById(sectionId);
+      el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+
+    this.activeSection = sectionId;
   }
 }

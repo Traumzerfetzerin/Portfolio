@@ -177,6 +177,18 @@
 }
 
 
+.navigationLinks {
+    background-image: url('/assets/img/shape/menuShapeMobile.png');
+    opacity: 1;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+    align-items: center;
+}
+
+
 
 // MEDIA QUERIES
 @media (max-width: 1225px) {

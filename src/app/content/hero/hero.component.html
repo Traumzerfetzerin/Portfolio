@@ -80,3 +80,12 @@
         </div>
     </div>
 </div>
+
+
+
+<div class="navigationLinks josefinSansMedium500 cursorPointer flexColumn">
+    <a (click)="scrollTo('whyMe')" class="navLink" [class.active]="activeSection === 'whyMe'">Why me</a>
+    <a (click)="scrollTo('skills')" class="navLink" [class.active]="activeSection === 'skills'">Skills</a>
+    <a (click)="scrollTo('projects')" class="navLink" [class.active]="activeSection === 'projects'">Projects</a>
+    <a (click)="scrollTo('contact')" class="navLink" [class.active]="activeSection === 'contact'">Contact</a>
+</div>
