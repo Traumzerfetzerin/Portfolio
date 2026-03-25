@@ -177,12 +177,6 @@
 }
 
 
-.navigation,
-.heroInfo {
-    height: 370px;
-}
-
-
 .navigationLinks {
     background-image: url('/assets/img/shape/menuShapeMobile.png');
     opacity: 1;
@@ -259,6 +253,12 @@
 
 
 @media (max-width: 600px) {
+
+    .navigation,
+    .heroInfo {
+        height: 370px;
+    }
+
     .heroDesktop {
         display: none;
     }
