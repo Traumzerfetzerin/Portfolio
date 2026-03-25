@@ -49,6 +49,7 @@
 @media (max-width: 630px) {
     .meContent {
         flex-direction: column;
+        gap: 32px;
     }
 
     .motivation button {
