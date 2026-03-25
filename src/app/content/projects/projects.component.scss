@@ -127,3 +127,10 @@ a:-webkit-any-link {
         flex-direction: column;
     }
 }
+
+
+@media (max-width: 600px) {
+    .technologies {
+        display: none;
+    }
+}
