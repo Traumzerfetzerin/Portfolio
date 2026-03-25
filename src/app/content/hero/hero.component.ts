@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
@@ -13,6 +14,8 @@ import { Router } from '@angular/router';
 export class HeroComponent {
   activeSection: string = '';
   sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
+  isVisible = false;
+
 
   constructor(private router: Router) { }
 
@@ -38,5 +41,15 @@ export class HeroComponent {
     }
 
     this.activeSection = sectionId;
+  }
+
+  
+  /**
+   * Toggles the visibility of the navigation menu.
+   * When the menu is visible, the arrow down in the hero section is hidden.
+   * When the menu is not visible, the arrow down in the hero section is shown.
+   */
+  toggleMenu() {
+    this.isVisible = !this.isVisible;
   }
 }

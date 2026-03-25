@@ -45,8 +45,8 @@
             <div class="developerInfo flex">
                 <div class="heroInfo flex">
                     <div class="bigMeMobile">
-                        <img src="assets/img/me.png" alt="Hero Image">
-                        <div class="navigation flexCenter flexColumn">
+                        <img src="assets/img/me.png" alt="Hero Image" *ngIf="!isVisible">
+                        <div class="navigation flexCenter flexColumn" *ngIf="isVisible">
                             <div class="navigationLinks cursorPointer flexColumn flexCenter">
                                 <div class="flexColumn links">
                                     <a (click)="scrollTo('whyMe')" class="navLink josefinSansRegular400 color262E34"
@@ -87,7 +87,7 @@
                         <p class="josefinSansLight300 color89BCD9 margin0">developer</p>
                     </div>
                 </div>
-                <div class="burger">
+                <div class="burger" (click)="toggleMenu()">
                     <img src="assets/img/burger.png" alt="">
                 </div>
                 <p class="developer AntaRegular400 colorF8F5EC margin0">Nadja Petruck</p>
