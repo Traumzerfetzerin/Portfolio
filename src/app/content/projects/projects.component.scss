@@ -62,8 +62,7 @@ h3 {
 
 
 .button {
-    width: 292px;
-    justify-content: space-between;
+    gap: 32px;
 }
 
 
@@ -132,5 +131,21 @@ a:-webkit-any-link {
 @media (max-width: 600px) {
     .technologies {
         display: none;
+    }
+
+    .projectImgContainer {
+        order: 1;
+    }
+
+    .aboutTheProject {
+        order: 2;
+    }
+
+    .howIWorked {
+        order: 3;
+    }
+
+    .whatILearned {
+        order: 4;
     }
 }
