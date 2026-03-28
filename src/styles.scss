@@ -127,7 +127,6 @@ html {
 // PROJECTS
 .mat-mdc-tab-header {
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
     background-color: transparent;
 }
@@ -203,7 +202,6 @@ html {
 
 // MEDIA QUERIES
 @media (max-width: 630px) {
-
     .mat-mdc-tab-body-wrapper,
     .mat-mdc-tab-header {
         width: clamp(320px, 90vw, 520px);
