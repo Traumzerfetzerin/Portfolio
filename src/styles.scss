@@ -190,12 +190,22 @@ html {
 }
 
 
+.mat-mdc-tab-list {
+    transform: none !important;
+}
+
+
+.mat-mdc-tab-header {
+    overflow: visible;
+}
+
+
 
 // MEDIA QUERIES
 @media (max-width: 630px) {
+
     .mat-mdc-tab-body-wrapper,
     .mat-mdc-tab-header {
         width: clamp(320px, 90vw, 520px);
     }
-
 }
