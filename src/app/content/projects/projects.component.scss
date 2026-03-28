@@ -61,7 +61,8 @@ h3 {
 }
 
 
-.button {
+.button,
+.buttonMobile {
     gap: 32px;
 }
 
@@ -128,6 +129,11 @@ a:-webkit-any-link {
 }
 
 
+.buttonMobile {
+    display: none;
+}
+
+
 
 // MEDIA QUERIES
 @media (max-width: 900px) {
@@ -142,7 +148,11 @@ a:-webkit-any-link {
 
 
 @media (max-width: 600px) {
-    .technologies {
+    .buttonMobile {
+        display: flex;
+    }
+
+    .technologies, .button {
         display: none;
     }
 
