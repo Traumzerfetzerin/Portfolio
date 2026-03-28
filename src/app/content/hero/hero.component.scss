@@ -17,28 +17,34 @@
 
 .bigMe,
 .bigMeMobile {
+    position: relative;
+    display: inline-block;
+
     img {
         position: relative;
         top: clamp(10px, 2vw, 22px);
         left: clamp(10px, 2vw, 25px);
         z-index: 10;
         height: clamp(300px, 50vw, 683px);
-        width: auto;
+        width: auto
     }
 }
 
 
 .bigMe::before,
 .bigMe::after {
+    z-index: -1;
     content: "";
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: clamp(300px, 40vw, 535px);
     height: clamp(380px, 50vw, 683px);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     transition: opacity 0.5s ease-in-out;
-    z-index: -1;
 }
 
 
@@ -51,10 +57,10 @@
 .bigMe::after {
     background-image: url('/assets/img/shape/heroShapeAcross.png');
     opacity: 0;
-    transform: translate(clamp(20px, 5vw, 80px), clamp(10px, 4vw, 60px)) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
     transform-origin: center;
-    top: clamp(40px, 6vw, 85px);
-    left: clamp(100px, 12vw, 202px);
+    top: 50%;
+    left: 50%;
 }
 
 
@@ -253,6 +259,7 @@
 
 
 @media (max-width: 600px) {
+
     .navigation,
     .heroInfo {
         height: 370px;
