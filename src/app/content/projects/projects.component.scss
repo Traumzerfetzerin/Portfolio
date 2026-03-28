@@ -123,6 +123,11 @@ a:-webkit-any-link {
 }
 
 
+.projectImgContainer {
+    flex-direction: column;
+}
+
+
 
 // MEDIA QUERIES
 @media (max-width: 900px) {
