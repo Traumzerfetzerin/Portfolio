@@ -250,16 +250,10 @@
     .heroContent {
         flex: 0;
     }
-
-    .bigMe:after {
-        top: 30px;
-        left: -45px;
-    }
 }
 
 
 @media (max-width: 600px) {
-
     .navigation,
     .heroInfo {
         height: 370px;
