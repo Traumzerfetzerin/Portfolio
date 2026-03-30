@@ -44,7 +44,7 @@
         "h2": "Das haben meine Kollegen über mich gesagt",
         "link": "LinkedIn-Profil"
     },
-        "contact": {
+    "contact": {
         "h1": "Kontakt",
         "description": "Ich würde mich sehr über eine Nachricht von Ihnen freuen! Ich arbeite sowohl in der Frontend- als auch in der Backend-Entwicklung und habe Freude daran, Ideen zum Leben zu erwecken und Projekte bereichernd mitzugestalten.",
         "name": "Ihr Name",
@@ -54,5 +54,35 @@
         "message": "Ihre Nachricht",
         "messageRequired": "Die Nachricht ist erforderlich",
         "checkbox": "Ich habe die Datenschutzbestimmungen gelesen und stimme der Verarbeitung meiner Daten zu, wie sie in der Datenschutzerklärung beschrieben sind."
+    },
+    "policy": {
+        "h1": "Datenschutzerklärung",
+        "p": "Ich respektiere Ihre Privatsphäre und verpflichte mich, Ihre personenbezogenen Daten zu schützen. In dieser Datenschutzerklärung wird erläutert, wie ich mit den Informationen umgehe, die Sie beim Besuch meiner Portfolio-Website bereitstellen.",
+        "1": "1. Von mir erfasste Daten",
+        "1p": "Ich erhebe möglicherweise personenbezogene Daten, die Sie mir freiwillig zur Verfügung stellen, wie zum Beispiel:",
+        "1p1": "Name und E-Mail-Adresse (z.B. über das Kontaktformular)",
+        "1p2": "Informationen über Ihr Gerät und Ihren Browser (IP-Adresse, Browser-Typ)",
+        "1p3": "Es werden keine anderen personenbezogenen Daten automatisch erfasst.",
+        "2": "2. Wie ich Ihre Informationen verwende",
+        "2p": "Ihre Daten werden nur für folgende Zwecke verwendet:",
+        "2p1": "Auf Ihre Nachrichten oder Anfragen antworten",
+        "2p2": "Meine Webseite und mein Portfolio verbessern",
+        "2p3": "Ich verkaufe oder teile meine Daten nicht mit Drittanbietern zur Marketingzwecke.",
+        "3": "3. Cookies",
+        "3p": "Meine Website verwendet nur wenige Cookies, um die Funktionen der Website zu gewährleisten. Sie können Cookies in Ihren Browsereinstellungen verwalten oder deaktivieren.",
+        "4": "4. Ihre Rechte",
+        "4p": "Sie haben das Recht zu:",
+        "4p1": "Zugriff auf die personenbezogenen Daten zu erhalten, die ich über Sie besitze",
+        "4p2": "Korrekturen oder Löschung zu verlangen",
+        "4p3": "Ihre Zustimmung jederzeit zu widerrufen",
+        "4p4": "Um diese Rechte auszuüben, kontaktieren Sie mich unter: nadjaparadiesvogel(at)gmail.com",
+        "5": "5. Datensicherheit",
+        "5p": "Ich ergreife geeignete Maßnahmen, um Ihre Daten vor unbefugtem Zugriff oder Verlust zu schützen.",
+        "6": "6. Änderungen",
+        "6p": "Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden. Die aktuellste Version ist stets auf dieser Seite verfügbar.",
+        "7": "7. Kontakt",
+        "name": "Name: Nadja Petruck",
+        "address": "Addresse: Schulstraße 13, 67136 Fußgönheim",
+        "email": "Email: nadjaparadiesvogel&#64;gmail.com"
     }
 }
