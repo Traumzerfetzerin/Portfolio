@@ -84,5 +84,17 @@
         "name": "Name: Nadja Petruck",
         "address": "Addresse: Schulstraße 13, 67136 Fußgönheim",
         "email": "Email: nadjaparadiesvogel&#64;gmail.com"
+    },
+    "imprint": {
+        "h1": "Rechtliche Hinweise",
+        "h2": "Impressum",
+        "1h3": "Zweck & Geltungsbereich",
+        "1p": "Dieses Portfolio wurde als persönliches Web-Entwicklung-Projekt erstellt. Es dient dazu, meine Fähigkeiten in der Frontend- und Backend-Entwicklung zu zeigen und ist nicht für kommerzielle Zwecke gedacht.",
+        "2h3": "Geistiges Eigentum",
+        "2p": "Alle Inhalte, Gestaltung und Code in diesem Portfolio sind meine eigene Arbeit. Unbefugtes Kopieren, Modifizieren oder Verteilen ist verboten.",
+        "3h3": "Nutzung des Portfolios",
+        "3p": "Dieses Portfolio dient ausschließlich zu Informationszwecken. Ich übernehme keine Haftung für Schäden oder Missbrauch, die durch die Nutzung des Portfolios entstehen.",
+        "4h3": "Kontakt",
+        "4p": "Für Fragen oder Anfragen können Sie mich unter nadjaparadiesvogel&#64;gmail.com kontaktieren."
     }
 }
