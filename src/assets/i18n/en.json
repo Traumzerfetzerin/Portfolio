@@ -43,5 +43,16 @@
         "h1": "Need a teamplayer?",
         "h2": "Here what my colleagues said about me",
         "link": "LinkedIn Profile"
+    },
+    "contact": {
+        "h1": "Contact Me",
+        "description": "I’d love to hear from you! I work in both front- and back-end development and enjoy bringing ideas to life while adding value to projects.",
+        "name": "Your Name",
+        "nameRequired": "Name is required",
+        "email": "Your Email",
+        "emailRequired": "Valid email is required",
+        "message": "Your Message",
+        "messageRequired": "Message is required",
+        "checkbox": "I've read the privacy policy and agree to the processing of my data as outlined."
     }
 }

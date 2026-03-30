@@ -43,5 +43,16 @@
         "h1": "Suchen Sie einen Teamplayer?",
         "h2": "Das haben meine Kollegen über mich gesagt",
         "link": "LinkedIn-Profil"
+    },
+        "contact": {
+        "h1": "Kontakt",
+        "description": "Ich würde mich sehr über eine Nachricht von Ihnen freuen! Ich arbeite sowohl in der Frontend- als auch in der Backend-Entwicklung und habe Freude daran, Ideen zum Leben zu erwecken und Projekte bereichernd mitzugestalten.",
+        "name": "Ihr Name",
+        "nameRequired": "Der Name ist erforderlich",
+        "email": "Ihre E-Mail",
+        "emailRequired": "Eine gültige E-Mail-Adresse ist erforderlich",
+        "message": "Ihre Nachricht",
+        "messageRequired": "Die Nachricht ist erforderlich",
+        "checkbox": "Ich habe die Datenschutzbestimmungen gelesen und stimme der Verarbeitung meiner Daten zu, wie sie in der Datenschutzerklärung beschrieben sind."
     }
 }
