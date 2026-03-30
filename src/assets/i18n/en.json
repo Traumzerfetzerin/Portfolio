@@ -1,0 +1,14 @@
+{
+    "menu": {
+        "whyMe": "Why me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "me": {
+        "h1": "Why me",
+        "location": "I am open to work remote..|",
+        "motivation": "I’m passionate about coding because it lets me turn ideas into real solutions. I enjoy tackling complex problems, learning continuously, and building meaningful digital experiences. I’m open to remote work and flexible with location.",
+        "contact": "Let's talk"
+    }
+}
