@@ -38,5 +38,10 @@
         "tab4About": "Woran arbeiten Sie derzeit und welche Funktionen implementieren Sie? Was ist der Schlüssel zum Erfolg bei Ihren Projekten? Sie können gute Planung, Codequalität und Umsetzung nennen.",
         "tab4p": "Zeige Bereitschaft, neue Technologien zu erlernen und deine Fähigkeiten kontinuierlich zu verbessern.",
         "tab4soon": "Demnächst..."
+    },
+    "reviews": {
+        "h1": "Suchen Sie einen Teamplayer?",
+        "h2": "Das haben meine Kollegen über mich gesagt",
+        "link": "LinkedIn-Profil"
     }
 }

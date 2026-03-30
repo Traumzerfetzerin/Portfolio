@@ -38,5 +38,10 @@
         "tab4About":"What are you currently working on and what features are you implementing? What is the key to success in your projects? You can mention good planning, code quality and execution.",
         "tab4p":"Show a desire to learn new technologies and continually improve your skills.",
         "tab4soon": "Coming soon..."
+    },
+    "reviews": {
+        "h1": "Need a teamplayer?",
+        "h2": "Here what my colleagues said about me",
+        "link": "LinkedIn Profile"
     }
 }
