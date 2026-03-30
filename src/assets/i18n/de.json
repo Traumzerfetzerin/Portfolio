@@ -18,11 +18,25 @@
     },
     "projects": {
         "h1": "Projekte",
+        "technologies": "Technologien",
         "bulletPoint1": "Über das Projekt",
-        "bulletPoint1Description": "Das Pokémon-Trainer-Register ist eine Web-App, die Pokémon-Daten über eine öffentliche API abruft und es den Nutzern ermöglicht, Typen, Fähigkeiten, Werte und Bilder in einem modernen digitalen Pokédex zu erkunden.",
         "bulletPoint2": "Wie ich meinen Arbeitsablauf organisiert habe",
-        "bulletPoint2Description": "Zunächst habe ich die Funktionen und die Komponentenstruktur geplant, dann die API integriert, eine responsive Benutzeroberfläche erstellt und die App mit übersichtlichem, modularem Code optimiert.",
         "bulletPoint3": "Was ich gelernt habe",
-        "bulletPoint3Description": "Ich habe gelernt, mit REST-APIs zu arbeiten, dynamische Daten und Ladezustände zu verwalten, skalierbare Anwendungen zu strukturieren und meine Problemlösungsfähigkeiten zu verbessern, während ich wartbaren Code erstelle."
+        "tab1": "Pokedex",
+        "tab1About": "Das Pokémon-Trainer-Register ist eine Web-App, die Pokémon-Daten über eine öffentliche API abruft und es den Nutzern ermöglicht, Typen, Fähigkeiten, Werte und Bilder in einem modernen digitalen Pokédex zu erkunden.",
+        "tab1How": "Zunächst habe ich die Funktionen und die Komponentenstruktur geplant, dann die API integriert, eine responsive Benutzeroberfläche erstellt und die App mit übersichtlichem, modularem Code optimiert.",
+        "tab1What": "Ich habe gelernt, mit REST-APIs zu arbeiten, dynamische Daten und Ladezustände zu verwalten, skalierbare Anwendungen zu strukturieren und meine Problemlösungsfähigkeiten zu verbessern, während ich wartbaren Code erstelle.",
+        "tab2": "Yokairyu",
+        "tab2About": "Ich habe ein Jump-and-Run-Spiel entwickelt, in dem der Spieler in die Rolle des Helden schlüpft und das Geschehen steuert. Dabei habe ich unterhaltsames Gameplay mit fortgeschrittenen Programmierkonzepten kombiniert, um ein fesselndes Spielerlebnis zu schaffen.",
+        "tab2How": "Zunächst habe ich die Spielmechanik geplant und die objektorientierte Struktur entworfen, dann die Spielersteuerung, die Levels und die Hindernisse implementiert und schließlich das Gameplay getestet und optimiert, um einen flüssigen Spielablauf zu gewährleisten.",
+        "tab2What": "Ich habe gelernt, objektorientierte Programmierung in einem realen Projekt anzuwenden, den Spielstatus und die Spiellogik zu verwalten, Kollisionserkennung zu implementieren und einen strukturierten Ansatz für die Entwicklung interaktiver Anwendungen zu entwickeln.",
+        "tab3": "Join",
+        "tab3About": "Gemeinsam mit anderen Teilnehmern des Trainings habe ich eine Web-App mit HTML, CSS, JavaScript, Git und Firebase entwickelt und dabei ein Projektmanagement-Tool erstellt, das den Status von Aufgaben und die Zuständigkeiten visualisiert.",
+        "tab3How": "Ich habe eng mit dem Team zusammengearbeitet, um Funktionen zu planen, die Versionskontrolle mit Git einzurichten, das Frontend und Backend zu implementieren und Aufgaben zu koordinieren, um einen reibungslosen Ablauf und eine nahtlose Integration zu gewährleisten.",
+        "tab3What": "Ich habe gelernt, effektiv im Team zu arbeiten, ein Projekt mit Git und Firebase zu verwalten, Frontend- und Backend-Komponenten zu strukturieren und praktische Fähigkeiten bei der Entwicklung einer kollaborativen Webanwendung zu erwerben.",
+        "tab4": "Laufendes Projekt",
+        "tab4About": "Woran arbeiten Sie derzeit und welche Funktionen implementieren Sie? Was ist der Schlüssel zum Erfolg bei Ihren Projekten? Sie können gute Planung, Codequalität und Umsetzung nennen.",
+        "tab4p": "Zeige Bereitschaft, neue Technologien zu erlernen und deine Fähigkeiten kontinuierlich zu verbessern.",
+        "tab4soon": "Demnächst..."
     }
 }
