@@ -9,6 +9,11 @@
         "h1": "Warum gerade ich",
         "location": "Ich bin offen für Remote-Arbeit..|",
         "motivation": "Das Programmieren begeistert mich, weil ich dadurch Ideen in konkrete Lösungen umsetzen kann. Es macht mir Spaß, komplexe Probleme anzugehen, ständig dazuzulernen und sinnvolle digitale Erlebnisse zu gestalten. Ich bin offen für Remote-Arbeit und flexibel, was den Arbeitsort angeht.",
-        "contact": "Lass uns reden"
+        "contactButton": "Lass uns reden"
+    },
+        "skills": {
+        "h1": "Meine Fähigkeiten",
+        "currentLearning": "Was ich gerade lerne",
+        "learning": "Ich liebe es, neue Technologien zu erlernen, mit kreativen Lösungen zu experimentieren und meine Fähigkeiten ständig zu verbessern."
     }
 }
