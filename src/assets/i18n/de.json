@@ -11,9 +11,18 @@
         "motivation": "Das Programmieren begeistert mich, weil ich dadurch Ideen in konkrete Lösungen umsetzen kann. Es macht mir Spaß, komplexe Probleme anzugehen, ständig dazuzulernen und sinnvolle digitale Erlebnisse zu gestalten. Ich bin offen für Remote-Arbeit und flexibel, was den Arbeitsort angeht.",
         "contactButton": "Lass uns reden"
     },
-        "skills": {
+    "skills": {
         "h1": "Meine Fähigkeiten",
         "currentLearning": "Was ich gerade lerne",
         "learning": "Ich liebe es, neue Technologien zu erlernen, mit kreativen Lösungen zu experimentieren und meine Fähigkeiten ständig zu verbessern."
+    },
+    "projects": {
+        "h1": "Projekte",
+        "bulletPoint1": "Über das Projekt",
+        "bulletPoint1Description": "Das Pokémon-Trainer-Register ist eine Web-App, die Pokémon-Daten über eine öffentliche API abruft und es den Nutzern ermöglicht, Typen, Fähigkeiten, Werte und Bilder in einem modernen digitalen Pokédex zu erkunden.",
+        "bulletPoint2": "Wie ich meinen Arbeitsablauf organisiert habe",
+        "bulletPoint2Description": "Zunächst habe ich die Funktionen und die Komponentenstruktur geplant, dann die API integriert, eine responsive Benutzeroberfläche erstellt und die App mit übersichtlichem, modularem Code optimiert.",
+        "bulletPoint3": "Was ich gelernt habe",
+        "bulletPoint3Description": "Ich habe gelernt, mit REST-APIs zu arbeiten, dynamische Daten und Ladezustände zu verwalten, skalierbare Anwendungen zu strukturieren und meine Problemlösungsfähigkeiten zu verbessern, während ich wartbaren Code erstelle."
     }
 }
