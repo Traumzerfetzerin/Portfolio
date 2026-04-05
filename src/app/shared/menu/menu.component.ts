@@ -17,7 +17,7 @@ export class MenuComponent {
   activeSection: string = '';
   sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
 
-  
+
   /**
    * Constructor for the MenuComponent.
    * Sets the default language for the TranslateService to 'de' and uses it.
@@ -31,6 +31,17 @@ export class MenuComponent {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
   }
+
+
+  /**
+ * Switches the language of the application to the given language.
+ * @param {string} lang - The language to switch to.
+ */
+  switchLang(lang: string) {
+    this.translate.use(lang);
+    console.log('TEST:', this.translate.instant('menu.skills'));
+  }
+
 
   /**
    * Scrolls to the given section with the given id.
@@ -54,15 +65,5 @@ export class MenuComponent {
     }
 
     this.activeSection = sectionId;
-  }
-
-
-  /**
-   * Switches the language of the application to the given language.
-   * @param {string} lang - The language to switch to.
-   */
-  switchLang(lang: string) {
-    this.translate.use(lang);
-    console.log('TEST:', this.translate.instant('menu.skills'));
   }
 }
