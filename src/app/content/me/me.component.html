@@ -1,21 +1,18 @@
 <div class="flexCenter meContainer">
     <div class="me flexColumn">
-        <h1 class="AntaRegular400 color89BCD9 flexCenter">Why me</h1>
+        <h1 class="AntaRegular400 color89BCD9 flexCenter">{{ 'me.h1' | translate }}</h1>
 
         <div class="meContent flexCenter">
             <div class="location flex">
                 <img src="assets/img/Icon Remote.png" alt="">
-                <p class="josefinSansBold700 colorF8F5EC"><span class="color89BCD9">I am</span> open to work remote..|
-                </p>
+                <p class="josefinSansBold700 colorF8F5EC"><span class="color89BCD9">{{ 'me.locationBlue' | translate
+                        }}</span> {{ 'me.locationWhite' | translate }} |</p>
             </div>
 
             <div class="motivation">
-                <p class="josefinSansRegular400 colorF8F5EC">I’m passionate about coding because it lets me turn ideas
-                    into real solutions. I enjoy tackling complex problems, learning continuously, and building
-                    meaningful digital experiences. I’m open to remote work and flexible with location.</p>
-
-                <button (click)="scrollTo('contact')" class="josefinSansRegular400 color89BCD9 cursorPointer">Let's
-                    talk</button>
+                <p class="josefinSansRegular400 colorF8F5EC">{{ 'me.motivation' | translate }}</p>
+                <button (click)="scrollTo('contact')" class="josefinSansRegular400 color89BCD9 cursorPointer">{{
+                    'me.contactButton' | translate }}</button>
             </div>
         </div>
     </div>
