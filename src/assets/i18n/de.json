@@ -7,7 +7,8 @@
     },
     "me": {
         "h1": "Warum gerade ich",
-        "location": "Ich bin offen für Remote-Arbeit..|",
+        "locationBlue": "Ich bin",
+        "locationWhite": "offen für Remote-Arbeit..",
         "motivation": "Das Programmieren begeistert mich, weil ich dadurch Ideen in konkrete Lösungen umsetzen kann. Es macht mir Spaß, komplexe Probleme anzugehen, ständig dazuzulernen und sinnvolle digitale Erlebnisse zu gestalten. Ich bin offen für Remote-Arbeit und flexibel, was den Arbeitsort angeht.",
         "contactButton": "Lass uns reden"
     },

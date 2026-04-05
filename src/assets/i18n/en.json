@@ -7,7 +7,8 @@
     },
     "me": {
         "h1": "Why me",
-        "location": "I am open to work remote..|",
+        "locationBlue": "I am",
+        "locationWhite": "open to work remote..",
         "motivation": "I’m passionate about coding because it lets me turn ideas into real solutions. I enjoy tackling complex problems, learning continuously, and building meaningful digital experiences. I’m open to remote work and flexible with location.",
         "contactButton": "Let's talk"
     },
