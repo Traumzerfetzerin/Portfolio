@@ -39,7 +39,6 @@ export class MenuComponent {
  */
   switchLang(lang: string) {
     this.translate.use(lang);
-    console.log('TEST:', this.translate.instant('menu.skills'));
   }
 
 
