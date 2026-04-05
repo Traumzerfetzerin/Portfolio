@@ -17,6 +17,13 @@ export class MenuComponent {
   activeSection: string = '';
   sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
 
+  
+  /**
+   * Constructor for the MenuComponent.
+   * Sets the default language for the TranslateService to 'de' and uses it.
+   * @param {Router} router - The Angular Router for navigating to different routes.
+   * @param {TranslateService} translate - The TranslateService for translating text.
+   */
   constructor(
     private router: Router,
     private translate: TranslateService
