@@ -50,8 +50,12 @@ export class MenuComponent {
   }
 
 
+  /**
+   * Switches the language of the application to the given language.
+   * @param {string} lang - The language to switch to.
+   */
   switchLang(lang: string) {
     this.translate.use(lang);
-     console.log('TEST:', this.translate.instant('menu.skills'));
+    console.log('TEST:', this.translate.instant('menu.skills'));
   }
 }
