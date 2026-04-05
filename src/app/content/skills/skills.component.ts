@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -23,7 +27,21 @@ export class SkillsComponent {
     { img: 'assets/img/skills/Scrum.png', name: 'Scrum' }
   ];
 
-  
+
+  constructor(
+    private router: Router,
+    private translate: TranslateService
+  ) {
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
+  }
+
+
+  switchLang(lang: string) {
+    this.translate.use(lang);
+  }
+
+
   /**
  * Scroll to the given element with the given id.
  * @param {string} sectionId - The id of the element to scroll to.
