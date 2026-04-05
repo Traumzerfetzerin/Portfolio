@@ -28,6 +28,12 @@ export class SkillsComponent {
   ];
 
 
+  /**
+   * Constructor for the SkillsComponent.
+   * Sets the default language for the TranslateService to 'de' and uses it.
+   * @param {Router} router - The Angular Router for navigating to different routes.
+   * @param {TranslateService} translate - The TranslateService for translating text.
+   */
   constructor(
     private router: Router,
     private translate: TranslateService
@@ -37,6 +43,10 @@ export class SkillsComponent {
   }
 
 
+  /**
+   * Switches the language of the application to the given language.
+   * @param {string} lang - The language to switch to.
+   */
   switchLang(lang: string) {
     this.translate.use(lang);
   }
