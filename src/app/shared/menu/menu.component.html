@@ -7,15 +7,20 @@
         </div>
 
         <div class="navigationLinks josefinSansMedium500 cursorPointer flex">
-            <a (click)="scrollTo('whyMe')" class="navLink" [class.active]="activeSection === 'whyMe'">Why me</a>
-            <a (click)="scrollTo('skills')" class="navLink" [class.active]="activeSection === 'skills'">Skills</a>
-            <a (click)="scrollTo('projects')" class="navLink" [class.active]="activeSection === 'projects'">Projects</a>
-            <a (click)="scrollTo('contact')" class="navLink" [class.active]="activeSection === 'contact'">Contact</a>
+            <a (click)="scrollTo('whyMe')" class="navLink" [class.active]="activeSection === 'whyMe'">{{ 'menu.whyMe' |
+                translate }}</a>
+            <a (click)="scrollTo('skills')" class="navLink" [class.active]="activeSection === 'skills'">
+                {{ 'menu.skills' | translate }}
+            </a>
+            <a (click)="scrollTo('projects')" class="navLink" [class.active]="activeSection === 'projects'">{{
+                'menu.projects' | translate }}</a>
+            <a (click)="scrollTo('contact')" class="navLink" [class.active]="activeSection === 'contact'">{{
+                'menu.contact' | translate }}</a>
         </div>
 
         <div class="languageSwitcher cursorPointer flex flexSpaceBetween">
-            <p class="josefinSansRegular400 margin0 color262E34">DE</p>
-            <p class="english josefinSansRegular400 flexCenter margin0 color262E34">EN</p>
+            <p class="josefinSansRegular400 margin0 color262E34" (click)="switchLang('de')">DE</p>
+            <p class="english josefinSansRegular400 flexCenter margin0 color262E34" (click)="switchLang('en')">EN</p>
         </div>
     </div>
 </div>

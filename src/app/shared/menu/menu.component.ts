@@ -1,10 +1,13 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-menu',
   standalone: true,
+  imports: [TranslateModule],
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
@@ -14,7 +17,13 @@ export class MenuComponent {
   activeSection: string = '';
   sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private translate: TranslateService
+  ) {
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
+  }
 
   /**
    * Scrolls to the given section with the given id.
@@ -38,5 +47,11 @@ export class MenuComponent {
     }
 
     this.activeSection = sectionId;
+  }
+
+
+  switchLang(lang: string) {
+    this.translate.use(lang);
+     console.log('TEST:', this.translate.instant('menu.skills'));
   }
 }
