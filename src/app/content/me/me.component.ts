@@ -13,7 +13,12 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 
 export class MeComponent {
-
+  /**
+   * Constructor for the MeComponent.
+   * Sets the default language for the TranslateService to 'de' and uses it.
+   * @param {Router} router - The Angular Router for navigating to different routes.
+   * @param {TranslateService} translate - The TranslateService for translating text.
+   */
   constructor(
     private router: Router,
     private translate: TranslateService
@@ -21,8 +26,14 @@ export class MeComponent {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
   }
-  
 
+
+  /**
+   * Switches the language of the application to the given language.
+   * @param {string} lang - The language to switch to.
+   * @example
+   * switchLang('en')
+   */
   switchLang(lang: string) {
     this.translate.use(lang);
     console.log('TEST:', this.translate.instant('menu.skills'));
