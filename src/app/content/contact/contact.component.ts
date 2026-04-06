@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, RouterModule, ReactiveFormsModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -17,17 +20,25 @@ export class ContactComponent {
   contactForm: FormGroup;
 
 
-  /**
-   * Constructor
-   * @param {FormBuilder} fb - The form builder used to create the contact form.
-   */
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private router: Router,
+    private translate: TranslateService,
+    private fb: FormBuilder
+  ) {
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
+
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
       acceptPolicy: [false, Validators.requiredTrue]
     });
+  }
+
+
+  switchLang(lang: string) {
+    this.translate.use(lang);
   }
 
 
