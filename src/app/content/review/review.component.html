@@ -1,22 +1,22 @@
 <div class="flexColumn flexCenter reviewContent">
     <div class="review">
-        <h1 class="josefinSansRegular400 color89BCD9 flexCenter">Need a teamplayer?</h1>
-        <h2 class="josefinSansRegular400 color89BCD9 flexCenter">Here what my colleagues said about me</h2>
+        <h1 class="josefinSansRegular400 color89BCD9 flexCenter">{{ 'reviews.h1' | translate }}</h1>
+        <h2 class="josefinSansRegular400 color89BCD9 flexCenter">{{ 'reviews.h2' | translate }}</h2>
     </div>
     <div class="flex reviewContainer">
         @for (review of reviews; track review.name) {
         <div class="individuallyReview flex flexCenter">
 
             <div class="individuallyReviewContent flexColumn flexCenter">
-                <h2 class="josefinSansSemiBold600 colorF8F5EC">{{ review.name }}</h2>
+                <h2 class="josefinSansSemiBold600 colorF8F5EC">{{ review.name | translate }}</h2>
                 <p class="josefinSansRegular400 colorF8F5EC">
-                    Project <span class="color89BCD9">{{ review.project }}</span>
+                    Project <span class="color89BCD9">{{ review.project | translate }}</span>
                 </p>
                 <p class="josefinSansRegular400 colorF8F5EC">
-                    "{{ review.text }}"
+                    "{{ review.text | translate }}"
                 </p>
                 <a class="josefinSansRegular400 color89BCD9" [href]="review.linkedin" target="_blank">
-                    LinkedIn Profile
+                    {{ 'reviews.link' | translate }}
                 </a>
             </div>
 

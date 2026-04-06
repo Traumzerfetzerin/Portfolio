@@ -42,21 +42,21 @@ export class ReviewComponent {
 
   reviews = [
     {
-      name: 'Name',
-      project: 'Project A',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      name: 'reviewsText.0.name',
+      project: 'reviewsText.0.project',
+      text: 'reviewsText.0.text',
       linkedin: '#'
     },
     {
-      name: 'Name',
-      project: 'Project B',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      name: 'reviewsText.1.name',
+      project: 'reviewsText.1.project',
+      text: 'reviewsText.1.text',
       linkedin: '#'
     },
     {
-      name: 'Name',
-      project: 'Project C',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      name: 'reviewsText.2.name',
+      project: 'reviewsText.2.project',
+      text: 'reviewsText.2.text',
       linkedin: '#'
     }
   ];
