@@ -75,7 +75,8 @@
         "messageRequired": "Die Nachricht ist erforderlich",
         "checkboxStart": "Ich habe die",
         "privacy": "Datenschutzbestimmungen",
-        "checkboxEnd": "gelesen und stimme der Verarbeitung meiner Daten zu, wie sie in der Datenschutzerklärung beschrieben sind."
+        "checkboxEnd": "gelesen und stimme der Verarbeitung meiner Daten zu, wie sie in der Datenschutzerklärung beschrieben sind.",
+        "sendButton": "Senden"
     },
     "policy": {
         "h1": "Datenschutzerklärung",

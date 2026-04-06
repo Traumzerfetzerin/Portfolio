@@ -75,7 +75,8 @@
         "messageRequired": "Message is required",
         "checkboxStart": "I've read the",
         "privacy": "privacy policy",
-        "checkboxEnd": "and agree to the processing of my data as outlined."
+        "checkboxEnd": "and agree to the processing of my data as outlined.",
+        "sendButton": "Send"
     },
     "policy": {
         "h1": "Privacy Policy",
