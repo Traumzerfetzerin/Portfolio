@@ -46,6 +46,23 @@
         "h2": "Here what my colleagues said about me",
         "link": "LinkedIn Profile"
     },
+    "reviewsText": [
+        {
+            "name": "Name",
+            "project": "Project",
+            "text": "Text"
+        },
+        {
+            "name": "Name",
+            "project": "Project",
+            "text": "Text"
+        },
+        {
+            "name": "Name",
+            "project": "Project",
+            "text": "Text"
+        }
+    ],
     "contact": {
         "h1": "Contact Me",
         "description": "I’d love to hear from you! I work in both front- and back-end development and enjoy bringing ideas to life while adding value to projects.",

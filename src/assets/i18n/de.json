@@ -46,6 +46,23 @@
         "h2": "Das haben meine Kollegen über mich gesagt",
         "link": "LinkedIn-Profil"
     },
+    "reviewsText": [
+        {
+            "name": "Name",
+            "project": "Project",
+            "text": "Text"
+        },
+        {
+            "name": "Name",
+            "project": "Project",
+            "text": "Text"
+        },
+        {
+            "name": "Name",
+            "project": "Project",
+            "text": "Text"
+        }
+    ],
     "contact": {
         "h1": "Kontakt",
         "description": "Ich würde mich sehr über eine Nachricht von Ihnen freuen! Ich arbeite sowohl in der Frontend- als auch in der Backend-Entwicklung und habe Freude daran, Ideen zum Leben zu erwecken und Projekte bereichernd mitzugestalten.",
