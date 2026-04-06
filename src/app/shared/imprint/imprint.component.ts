@@ -8,13 +8,19 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [MenuComponent],
+  imports: [MenuComponent, TranslateModule],
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })
 
 
 export class ImprintComponent {
+  /**
+   * Constructor for the ImprintComponent.
+   * Sets the default language for the TranslateService to 'de' and uses it.
+   * @param {Router} router - The Angular Router for navigating to different routes.
+   * @param {TranslateService} translate - The TranslateService for translating text.
+   */
   constructor(
     private router: Router,
     private translate: TranslateService
@@ -24,6 +30,12 @@ export class ImprintComponent {
   }
 
 
+  /**
+   * Switches the language of the application to the given language.
+   * @param {string} lang - The language to switch to.
+   * @example
+   * switchLang('en')
+   */
   switchLang(lang: string) {
     this.translate.use(lang);
   }
