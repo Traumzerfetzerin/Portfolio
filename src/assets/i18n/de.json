@@ -107,9 +107,9 @@
         "6": "6. Änderungen",
         "6p": "Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden. Die aktuellste Version ist stets auf dieser Seite verfügbar.",
         "7": "7. Kontakt",
-        "name": "Name:",
-        "address": "Addresse:",
-        "email": "Email:"
+        "name": "Name",
+        "address": "Addresse",
+        "email": "Email"
     },
     "imprint": {
         "h1": "Rechtliche Hinweise",
