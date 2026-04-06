@@ -213,7 +213,8 @@
             </mat-tab>
             <mat-tab label="4. Ongoing Project">
                 <div class="projectsContent flex">
-                    <p class="josefinSansRegular400 colorF8F5EC technologiesText">Technologies: Angular, TypeScript,
+                    <p class="josefinSansRegular400 colorF8F5EC technologiesText">{{ 'projects.technologies' | translate
+                        }}: Angular, TypeScript,
                         HTML, CSS,
                         VUE JS, React</p>
                     <div class="flexColumn projectsDescription">
@@ -223,21 +224,17 @@
                                 <h2 class="josefinSansRegular400 colorF8F5EC">{{ 'projects.bulletPoint1' | translate }}
                                 </h2>
                             </div>
-                            <p class="josefinSansRegular400 colorF8F5EC">What are you currently working on and what
-                                features
-                                are
-                                you
-                                implementing? What is the key to success
-                                in
-                                your projects? You can mention good planning, code quality and execution.</p>
-                            <p class="josefinSansRegular400 colorF8F5EC">Show a desire to learn new technologies and
-                                continually
-                                improve your skills.</p>
+                            <p class="josefinSansRegular400 colorF8F5EC">{{ 'projects.tab4About' | translate
+                                }}.</p>
+                            <p class="josefinSansRegular400 colorF8F5EC">{{ 'projects.tab4p' | translate
+                                }}</p>
                         </div>
                     </div>
                     <div class="flexCenter flexColumn">
                         <div class="technologies flexColumn flexCenter">
-                            <h3 class="josefinSansRegular400 colorF8F5EC flexCenter">Technologies</h3>
+                            <h3 class="josefinSansRegular400 colorF8F5EC flexCenter">{{ 'projects.technologies' |
+                                translate
+                                }}</h3>
                             <div class="techImg flex">
                                 <img src="assets/img/skills/Angular.png" alt="Angular">
                                 <img src="assets/img/skills/TypeScript.png" alt="TypeScript">
@@ -248,7 +245,10 @@
                             </div>
                         </div>
                         <div class="flexCenter">
-                            <div class="commingSoon flexCenter josefinSansMedium500 color89BCD9">Comming soon...</div>
+                            <div class="commingSoon flexCenter josefinSansMedium500 color89BCD9">{{ 'projects.tab4soon'
+                                |
+                                translate
+                                }}</div>
                         </div>
                         <div class="button flexCenter">
                             <button class="live josefinSansRegular400 color262E34 flexCenter">Live Test</button>
