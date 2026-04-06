@@ -1,6 +1,6 @@
 <div class="flexCenter skillsContainer">
     <div id="skills" class="skills">
-        <h1 class="AntaRegular400 flexCenter color89BCD9">My Skills</h1>
+        <h1 class="AntaRegular400 flexCenter color89BCD9">{{ 'skills.h1' | translate }}</h1>
 
         <div class="skillsContent flex flexCenter">
             <div class="skillsIcons flex">
@@ -14,7 +14,8 @@
 
             <div class="currentlyLearning currentlyLearningDesktop">
                 <div class="learningContent flexCenter flexColumn">
-                    <p class="josefinSansRegular400 colorF8F5EC currentLearning">I am currently learning</p>
+                    <p class="josefinSansRegular400 colorF8F5EC currentLearning">{{ 'skills.currentLearning' | translate
+                        }}</p>
                     <div class="currentlyLearningIcons flex flexCenter">
                         <div class="flex flexCenter flexColumn">
                             <img src="assets/img/skills/react.png" alt="React">
@@ -25,17 +26,15 @@
                             <p class="josefinSansRegular400 colorF8F5EC">Vue Js</p>
                         </div>
                     </div>
-                    <p class="josefinSansRegular400 colorF8F5EC">I love learning new technologies, experimenting with
-                        creative solutions, and continuously improving my skills.</p>
+                    <p class="josefinSansRegular400 colorF8F5EC">{{ 'skills.learning' | translate }}</p>
                 </div>
             </div>
 
             <div class="skillsMobile">
-                <p class="josefinSansRegular400 color89BCD9 currentLearning flexCenter">What I am currently learning</p>
+                <p class="josefinSansRegular400 color89BCD9 currentLearning flexCenter">{{ 'skills.currentLearning' |
+                    translate }}</p>
                 <div class="flex flexCenter">
-                    <p class="josefinSansRegular400 colorF8F5EC learning">I love learning new technologies,
-                        experimenting with
-                        creative solutions, and continuously improving my skills.</p>
+                    <p class="josefinSansRegular400 colorF8F5EC learning">{{ 'skills.learning' | translate }}</p>
                     <div class="currentlyLearning currentlyLearningMobile">
                         <div class="learningContent flexCenter flexColumn">
                             <div class="currentlyLearningIcons flex flexCenter">
@@ -52,8 +51,8 @@
                     </div>
                 </div>
                 <div class="flexCenter">
-                    <button (click)="scrollTo('contact')" class="josefinSansRegular400 color394B55 cursorPointer">Let's
-                        talk</button>
+                    <button (click)="scrollTo('contact')" class="josefinSansRegular400 color394B55 cursorPointer">{{
+                        'me.contactButton' | translate }}</button>
                 </div>
             </div>
         </div>
