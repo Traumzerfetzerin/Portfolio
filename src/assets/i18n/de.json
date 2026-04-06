@@ -49,18 +49,18 @@
     "reviewsText": [
         {
             "name": "Name",
-            "project": "Project",
-            "text": "Text"
+            "project": "A",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "name": "Name",
-            "project": "Project",
-            "text": "Text"
+            "project": "B",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "name": "Name",
-            "project": "Project",
-            "text": "Text"
+            "project": "C",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
     ],
     "contact": {
