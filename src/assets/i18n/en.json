@@ -23,6 +23,7 @@
         "bulletPoint1": "About the project",
         "bulletPoint2": "How I have organised my work proces",
         "bulletPoint3": "What I have learnt",
+        "bulletPoint4": "My group work experience",
         "tab1": "Pokedex",
         "tab1About": "The Pokémon Trainer Register is a web app that fetches Pokémon data from a public API, allowing users to explore types, abilities, stats, and images in a modern digital Pokédex.",
         "tab1How": "I planned the features and component structure first, then integrated the API, built a responsive interface, and refined the app with clean, modular code.",

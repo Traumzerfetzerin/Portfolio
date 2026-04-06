@@ -23,6 +23,7 @@
         "bulletPoint1": "Über das Projekt",
         "bulletPoint2": "Wie ich meinen Arbeitsablauf organisiert habe",
         "bulletPoint3": "Was ich gelernt habe",
+        "bulletPoint4": "Meine Erfahrungen in der Gruppenarbeit",
         "tab1": "Pokedex",
         "tab1About": "Das Pokémon-Trainer-Register ist eine Web-App, die Pokémon-Daten über eine öffentliche API abruft und es den Nutzern ermöglicht, Typen, Fähigkeiten, Werte und Bilder in einem modernen digitalen Pokédex zu erkunden.",
         "tab1How": "Zunächst habe ich die Funktionen und die Komponentenstruktur geplant, dann die API integriert, eine responsive Benutzeroberfläche erstellt und die App mit übersichtlichem, modularem Code optimiert.",
