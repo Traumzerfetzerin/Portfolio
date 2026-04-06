@@ -1,6 +1,6 @@
 <div class="flexColumn flexCenter contactContainer">
     <div class="contact">
-        <h1 class="AntaRegular400 color89BCD9 flexCenter">Contact Me</h1>
+        <h1 class="AntaRegular400 color89BCD9 flexCenter">{{ 'contact.h1' | translate }}</h1>
         <div class="contactContent flex">
             <button (click)="scrollTo('hero')" class="arrowUp flexCenter cursorPointer arrowUpDesktop">
                 <img src="assets/img/Arrow Up.png" alt="">
@@ -8,12 +8,11 @@
 
             <div class="contactDescription">
                 <span class="description josefinSansRegular400 colorF8F5EC flexCenter">
-                    I’d love to hear from you! I work in both front- and back-end development and enjoy bringing ideas
-                    to life while adding value to projects.
+                    {{ 'contact.description' | translate }}
                 </span>
             </div>
             <div class="contactWork">
-                <span class="josefinSansRegular400 colorF8F5EC flexCenter">Let us work together!</span>
+                <span class="josefinSansRegular400 colorF8F5EC flexCenter">{{ 'contact.span' | translate }}</span>
             </div>
 
             <div class="flexColumn flexCenter contactInfo">
@@ -33,26 +32,26 @@
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactField flexColumn">
             <div class="formField flex fieldWrapper">
                 <div class="name">
-                    <p class="josefinSansRegular400 color89BCD9">Your Name</p>
+                    <p class="josefinSansRegular400 color89BCD9">{{ 'contact.name' | translate }}</p>
                     <input type="text" formControlName="name" placeholder="Your Name" class="cursorPointer">
                     <small *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
-                        Name is required
+                        {{ 'contact.nameRequired' | translate }}
                     </small>
                 </div>
 
                 <div class="mail fieldWrapper">
-                    <p class="josefinSansRegular400 color89BCD9">Your Email</p>
+                    <p class="josefinSansRegular400 color89BCD9">{{ 'contact.email' | translate }}</p>
                     <input type="email" formControlName="email" placeholder="Your Email" class="cursorPointer">
                     <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
-                        Valid email is required
+                        {{ 'contact.emailRequired' | translate }}
                     </small>
                 </div>
 
                 <div class="message fieldWrapper">
-                    <p class="josefinSansRegular400 color89BCD9">Your Message</p>
+                    <p class="josefinSansRegular400 color89BCD9">{{ 'contact.message' | translate }}</p>
                     <textarea formControlName="message" placeholder="Your Message" class="cursorPointer"></textarea>
                     <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
-                        Message is required
+                        {{ 'contact.messageRequired' | translate }}
                     </small>
                 </div>
             </div>
@@ -62,18 +61,19 @@
                     <input type="checkbox" formControlName="acceptPolicy">
                     <span class="checkmark"></span>
                     <span class="josefinSansRegular400 colorF8F5EC flex">
-                        I've read the
-                        <a [routerLink]="'/police'" class="flexCenter josefinSansRegular400 color89BCD9 cursorPointer">
-                            privacy policy
+                        {{ 'contact.checkboxStart' | translate }}
+                        <a [routerLink]="'/privacy-policy'"
+                            class="flexCenter josefinSansRegular400 color89BCD9 cursorPointer">
+                            {{ 'contact.privacy' | translate }}
                         </a>
-                        and agree to the processing of my data as outlined.
+                        {{ 'contact.checkboxEnd' | translate }}
                     </span>
                 </label>
             </div>
 
             <div class="send flexCenter">
                 <button type="submit" [disabled]="!contactForm.valid" [class.active]="contactForm.valid">
-                    Send
+                    {{ 'contact.sendButton' | translate }}
                 </button>
             </div>
         </form>
