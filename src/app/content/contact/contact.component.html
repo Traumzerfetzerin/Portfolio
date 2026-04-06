@@ -33,7 +33,7 @@
             <div class="formField flex fieldWrapper">
                 <div class="name">
                     <p class="josefinSansRegular400 color89BCD9">{{ 'contact.name' | translate }}</p>
-                    <input type="text" formControlName="name" placeholder="Your Name" class="cursorPointer">
+                    <input type="text" formControlName="name" placeholder="{{ 'contact.name' | translate }}" class="cursorPointer">
                     <small *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
                         {{ 'contact.nameRequired' | translate }}
                     </small>
@@ -41,7 +41,7 @@
 
                 <div class="mail fieldWrapper">
                     <p class="josefinSansRegular400 color89BCD9">{{ 'contact.email' | translate }}</p>
-                    <input type="email" formControlName="email" placeholder="Your Email" class="cursorPointer">
+                    <input type="email" formControlName="email" placeholder="{{ 'contact.email' | translate }}" class="cursorPointer">
                     <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
                         {{ 'contact.emailRequired' | translate }}
                     </small>
@@ -49,7 +49,7 @@
 
                 <div class="message fieldWrapper">
                     <p class="josefinSansRegular400 color89BCD9">{{ 'contact.message' | translate }}</p>
-                    <textarea formControlName="message" placeholder="Your Message" class="cursorPointer"></textarea>
+                    <textarea formControlName="message" placeholder="{{ 'contact.message' | translate }}" class="cursorPointer"></textarea>
                     <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
                         {{ 'contact.messageRequired' | translate }}
                     </small>
