@@ -47,8 +47,7 @@
     },
     "reviews": {
         "h1": "Suchen Sie einen Teamplayer?",
-        "h2": "Das haben meine Kollegen über mich gesagt",
-        "link": "LinkedIn-Profil"
+        "h2": "Das haben meine Kollegen über mich gesagt"
     },
     "reviewsText": [
         {
