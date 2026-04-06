@@ -73,7 +73,9 @@
         "emailRequired": "Eine gültige E-Mail-Adresse ist erforderlich",
         "message": "Ihre Nachricht",
         "messageRequired": "Die Nachricht ist erforderlich",
-        "checkbox": "Ich habe die Datenschutzbestimmungen gelesen und stimme der Verarbeitung meiner Daten zu, wie sie in der Datenschutzerklärung beschrieben sind."
+        "checkboxStart": "Ich habe die",
+        "privacy": "Datenschutzbestimmungen",
+        "checkboxEnd": "gelesen und stimme der Verarbeitung meiner Daten zu, wie sie in der Datenschutzerklärung beschrieben sind."
     },
     "policy": {
         "h1": "Datenschutzerklärung",
