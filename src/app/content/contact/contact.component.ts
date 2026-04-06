@@ -20,6 +20,14 @@ export class ContactComponent {
   contactForm: FormGroup;
 
 
+  /**
+   * Constructor for the ContactComponent.
+   * Sets the default language for the TranslateService to 'de' and uses it.
+   * Creates a form group for the contact form with the given fields and validators.
+   * @param {Router} router - The Angular Router for navigating to different routes.
+   * @param {TranslateService} translate - The TranslateService for translating text.
+   * @param {FormBuilder} fb - The FormBuilder for creating form groups.
+   */
   constructor(
     private router: Router,
     private translate: TranslateService,
@@ -37,6 +45,10 @@ export class ContactComponent {
   }
 
 
+  /**
+   * Switches the language of the application to the given language.
+   * @param {string} lang - The language to switch to.
+   */
   switchLang(lang: string) {
     this.translate.use(lang);
   }
