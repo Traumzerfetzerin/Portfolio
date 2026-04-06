@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
@@ -17,7 +20,20 @@ export class HeroComponent {
   isVisible = false;
 
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private translate: TranslateService
+  ) {
+    this.translate.setDefaultLang('de');
+    this.translate.use('de');
+  }
+
+
+  switchLang(lang: string) {
+    this.translate.use(lang);
+  }
+
+
 
   /**
    * Scrolls to the given section with the given id.
@@ -25,7 +41,6 @@ export class HeroComponent {
    * @param {string} sectionId - The id of the element to scroll to.
    */
   scrollTo(sectionId: string) {
-
     if (this.router.url !== '/') {
 
       this.router.navigate(['/']).then(() => {
@@ -43,7 +58,7 @@ export class HeroComponent {
     this.activeSection = sectionId;
   }
 
-  
+
   /**
    * Toggles the visibility of the navigation menu.
    * When the menu is visible, the arrow down in the hero section is hidden.
