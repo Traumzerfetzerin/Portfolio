@@ -1,4 +1,8 @@
 {
+    "hero": {
+        "developer": "Entwickler",
+        "fullstack": "FULLSTACK-ENTWICKLER"
+    },
     "menu": {
         "whyMe": "Warum gerade ich",
         "skills": "Fähigkeiten",
