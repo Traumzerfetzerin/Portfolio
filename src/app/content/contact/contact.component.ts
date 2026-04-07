@@ -69,14 +69,15 @@ export class ContactComponent {
     const email = 'nadjaparadiesvogel@gmail.com';
     const subject = encodeURIComponent('Contact Form Message');
     const body = encodeURIComponent(
-      `Name: ${this.contactForm.value.name}\n
-      Email: ${this.contactForm.value.email}\n
+      `Name: ${this.contactForm.value.name}
+      Email: ${this.contactForm.value.email}
       Message: ${this.contactForm.value.message}`
     );
 
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 
     this.contactForm.reset();
+    console.log(decodeURIComponent(body));
   }
 
 
