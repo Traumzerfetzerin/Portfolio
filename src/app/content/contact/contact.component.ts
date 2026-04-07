@@ -5,12 +5,13 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, RouterModule, ReactiveFormsModule, TranslateModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule, TranslateModule, HttpClientModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -20,18 +21,12 @@ export class ContactComponent {
   contactForm: FormGroup;
 
 
-  /**
-   * Constructor for the ContactComponent.
-   * Sets the default language for the TranslateService to 'de' and uses it.
-   * Creates a form group for the contact form with the given fields and validators.
-   * @param {Router} router - The Angular Router for navigating to different routes.
-   * @param {TranslateService} translate - The TranslateService for translating text.
-   * @param {FormBuilder} fb - The FormBuilder for creating form groups.
-   */
   constructor(
     private router: Router,
     private translate: TranslateService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private http: HttpClient
+
   ) {
     this.translate.setDefaultLang('de');
     this.translate.use('de');
@@ -54,30 +49,23 @@ export class ContactComponent {
   }
 
 
-  /**
-   * Submit the contact form
-   * If the form is invalid, mark all form controls as touched
-   * If the form is valid, create a mailto link with the form values and open it in a new window
-   * Reset the contact form after submitting
-   */
   onSubmit() {
     if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
       return;
     }
 
-    const email = 'nadjaparadiesvogel@gmail.com';
-    const subject = encodeURIComponent('Contact Form Message');
-    const body = encodeURIComponent(
-      `Name: ${this.contactForm.value.name}
-      Email: ${this.contactForm.value.email}
-      Message: ${this.contactForm.value.message}`
-    );
-
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
-
-    this.contactForm.reset();
-    console.log(decodeURIComponent(body));
+    this.http.post('https://your-api.com/contact', this.contactForm.value)
+      .subscribe({
+        next: () => {
+          alert('Nachricht erfolgreich gesendet!');
+          this.contactForm.reset();
+        },
+        error: (err) => {
+          console.error(err);
+          alert('Fehler beim Senden der Nachricht');
+        }
+      });
   }
 
 
