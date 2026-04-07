@@ -21,6 +21,15 @@ export class ContactComponent {
   contactForm: FormGroup;
 
 
+  /**
+   * Constructor for the ContactComponent.
+   * Sets the default language for the TranslateService to 'de' and uses it.
+   * Creates a form group for the contact form with validators for the name, email, message and accept policy fields.
+   * @param {Router} router - The Angular Router for navigating to different routes.
+   * @param {TranslateService} translate - The TranslateService for translating text.
+   * @param {Builder} fb - The FormBuilder for creating form groups and form controls.
+   * @param {HttpClient} http - The HttpClient for sending HTTP requests.
+   */
   constructor(
     private router: Router,
     private translate: TranslateService,
@@ -49,6 +58,12 @@ export class ContactComponent {
   }
 
 
+  /**
+   * Submits the contact form and sends a POST request to the given API endpoint.
+   * If the form is invalid, marks all form controls as touched and returns.
+   * If the request is successful, displays an alert with a success message and resets the form.
+   * If the request fails, displays an alert with an error message.
+   */
   onSubmit() {
     if (this.contactForm.invalid) {
       this.contactForm.markAllAsTouched();
@@ -57,10 +72,23 @@ export class ContactComponent {
 
     this.http.post('https://your-api.com/contact', this.contactForm.value)
       .subscribe({
+
+        
+        /**
+         * Success callback for the HTTP POST request.
+         * Displays an alert with a success message and resets the contact form.
+         */
         next: () => {
           alert('Nachricht erfolgreich gesendet!');
           this.contactForm.reset();
         },
+
+
+        /**
+         * Error callback for the HTTP POST request.
+         * Logs the error to the console and displays an alert with an error message.
+         * @param {any} err - The error object from the failed request.
+         */
         error: (err) => {
           console.error(err);
           alert('Fehler beim Senden der Nachricht');
