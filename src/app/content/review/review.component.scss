@@ -30,13 +30,13 @@
 
 
 .individuallyReview::before {
-    background-image: url('/assets/img/shape/reviewShape.png');
+    background-image: url('../../../assets/img/shape/reviewShape.png');
     opacity: 1;
 }
 
 
 .individuallyReview::after {
-    background-image: url('/assets/img/shape/reviewShapeAcross.png');
+    background-image: url('../../../assets/img/shape/reviewShapeAcross.png');
     opacity: 0;
 }
 

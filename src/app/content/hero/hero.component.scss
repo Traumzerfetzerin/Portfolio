@@ -49,7 +49,7 @@
 
 
 .bigMe::before {
-    background-image: url('../../..//assets/img/shape/heroShape.png');
+    background-image: url('../../../assets/img/shape/heroShape.png');
     opacity: 1;
 }
 
@@ -115,17 +115,17 @@
 
 
 .gitHub:hover {
-    content: url('/assets/img/socialMedia/gitHubFilled.png');
+    content: url('../../../assets/img/socialMedia/gitHubFilled.png');
 }
 
 
 .mail:hover {
-    content: url('/assets/img/socialMedia/mailFilled.png');
+    content: url('../../../assets/img/socialMedia/mailFilled.png');
 }
 
 
 .linkedIn:hover {
-    content: url('/assets/img/socialMedia/linkedInFilled.png');
+    content: url('../../../assets/img/socialMedia/linkedInFilled.png');
 }
 
 
@@ -166,7 +166,7 @@
 }
 
 .bigMeMobile {
-    background-image: url('/assets/img/shape/heroShape.png');
+    background-image: url('../../../assets/img/shape/heroShape.png');
     opacity: 1;
     content: "";
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@
 
 
 .navigationLinks {
-    background-image: url('/assets/img/shape/menuShapeMobile.png');
+    background-image: url('../../../assets/img/shape/menuShapeMobile.png');
     opacity: 1;
     content: "";
     background-repeat: no-repeat;
@@ -226,7 +226,7 @@
     }
 
     .english {
-        background-image: url('/assets/img/shape/languageShape.png');
+        background-image: url('../../../assets/img/shape/languageShape.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;

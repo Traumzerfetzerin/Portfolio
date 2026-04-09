@@ -62,13 +62,13 @@
 
 
 .currentlyLearning::before {
-    background-image: url('/assets/img/shape/learningShape.png');
+    background-image: url('../../../assets/img/shape/learningShape.png');
     opacity: 1;
 }
 
 
 .currentlyLearning::after {
-    background-image: url('/assets/img/shape/learningShapeAcross.png');
+    background-image: url('../../../assets/img/shape/learningShapeAcross.png');
     opacity: 0;
 }
 
