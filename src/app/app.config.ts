@@ -14,7 +14,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
  * @returns {TranslateHttpLoader} A new instance of TranslateHttpLoader.
  */
 export function httpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
 
 export const appConfig: ApplicationConfig = {
