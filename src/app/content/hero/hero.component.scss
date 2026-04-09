@@ -49,13 +49,13 @@
 
 
 .bigMe::before {
-    background-image: url('/assets/img/shape/heroShape.png');
+    background-image: url('../../..//assets/img/shape/heroShape.png');
     opacity: 1;
 }
 
 
 .bigMe::after {
-    background-image: url('/assets/img/shape/heroShapeAcross.png');
+    background-image: url('../../../assets/img/shape/heroShapeAcross.png');
     opacity: 0;
     transform: translate(-50%, -50%) rotate(45deg);
     transform-origin: center;
