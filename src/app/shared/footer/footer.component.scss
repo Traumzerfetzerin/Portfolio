@@ -43,7 +43,8 @@
 }
 
 
-.socialMediaIcons {
+.socialMediaIconsDesktop,
+.socialMediaIconsMobile {
     gap: 16px;
     align-self: flex-end;
 
@@ -52,6 +53,11 @@
         height: 30px;
         opacity: 60%;
     }
+}
+
+
+.socialMediaIconsMobile {
+    display: none;
 }
 
 
@@ -73,11 +79,20 @@
 
 // MEDIA QUERIES
 @media (max-width: 600px) {
+    .socialMediaIconsMobile {
+        display: flex;
+    }
+
+    .socialMediaIconsDesktop {
+        display: none;
+    }
+
     .developerInfo {
         order: 1;
     }
 
-    .socialMediaIcons {
+    .socialMediaIconsDesktop,
+    .socialMediaIconsMobile {
         order: 2;
         align-self: center;
     }
