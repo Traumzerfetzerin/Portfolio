@@ -16,6 +16,9 @@ import { TranslateModule } from '@ngx-translate/core';
 
 
 export class FooterComponent {
+  activeSection: string = '';
+  sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
+  
   /**
    * Constructor for the FooterComponent.
    * Sets the default language for the TranslateService to 'de' and uses it.
@@ -39,5 +42,24 @@ export class FooterComponent {
    */
   switchLang(lang: string) {
     this.translate.use(lang);
+  }
+
+
+  scrollTo(sectionId: string) {
+    if (this.router.url !== '/') {
+
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          const el = document.getElementById(sectionId);
+          el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      });
+
+    } else {
+      const el = document.getElementById(sectionId);
+      el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    this.activeSection = sectionId;
   }
 }
