@@ -18,7 +18,7 @@ import { TranslateModule } from '@ngx-translate/core';
 export class FooterComponent {
   activeSection: string = '';
   sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
-  
+
   /**
    * Constructor for the FooterComponent.
    * Sets the default language for the TranslateService to 'de' and uses it.
@@ -45,6 +45,11 @@ export class FooterComponent {
   }
 
 
+  /**
+   * Scrolls to the given element with the given id.
+   * If the router's current url is not '/', it will first navigate to '/' and then scroll to the element.
+   * @param {string} sectionId - The id of the element to scroll to.
+   */
   scrollTo(sectionId: string) {
     if (this.router.url !== '/') {
 
