@@ -21,15 +21,7 @@ export class ContactComponent {
   contactForm: FormGroup;
 
 
-  /**
-   * Constructor for the ContactComponent.
-   * Sets the default language for the TranslateService to 'de' and uses it.
-   * Creates a form group for the contact form with validators for the name, email, message and accept policy fields.
-   * @param {Router} router - The Angular Router for navigating to different routes.
-   * @param {TranslateService} translate - The TranslateService for translating text.
-   * @param {Builder} fb - The FormBuilder for creating form groups and form controls.
-   * @param {HttpClient} http - The HttpClient for sending HTTP requests.
-   */
+
   constructor(
     private router: Router,
     private translate: TranslateService,
@@ -42,7 +34,14 @@ export class ContactComponent {
 
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
+      email: [
+        '',
+        [
+          Validators.required,
+          Validators.email,
+          Validators.pattern('[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}')
+        ]
+      ],
       message: ['', Validators.required],
       acceptPolicy: [false, Validators.requiredTrue]
     });
@@ -73,7 +72,7 @@ export class ContactComponent {
     this.http.post('https://your-api.com/contact', this.contactForm.value)
       .subscribe({
 
-        
+
         /**
          * Success callback for the HTTP POST request.
          * Displays an alert with a success message and resets the contact form.
