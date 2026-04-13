@@ -4,6 +4,11 @@
 }
 
 
+.projects {
+    padding: clamp(20px, 5vw, 50px);
+}
+
+
 p {
     font-size: clamp(14px, 1.5vw, 18px);
 }
@@ -52,6 +57,7 @@ h3 {
     width: 453.47px;
     height: 312px;
     border-radius: 30px;
+    padding: clamp(20px, 5vw, 50px);
 }
 
 
