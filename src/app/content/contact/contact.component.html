@@ -33,26 +33,35 @@
             <div class="formField flex fieldWrapper">
                 <div class="name">
                     <p class="josefinSansRegular400 color89BCD9">{{ 'contact.name' | translate }}</p>
-                    <input type="text" formControlName="name" placeholder="{{ 'contact.name' | translate }}" class="cursorPointer">
-                    <small *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
-                        {{ 'contact.nameRequired' | translate }}
-                    </small>
+                    <input type="text" formControlName="name" placeholder="{{ 'contact.name' | translate }}"
+                        class="cursorPointer">
+                    <div class="errorMessage">
+                        <small *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
+                            {{ 'contact.nameRequired' | translate }}
+                        </small>
+                    </div>
                 </div>
 
                 <div class="mail fieldWrapper">
                     <p class="josefinSansRegular400 color89BCD9">{{ 'contact.email' | translate }}</p>
-                    <input type="email" formControlName="email" placeholder="{{ 'contact.email' | translate }}" class="cursorPointer">
-                    <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
-                        {{ 'contact.emailRequired' | translate }}
-                    </small>
+                    <input type="email" formControlName="email" placeholder="{{ 'contact.email' | translate }}"
+                        class="cursorPointer">
+                    <div class="errorMessage">
+                        <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+                            {{ 'contact.emailRequired' | translate }}
+                        </small>
+                    </div>
                 </div>
 
                 <div class="message fieldWrapper">
                     <p class="josefinSansRegular400 color89BCD9">{{ 'contact.message' | translate }}</p>
-                    <textarea formControlName="message" placeholder="{{ 'contact.message' | translate }}" class="cursorPointer"></textarea>
-                    <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
-                        {{ 'contact.messageRequired' | translate }}
-                    </small>
+                    <textarea formControlName="message" placeholder="{{ 'contact.message' | translate }}"
+                        class="cursorPointer"></textarea>
+                    <div class="errorMessage">
+                        <small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+                            {{ 'contact.messageRequired' | translate }}
+                        </small>
+                    </div>
                 </div>
             </div>
 
@@ -62,8 +71,7 @@
                     <span class="checkmark"></span>
                     <span class="josefinSansRegular400 colorF8F5EC flex">
                         {{ 'contact.checkboxStart' | translate }}
-                        <a [routerLink]="'/police'"
-                            class="flexCenter josefinSansRegular400 color89BCD9 cursorPointer">
+                        <a [routerLink]="'/police'" class="flexCenter josefinSansRegular400 color89BCD9 cursorPointer">
                             {{ 'contact.privacy' | translate }}
                         </a>
                         {{ 'contact.checkboxEnd' | translate }}
