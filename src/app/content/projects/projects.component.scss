@@ -102,6 +102,7 @@ a:-webkit-any-link {
 
 .projectsContent {
     background-color: #394b55;
+    padding: clamp(20px, 5vw, 50px);
 
     .technologiesText {
         display: none;
@@ -146,7 +147,8 @@ a:-webkit-any-link {
         display: flex;
     }
 
-    .technologies, .button {
+    .technologies,
+    .button {
         display: none;
     }
 
