@@ -19,8 +19,10 @@
         </div>
 
         <div class="languageSwitcher cursorPointer flex flexSpaceBetween">
-            <p class="josefinSansRegular400 margin0 color262E34" (click)="switchLang('de')">DE</p>
-            <p class="english josefinSansRegular400 flexCenter margin0 color262E34" (click)="switchLang('en')">EN</p>
+            <p class="josefinSansRegular400 margin0 color262E34" (click)="switchLang('de')"
+                [class.active]="currentLang === 'de'">DE</p>
+            <p class="english josefinSansRegular400 flexCenter margin0 color262E34" (click)="switchLang('en')"
+                [class.active]="currentLang === 'en'">EN</p>
         </div>
     </div>
 </div>
