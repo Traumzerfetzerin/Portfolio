@@ -30,12 +30,15 @@
 
 .navigationLinks {
     justify-content: space-around;
+    align-items: center;
     width: clamp(320px, 60vw, 677px);
     gap: clamp(12px, 2vw, 32px);
 
     a {
         font-size: clamp(16px, 2vw, 26px);
         text-decoration: none;
+        height: clamp(40px, 6vw, 56.16px);
+        align-content: center;
     }
 
     a:hover {
