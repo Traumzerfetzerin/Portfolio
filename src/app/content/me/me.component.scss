@@ -44,6 +44,11 @@
 }
 
 
+.meContent {
+    padding: clamp(20px, 5vw, 50px);
+}
+
+
 
 // MEDIA QUERIES
 @media (max-width: 630px) {
