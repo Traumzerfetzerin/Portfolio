@@ -27,6 +27,7 @@
     img {
         width: clamp(40px, 6vw, 60px);
         height: clamp(40px, 6vw, 60px);
+        object-fit: contain;
     }
 
     p {
