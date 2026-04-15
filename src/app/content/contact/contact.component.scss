@@ -47,6 +47,12 @@
 }
 
 
+.contactInfo {
+    display: flex;
+    justify-content: center;
+}
+
+
 .mailSection,
 .phoneSection {
     min-width: clamp(260px, 50vw, 445px);
@@ -56,6 +62,10 @@
 
     a {
         text-decoration: none;
+    }
+
+    p {
+        margin: 0;
     }
 
     p:hover {
@@ -102,7 +112,6 @@
 .name,
 .mail,
 .message {
-
     gap: 16px;
     display: flex;
     flex-direction: column;
@@ -153,6 +162,7 @@
 
 .policy {
     align-items: center;
+    margin: clamp(20px, 5vw, 50px);
 
     span {
         flex-wrap: wrap;
