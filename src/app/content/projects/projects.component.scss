@@ -34,6 +34,11 @@ h3 {
 }
 
 
+.bulletPointContainer {
+    gap: clamp(12px, 2.5vw, 32px);
+}
+
+
 .technologies {
     padding-right: 2px;
     padding-left: 2px;
