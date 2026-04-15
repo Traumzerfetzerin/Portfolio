@@ -62,7 +62,6 @@ h3 {
     width: 453.47px;
     height: 312px;
     border-radius: 30px;
-    padding: clamp(20px, 5vw, 50px);
 }
 
 
@@ -114,6 +113,7 @@ a:-webkit-any-link {
 .projectsContent {
     background-color: #394b55;
     padding: clamp(20px, 5vw, 50px);
+    border-radius: 30px;
 
     .technologiesText {
         display: none;
@@ -132,6 +132,11 @@ a:-webkit-any-link {
 
 .projectImgContainer {
     flex-direction: column;
+}
+
+
+.projectContainerImg {
+    padding: clamp(20px, 5vw, 50px);
 }
 
 
