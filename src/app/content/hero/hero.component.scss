@@ -256,6 +256,7 @@
 
 
 @media (max-width: 600px) {
+
     .navigation,
     .heroInfo {
         height: 370px;
@@ -320,5 +321,16 @@
 
     .arrowDown {
         order: 5;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .developerInfoContent {
+        left: 24px;
+    }
+
+    .burger {
+        right: 24px;
     }
 }
