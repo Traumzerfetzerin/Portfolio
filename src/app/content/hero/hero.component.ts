@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { ElementRef, ViewChild, HostListener } from '@angular/core';
 
 
 @Component({
@@ -18,6 +19,8 @@ export class HeroComponent {
   activeSection: string = '';
   sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
   isVisible = false;
+  @ViewChild('menu') menuRef!: ElementRef;
+  @ViewChild('burger') burgerRef!: ElementRef;
 
 
   /**
@@ -77,5 +80,18 @@ export class HeroComponent {
    */
   toggleMenu() {
     this.isVisible = !this.isVisible;
+  }
+
+
+  @HostListener('document:click', ['$event'])
+  handleClick(event: MouseEvent) {
+    if (!this.isVisible) return;
+
+    const clickedInsideMenu = this.menuRef?.nativeElement.contains(event.target);
+    const clickedBurger = this.burgerRef?.nativeElement.contains(event.target);
+
+    if (!clickedInsideMenu && !clickedBurger) {
+      this.isVisible = false;
+    }
   }
 }

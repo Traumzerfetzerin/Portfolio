@@ -46,21 +46,21 @@
                 <div class="heroInfo flex">
                     <div class="bigMeMobile">
                         <img src="assets/img/me.png" alt="Hero Image" *ngIf="!isVisible">
-                        <div class="navigation flexCenter flexColumn" *ngIf="isVisible">
+                        <div class="navigation flexCenter flexColumn" *ngIf="isVisible" #menu>
                             <div class="navigationLinks flexColumn flexCenter">
                                 <div class="flexColumn links">
-                                    <a (click)="scrollTo('whyMe')"
+                                    <a (click)="scrollTo('whyMe'); isVisible = false"
                                         class="navLink josefinSansRegular400 color262E34 cursorPointer"
                                         [class.active]="activeSection === 'whyMe'">{{ 'menu.whyMe' |
                                         translate }}</a>
-                                    <a (click)="scrollTo('skills')"
+                                    <a (click)="scrollTo('skills'); isVisible = false"
                                         class="navLink josefinSansRegular400 color262E34 cursorPointer"
                                         [class.active]="activeSection === 'skills'">{{ 'menu.skills' | translate }}</a>
-                                    <a (click)="scrollTo('projects')"
+                                    <a (click)="scrollTo('projects'); isVisible = false"
                                         class="navLink josefinSansRegular400 color262E34 cursorPointer"
                                         [class.active]="activeSection === 'projects'">{{ 'menu.projects' | translate
                                         }}</a>
-                                    <a (click)="scrollTo('contact')"
+                                    <a (click)="scrollTo('contact'); isVisible = false"
                                         class="navLink josefinSansRegular400 color262E34 cursorPointer"
                                         [class.active]="activeSection === 'contact'">{{ 'menu.contact' | translate
                                         }}</a>
@@ -96,7 +96,7 @@
                         <p class="josefinSansLight300 color89BCD9 margin0">{{ 'hero.developer' | translate }}</p>
                     </div>
                 </div>
-                <div class="burger cursorPointer" (click)="toggleMenu()">
+                <div class="burger cursorPointer" #burger (click)="toggleMenu()">
                     <img src="assets/img/burger.png" alt="">
                 </div>
                 <p class="developer AntaRegular400 colorF8F5EC margin0">Nadja Petruck</p>
