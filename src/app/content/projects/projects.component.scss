@@ -4,11 +4,6 @@
 }
 
 
-.projects {
-    padding: clamp(20px, 5vw, 50px);
-}
-
-
 p {
     font-size: clamp(14px, 1.5vw, 18px);
 }
@@ -16,6 +11,7 @@ p {
 
 h1 {
     font-size: clamp(32px, 5vw, 60px);
+    padding: clamp(20px, 5vw, 50px);
 }
 
 
