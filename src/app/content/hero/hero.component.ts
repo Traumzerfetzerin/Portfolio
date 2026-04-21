@@ -84,6 +84,7 @@ export class HeroComponent {
 
 
   @HostListener('document:click', ['$event'])
+
   handleClick(event: MouseEvent) {
     if (!this.isVisible) return;
 
