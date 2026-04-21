@@ -9,3 +9,17 @@
         align-items: center;
     }
 }
+
+
+
+// MEDIA QUERIES
+@media (max-width: 600px) {
+    .main app-menu {
+        display: none;
+    }
+
+
+    app-police app-imprint app-menu {
+        display: block;
+    }
+}
