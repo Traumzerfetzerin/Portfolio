@@ -1,6 +1,7 @@
 .imprintContainer {
     height: 100vh;
     padding: clamp(20px, 5vw, 50px);
+    max-width: 1440px;
 
     h1 {
         font-size: clamp(32px, 5vw, 54px);
