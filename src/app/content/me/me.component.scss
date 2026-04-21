@@ -5,6 +5,11 @@
 }
 
 
+.meContainer {
+    padding-top: clamp(20px, 5vw, 50px);
+}
+
+
 .location {
     gap: clamp(8px, 1.5vw, 16px);
     align-items: center;
