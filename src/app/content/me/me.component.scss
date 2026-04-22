@@ -7,6 +7,7 @@
 
 .meContainer {
     padding-top: clamp(20px, 5vw, 50px);
+    max-width: 1440px;
 }
 
 
@@ -23,29 +24,33 @@
 }
 
 
-.motivation {
-    width: clamp(220px, 90%, 379px);
+.motivationContainer {
+    width: fit-content;
+}
 
+
+.motivation {
     p {
         font-size: clamp(14px, 1.6vw, 18px);
     }
+}
 
-    button {
-        height: clamp(40px, 5vw, 48px);
-        border-radius: 30px;
-        border: 1px solid #89BCD9;
-        padding: clamp(10px, 1.5vw, 13px) clamp(18px, 3vw, 30px);
-        font-size: clamp(14px, 1.6vw, 18px);
-        background-color: transparent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: clamp(6px, 1vw, 10px);
-    }
 
-    button:hover {
-        background-color: #394B55;
-    }
+button {
+    height: clamp(40px, 5vw, 48px);
+    border-radius: 30px;
+    border: 1px solid #89BCD9;
+    padding: clamp(10px, 1.5vw, 13px) clamp(18px, 3vw, 30px);
+    font-size: clamp(14px, 1.6vw, 18px);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(6px, 1vw, 10px);
+}
+
+button:hover {
+    background-color: #394B55;
 }
 
 
