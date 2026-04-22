@@ -77,7 +77,7 @@
         "message": "Ihre Nachricht",
         "messageRequired": "Die Nachricht ist erforderlich",
         "checkboxStart": "Ich habe die ",
-        "privacy": "Datenschutzbestimmungen ",
+        "privacy": " Datenschutzbestimmungen ",
         "checkboxEnd": "gelesen und stimme der Verarbeitung meiner Daten zu, wie sie in der Datenschutzerklärung beschrieben sind.",
         "sendButton": "Senden"
     },
