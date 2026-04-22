@@ -1,6 +1,9 @@
 .hero {
     width: clamp(320px, 100%, 1440px);
     margin: 0 auto;
+    padding: clamp(20px, 5vw, 50px);
+    height: 100vh;
+    flex-direction: column;
 }
 
 

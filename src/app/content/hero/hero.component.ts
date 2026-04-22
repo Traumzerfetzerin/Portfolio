@@ -4,12 +4,13 @@ import { CommonModule } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ElementRef, ViewChild, HostListener } from '@angular/core';
+import { MenuComponent } from '../../shared/menu/menu.component';
 
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, MenuComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
