@@ -76,8 +76,8 @@
         "emailRequired": "Valid email is required",
         "message": "Your Message",
         "messageRequired": "Message is required",
-        "checkboxStart": "I've read the ",
-        "privacy": " privacy policy ",
+        "checkboxStart": "I've read the",
+        "privacy": "privacy policy",
         "checkboxEnd": "and agree to the processing of my data as outlined.",
         "sendButton": "Send"
     },
