@@ -5,7 +5,7 @@
         <div class="skillsContent flex flexCenter">
             <div class="skillsIcons flex">
                 @for (skill of skills; track skill.name) {
-                <div class="flexColumn">
+                <div class="flexColumn" data-aos="zoom-in">
                     <img [src]="skill.img" [alt]="skill.name">
                     <p class="josefinSansRegular400 color89BCD9">{{ skill.name }}</p>
                 </div>

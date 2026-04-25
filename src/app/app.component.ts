@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import AOS from 'aos';
 
 // shared
 import { FooterComponent } from './shared/footer/footer.component';
@@ -18,12 +19,32 @@ import { ProjectsComponent } from './content/projects/projects.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FooterComponent, MenuComponent, HeroComponent, MeComponent, SkillsComponent, ReviewComponent, ContactComponent, ProjectsComponent],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    FooterComponent,
+    MenuComponent,
+    HeroComponent,
+    MeComponent,
+    SkillsComponent,
+    ReviewComponent,
+    ContactComponent,
+    ProjectsComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 
-
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
+
+
+
+  ngAfterViewInit(): void {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 120
+    });
+  }
 }

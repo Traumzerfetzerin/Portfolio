@@ -15,7 +15,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 export class SkillsComponent {
   skills = [
-    { img: 'assets/img/skills/Angular.png', name: 'Angular' },
+    { img: 'assets/img/skills/Angular.png', name: 'Angular'},
     { img: 'assets/img/skills/TypeScript.png', name: 'TypeScript' },
     { img: 'assets/img/skills/Javascript.png', name: 'JavaScript' },
     { img: 'assets/img/skills/html.png', name: 'HTML' },
