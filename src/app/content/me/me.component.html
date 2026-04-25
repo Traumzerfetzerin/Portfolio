@@ -3,7 +3,7 @@
         <h1 class="AntaRegular400 color89BCD9 flexCenter">{{ 'me.h1' | translate }}</h1>
 
         <div class="meContent flexCenter">
-            <div class="location flex">
+            <div class="location flex" data-aos="flip-left">
                 <img src="assets/img/Icon Remote.png" alt="">
                 <p class="josefinSansBold700 colorF8F5EC"><span class="color89BCD9">{{ 'me.locationBlue' | translate
                         }}</span> {{ 'me.locationWhite' | translate }}</p>
@@ -13,7 +13,7 @@
                 <div class="motivation">
                     <p class="josefinSansRegular400 colorF8F5EC">{{ 'me.motivation' | translate }}</p>
                 </div>
-                <button (click)="scrollTo('contact')" class="josefinSansRegular400 color89BCD9 cursorPointer">{{
+                <button (click)="scrollTo('contact')" class="josefinSansRegular400 color89BCD9 cursorPointer" data-aos="zoom-in">{{
                     'me.contactButton' | translate }}</button>
             </div>
         </div>

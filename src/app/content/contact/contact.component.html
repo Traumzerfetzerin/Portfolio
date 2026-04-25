@@ -3,10 +3,10 @@
         <h1 class="AntaRegular400 color89BCD9 flexCenter">{{ 'contact.h1' | translate }}</h1>
         <div class="contactContent flex">
             <button (click)="scrollTo('hero')" class="arrowUp flexCenter cursorPointer arrowUpDesktop">
-                <img src="assets/img/Arrow Up.png" alt="">
+                <img src="assets/img/Arrow Up.png" alt="" data-aos="fade-up">
             </button>
 
-            <div class="contactDescription">
+            <div class="contactDescription" data-aos="fade-down-right">
                 <span class="description josefinSansRegular400 colorF8F5EC flexCenter">
                     {{ 'contact.description' | translate }}
                 </span>
@@ -15,7 +15,7 @@
                 <span class="josefinSansRegular400 colorF8F5EC flexCenter">{{ 'contact.span' | translate }}</span>
             </div>
 
-            <div class="flexColumn contactInfo">
+            <div class="flexColumn contactInfo" data-aos="fade-down-left">
                 <div class="mailSection cursorPointer">
                     <img class="mailImg" src="assets/img/contact/emailWhite.png" alt="">
                     <a href="mailto:nadjaparadiesvogel@gmail.com">
@@ -88,7 +88,7 @@
 
         <div class="flexCenter arrowUpforMobile">
             <button (click)="scrollTo('hero')" class="arrowUp flexCenter cursorPointer arrowUpMobile">
-                <img src="assets/img/Arrow Up.png" alt="">
+                <img src="assets/img/Arrow Up.png" alt="" data-aos="fade-up">
             </button>
         </div>
     </div>
