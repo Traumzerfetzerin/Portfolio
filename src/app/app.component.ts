@@ -35,12 +35,23 @@ import { ProjectsComponent } from './content/projects/projects.component';
   styleUrl: './app.component.scss'
 })
 
+
 export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
 
 
-
-
+  /**
+   * Initializes the AOS (Animate On Scroll) library after the component view has been fully initialized.
+   *
+   * @remarks
+   * This lifecycle hook ensures that all DOM elements are rendered before AOS scans
+   * and applies animations. Without this, AOS might not detect elements correctly.
+   *
+   * @description
+   * - Sets animation duration to 800ms
+   * - Ensures animations run only once (`once: true`)
+   * - Applies an offset of 120px before triggering animations
+   */
   ngAfterViewInit(): void {
     AOS.init({
       duration: 800,
