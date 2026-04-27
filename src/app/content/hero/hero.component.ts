@@ -86,6 +86,18 @@ export class HeroComponent {
 
   @HostListener('document:click', ['$event'])
 
+  
+  /**
+   * Handles click events to close the menu when clicking outside of it.
+   *
+   * @param {MouseEvent} event - The click event triggered on the document.
+   *
+   * @description
+   * This method checks whether the menu is currently visible.
+   * If it is, it determines whether the click occurred inside the menu
+   * or on the burger button. If the click happened outside both,
+   * the menu will be closed by setting `isVisible` to false.
+   */
   handleClick(event: MouseEvent) {
     if (!this.isVisible) return;
 
