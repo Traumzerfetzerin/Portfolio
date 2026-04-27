@@ -30,12 +30,12 @@ export class ProjectsComponent {
   }
 
 
-/**
- * Switches the language of the application to the given language.
- * @param {string} lang - The language to switch to.
- * @example
- * switchLang('en')
- */
+  /**
+   * Switches the language of the application to the given language.
+   * @param {string} lang - The language to switch to.
+   * @example
+   * switchLang('en')
+   */
   switchLang(lang: string) {
     this.translate.use(lang);
   }
