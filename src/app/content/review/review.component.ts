@@ -39,7 +39,6 @@ export class ReviewComponent {
     this.translate.use(lang);
   }
 
-
   reviews = [
     {
       name: 'reviewsText.0.name',
