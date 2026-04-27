@@ -265,6 +265,7 @@
 
 }
 
+
 .contactWork {
     display: none;
 }
@@ -279,7 +280,6 @@ textarea::placeholder {
 
 // MEDIA QUERIES
 @media (max-width: 1130px) {
-
     .contactContent,
     .formField {
         flex-direction: column;
