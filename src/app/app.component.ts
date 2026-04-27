@@ -40,6 +40,7 @@ export class AppComponent implements AfterViewInit {
 
 
 
+
   ngAfterViewInit(): void {
     AOS.init({
       duration: 800,

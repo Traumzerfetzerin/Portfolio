@@ -29,7 +29,8 @@
             </div>
         </div>
 
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactField flexColumn">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contactField flexColumn" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
             <div class="formField flex fieldWrapper">
                 <div class="name">
                     <p class="josefinSansRegular400 color89BCD9">{{ 'contact.name' | translate }}</p>
