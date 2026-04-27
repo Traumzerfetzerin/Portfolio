@@ -19,6 +19,7 @@ export class FooterComponent {
   activeSection: string = '';
   sections: string[] = ['whyMe', 'skills', 'projects', 'contact'];
 
+  
   /**
    * Constructor for the FooterComponent.
    * Sets the default language for the TranslateService to 'de' and uses it.
