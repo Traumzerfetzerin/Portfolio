@@ -40,7 +40,7 @@
 
 
 .description {
-    width: clamp(260px, 90vw, 429px);
+    max-width: 429px;
     font-size: clamp(16px, 1.6vw, 20px);
 }
 
