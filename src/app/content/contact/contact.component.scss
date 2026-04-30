@@ -83,7 +83,7 @@
     gap: clamp(10px, 2vw, 21px);
     flex-direction: column;
     display: block;
-    padding: clamp(20px, 5vw, 50px);
+    padding: 20px;
 }
 
 
@@ -281,6 +281,7 @@ textarea::placeholder {
 
 // MEDIA QUERIES
 @media (max-width: 1130px) {
+
     .contactContent,
     .formField {
         flex-direction: column;
@@ -300,6 +301,7 @@ textarea::placeholder {
 
     .formField {
         display: flex;
+        padding: 10px;
     }
 
     .contactWork {
@@ -338,5 +340,12 @@ textarea::placeholder {
 
     .contactDescription {
         order: 3;
+    }
+}
+
+
+@media (max-width: 340px) {
+    .formField {
+        padding: 0px;
     }
 }
