@@ -1,4 +1,20 @@
 <app-menu></app-menu>
+
+<div class="burger cursorPointer" (click)="toggleMenu()">
+    <img src="assets/img/burger.png" alt="">
+</div>
+
+<div class="navigation flexCenter flexColumn" *ngIf="isVisible">
+    <div class="navigationLinks flexColumn flexCenter">
+        <div class="flexColumn links">
+            <a (click)="scrollTo('whyMe'); isVisible = false">Why me</a>
+            <a (click)="scrollTo('skills'); isVisible = false">Skills</a>
+            <a (click)="scrollTo('projects'); isVisible = false">Projects</a>
+            <a (click)="scrollTo('contact'); isVisible = false">Contact</a>
+        </div>
+    </div>
+</div>
+
 <div class="policyWrapper flexCenter">
     <div class="padding flexColumn flexCenter">
         <div class="police flex flexColumn">
