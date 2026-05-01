@@ -25,6 +25,9 @@ export class PoliceComponent implements OnDestroy {
   @ViewChild('burger') burgerRef!: ElementRef;
 
 
+  /**
+   * Resets body scroll on component destroy.
+   */
   ngOnDestroy() {
     document.body.style.overflow = 'auto';
   }
@@ -54,15 +57,22 @@ export class PoliceComponent implements OnDestroy {
   }
 
 
-
+  /**
+   * Toggles the visibility of the navigation menu.
+   * When the menu is visible, the arrow down in the hero section is hidden.
+   * When the menu is not visible, the arrow down in the hero section is shown.
+   */
   toggleMenu() {
     this.isVisible = !this.isVisible;
     document.body.style.overflow = this.isVisible ? 'hidden' : 'auto';
   }
 
 
-
-
+  /**
+   * Scrolls to the given section with the given id.
+   * If the router's current url is not '/', it will first navigate to '/' and then scroll to the element.
+   * @param {string} sectionId - The id of the element to scroll to.
+   */
   scrollTo(sectionId: string) {
     if (this.router.url !== '/') {
 
@@ -83,6 +93,14 @@ export class PoliceComponent implements OnDestroy {
 
 
   @HostListener('document:click', ['$event'])
+
+
+  /**
+   * Closes the menu when clicking outside of it or the burger button.
+   * Restores page scrolling.
+   *
+   * @param event Click event from document listener.
+   */
   handleClick(event: MouseEvent) {
     if (!this.isVisible) return;
 
