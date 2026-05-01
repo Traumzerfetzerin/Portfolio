@@ -1,33 +1,33 @@
-<div class="menuWrapper">
-    <div class="menu flex flexSpaceBetween">
-        <div class="developerInfo flexCenter cursorPointer margin0 flexColumn">
-            <img (click)="scrollTo('hero')" src="assets/img/NP-Logo.png" alt="logo">
-            <p class="AntaRegular400 margin0 colorF8F5EC">N.Petruck</p>
-            <p class="josefinSansLight300 margin0 color262E34">{{ 'hero.developer' | translate }}</p>
-        </div>
+    <div class="menuWrapper">
+        <div class="menu flex flexSpaceBetween">
+            <div class="developerInfo flexCenter cursorPointer margin0 flexColumn">
+                <img (click)="scrollTo('hero')" src="assets/img/NP-Logo.png" alt="logo">
+                <p class="AntaRegular400 margin0 colorF8F5EC">N.Petruck</p>
+                <p class="josefinSansLight300 margin0 color262E34">{{ 'hero.developer' | translate }}</p>
+            </div>
 
-        <div class="navigationLinks josefinSansMedium500 cursorPointer flex">
-            <a (click)="scrollTo('whyMe')" class="navLink" [class.active]="activeSection === 'whyMe'"
-                data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">{{ 'menu.whyMe' |
-                translate }}</a>
-            <a (click)="scrollTo('skills')" class="navLink" [class.active]="activeSection === 'skills'"
-                data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                {{ 'menu.skills' | translate }}
-            </a>
-            <a (click)="scrollTo('projects')" class="navLink" [class.active]="activeSection === 'projects'"
-                data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">{{
-                'menu.projects' | translate }}</a>
-            <a (click)="scrollTo('contact')" class="navLink" [class.active]="activeSection === 'contact'"
-                data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">{{
-                'menu.contact' | translate }}</a>
-        </div>
+            <div class="navigationLinks josefinSansMedium500 cursorPointer flex">
+                <a (click)="scrollTo('whyMe')" class="navLink" [class.active]="activeSection === 'whyMe'"
+                    data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">{{ 'menu.whyMe' |
+                    translate }}</a>
+                <a (click)="scrollTo('skills')" class="navLink" [class.active]="activeSection === 'skills'"
+                    data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    {{ 'menu.skills' | translate }}
+                </a>
+                <a (click)="scrollTo('projects')" class="navLink" [class.active]="activeSection === 'projects'"
+                    data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">{{
+                    'menu.projects' | translate }}</a>
+                <a (click)="scrollTo('contact')" class="navLink" [class.active]="activeSection === 'contact'"
+                    data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">{{
+                    'menu.contact' | translate }}</a>
+            </div>
 
-        <div class="languageSwitcher cursorPointer flex flexSpaceBetween">
-            <p class="josefinSansRegular400 margin0 color262E34" (click)="switchLang('de')"
-                [class.active]="currentLang === 'de'" data-aos="fade-up" data-aos-duration="3000">DE</p>
-            <p class="english josefinSansRegular400 flexCenter margin0 color262E34" (click)="switchLang('en')"
-                [class.active]="currentLang === 'en'" data-aos="fade-down" data-aos-easing="linear"
-                data-aos-duration="1500">EN</p>
+            <div class="languageSwitcher cursorPointer flex flexSpaceBetween">
+                <p class="josefinSansRegular400 margin0 color262E34" (click)="switchLang('de')"
+                    [class.active]="currentLang === 'de'" data-aos="fade-up" data-aos-duration="3000">DE</p>
+                <p class="english josefinSansRegular400 flexCenter margin0 color262E34" (click)="switchLang('en')"
+                    [class.active]="currentLang === 'en'" data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1500">EN</p>
+            </div>
         </div>
     </div>
-</div>
