@@ -44,10 +44,9 @@
         transition: opacity 0.5s ease-in-out;
         align-items: center;
         gap: 32px;
-        top: 0;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 20%;
+        left: 20%;
         transform: translate(-50%, -50%);
         width: clamp(300px, 40vw, 535px);
         height: clamp(380px, 50vw, 683px);

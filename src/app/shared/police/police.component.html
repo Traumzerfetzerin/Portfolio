@@ -1,10 +1,10 @@
 <app-menu></app-menu>
 
-<div class="burger cursorPointer" (click)="toggleMenu()">
+<div class="burger cursorPointer" (click)="toggleMenu()" #burger>
     <img src="assets/img/burger.png" alt="">
 </div>
 
-<div class="navigation flexCenter flexColumn" *ngIf="isVisible">
+<div class="navigation flexCenter flexColumn" *ngIf="isVisible" #menu>
     <div class="navigationLinks flexColumn flexCenter">
         <div class="flexColumn links">
             <a (click)="scrollTo('whyMe'); isVisible = false">Why me</a>

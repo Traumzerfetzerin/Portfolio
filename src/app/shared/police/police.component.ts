@@ -54,11 +54,14 @@ export class PoliceComponent implements OnDestroy {
   }
 
 
+
   toggleMenu() {
     this.isVisible = !this.isVisible;
     document.body.style.overflow = this.isVisible ? 'hidden' : 'auto';
   }
-  
+
+
+
 
   scrollTo(sectionId: string) {
     if (this.router.url !== '/') {
@@ -76,5 +79,19 @@ export class PoliceComponent implements OnDestroy {
     }
 
     this.activeSection = sectionId;
+  }
+
+
+  @HostListener('document:click', ['$event'])
+  handleClick(event: MouseEvent) {
+    if (!this.isVisible) return;
+
+    const clickedInsideMenu = this.menuRef?.nativeElement.contains(event.target);
+    const clickedBurger = this.burgerRef?.nativeElement.contains(event.target);
+
+    if (!clickedInsideMenu && !clickedBurger) {
+      this.isVisible = false;
+      document.body.style.overflow = 'auto';
+    }
   }
 }
