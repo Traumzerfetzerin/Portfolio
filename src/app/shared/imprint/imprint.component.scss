@@ -1,7 +1,8 @@
 .imprintContainer {
-    height: 100vh;
-    padding: clamp(20px, 5vw, 50px);
+    padding: 20px;
     max-width: 1440px;
+    margin: 50px auto;
+    min-height: 100vh;
 
     h1 {
         font-size: clamp(32px, 5vw, 54px);
@@ -23,7 +24,94 @@
 }
 
 
-a {
-    text-decoration: none;
-    color: #89BCD9;
+.imprintContent {
+    a {
+        text-decoration: none;
+        color: #89BCD9;
+    }
+}
+
+
+.burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    display: none;
+}
+
+
+.navigationLinks {
+    background-image: url('../../../assets/img/shape/menuShapeMobile.png');
+    opacity: 1;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: clamp(300px, 40vw, 535px);
+    height: clamp(380px, 50vw, 683px);
+
+    a {
+        font-size: 22px
+    }
+}
+
+
+.links {
+    gap: 16px;
+}
+
+
+.languageSwitcher {
+    gap: clamp(12px, 3vw, 32px);
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .german:hover {
+        color: #F8F5EC;
+    }
+
+    .english {
+        background-image: url('../../../assets/img/shape/languageShape.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: clamp(24px, 3vw, 36.8px);
+        height: clamp(16px, 2vw, 24px);
+    }
+
+    .english:hover {
+        background-image: none;
+    }
+
+    p:hover+.english,
+    .english:hover {
+        background-image: none;
+        color: #262E34;
+    }
+}
+
+
+
+// MEDIA QUERIES
+@media (max-width: 600px) {
+    .burger {
+        display: inline;
+    }
+
+    app-menu {
+        display: none;
+    }
 }
