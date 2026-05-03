@@ -164,6 +164,7 @@ a:-webkit-any-link {
 @media (max-width: 600px) {
     .buttonMobile {
         display: flex;
+        gap: 16px;
     }
 
     .technologies,
