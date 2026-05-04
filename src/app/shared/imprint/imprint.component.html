@@ -7,10 +7,15 @@
 <div class="navigation flexCenter flexColumn" *ngIf="isVisible" #menu>
     <div class="navigationLinks flexColumn flexCenter">
         <div class="flexColumn links">
-            <a (click)="scrollTo('whyMe'); isVisible = false">Why me</a>
-            <a (click)="scrollTo('skills'); isVisible = false">Skills</a>
-            <a (click)="scrollTo('projects'); isVisible = false">Projects</a>
-            <a (click)="scrollTo('contact'); isVisible = false">Contact</a>
+            <a (click)="scrollTo('whyMe'); isVisible = false">{{ 'menu.whyMe' | translate }}</a>
+            <a (click)="scrollTo('skills'); isVisible = false">{{ 'menu.skills' | translate }}</a>
+            <a (click)="scrollTo('projects'); isVisible = false">{{ 'menu.projects' | translate }}</a>
+            <a (click)="scrollTo('contact'); isVisible = false">{{ 'menu.contact' | translate }}</a>
+        </div>
+
+        <div class="languageSwitcher cursorPointer flex flexSpaceBetween">
+            <p class="german josefinSansRegular400 margin0 color262E34" (click)="switchLang('de')">DE</p>
+            <p class="english josefinSansRegular400 flexCenter margin0 colorF8F5EC" (click)="switchLang('en')">EN</p>
         </div>
     </div>
 </div>

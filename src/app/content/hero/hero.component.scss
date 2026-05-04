@@ -206,6 +206,11 @@
 }
 
 
+.navLink:hover {
+    color: #F8F5EC;
+}
+
+
 .links {
     gap: 16px;
 }
@@ -219,30 +224,22 @@
     p {
         font-size: 18px;
         cursor: pointer;
-    }
-
-    .german:hover {
-        color: #F8F5EC;
-    }
-
-    .english {
-        background-image: url('../../../assets/img/shape/languageShape.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: clamp(24px, 3vw, 36.8px);
-        height: clamp(16px, 2vw, 24px);
-    }
-
-    .english:hover {
-        background-image: none;
-    }
-
-    p:hover+.english,
-    .english:hover {
-        background-image: none;
         color: #262E34;
     }
+}
+
+
+.languageSwitcher p:hover {
+    color: #F8F5EC;
+}
+
+
+.languageSwitcher p.active {
+    background-image: url('../../../assets/img/shape/languageShape.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #F8F5EC;
 }
 
 
@@ -256,6 +253,7 @@
 
 
 @media (max-width: 600px) {
+
     .navigation,
     .heroInfo {
         height: 370px;
