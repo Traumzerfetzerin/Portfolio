@@ -23,6 +23,7 @@ export class ImprintComponent implements OnDestroy {
   isVisible = false;
   @ViewChild('menu') menuRef!: ElementRef;
   @ViewChild('burger') burgerRef!: ElementRef;
+  currentLang: string = 'de';
 
 
   /**
@@ -33,28 +34,20 @@ export class ImprintComponent implements OnDestroy {
   }
 
 
-  /**
-   * Constructor for the ImprintComponent.
-   * Sets the default language for the TranslateService to 'de' and uses it.
-   * @param {Router} router - The Angular Router for navigating to different routes.
-   * @param {TranslateService} translate - The TranslateService for translating text.
-   */
+
   constructor(
     private router: Router,
     private translate: TranslateService
   ) {
     this.translate.setDefaultLang('de');
-    this.translate.use('de');
+    this.currentLang = this.translate.currentLang || 'de';
+    this.translate.use(this.currentLang);
   }
 
 
-  /**
-   * Switches the language of the application to the given language.
-   * @param {string} lang - The language to switch to.
-   * @example
-   * switchLang('en')
-   */
+
   switchLang(lang: string) {
+    this.currentLang = lang;
     this.translate.use(lang);
   }
 
