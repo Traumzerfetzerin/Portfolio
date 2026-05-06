@@ -205,9 +205,8 @@ html {
 
 // MEDIA QUERIES
 @media (max-width: 645px) {
-
     .mat-mdc-tab-body-wrapper,
     .mat-mdc-tab-header {
-        width: clamp(320px, 90vw, 1440px);
+        width: clamp(300px, 90vw, 1440px);
     }
 }
