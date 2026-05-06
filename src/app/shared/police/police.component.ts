@@ -34,7 +34,10 @@ export class PoliceComponent implements OnDestroy {
   }
 
 
-
+  /**
+   * Initializes the component and sets the default language.
+   * Uses the current language if available, otherwise falls back to German.
+   */
   constructor(
     private router: Router,
     private translate: TranslateService
@@ -45,7 +48,10 @@ export class PoliceComponent implements OnDestroy {
   }
 
 
-
+  /**
+   * Switches the application language.
+   * @param lang Language code (e.g. 'de', 'en')
+   */
   switchLang(lang: string) {
     this.currentLang = lang;
     this.translate.use(lang);
