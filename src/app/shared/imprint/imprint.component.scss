@@ -42,6 +42,7 @@
 
 
 .navigationLinks {
+    display: none;
     background-image: url('../../../assets/img/shape/menuShapeMobile.png');
     opacity: 1;
     content: "";
@@ -103,6 +104,10 @@ a:hover {
 
 // MEDIA QUERIES
 @media (max-width: 600px) {
+    .navigationLinks {
+        display: flex;
+    }
+
     .burger {
         display: inline;
     }
