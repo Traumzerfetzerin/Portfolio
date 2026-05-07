@@ -6,12 +6,13 @@ import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LanguageSwitcherComponent } from '../../shared/language-switcher/language-switcher.component';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, RouterModule, ReactiveFormsModule, TranslateModule, HttpClientModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule, TranslateModule, HttpClientModule, LanguageSwitcherComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -30,19 +31,15 @@ export class ContactComponent {
    *   message: required string
    *   acceptPolicy: required boolean that must be true
    * @param {Router} router - The Angular Router for navigating to different routes.
-   * @param {TranslateService} translate - The TranslateService for translating text.
    * @param {FormBuilder} fb - The FormBuilder for creating form groups and form controls.
    * @param {HttpClient} http - The HttpClient for making HTTP requests.
    */
   constructor(
     private router: Router,
-    private translate: TranslateService,
     private fb: FormBuilder,
     private http: HttpClient
 
   ) {
-    this.translate.setDefaultLang('de');
-    this.translate.use('de');
 
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
@@ -57,15 +54,6 @@ export class ContactComponent {
       message: ['', Validators.required],
       acceptPolicy: [false, Validators.requiredTrue]
     });
-  }
-
-
-  /**
-   * Switches the language of the application to the given language.
-   * @param {string} lang - The language to switch to.
-   */
-  switchLang(lang: string) {
-    this.translate.use(lang);
   }
 
 

@@ -6,12 +6,13 @@ import { TranslateModule } from '@ngx-translate/core';
 import { OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ElementRef, ViewChild, HostListener } from '@angular/core';
+import { LanguageSwitcherComponent } from '../../shared/language-switcher/language-switcher.component';
 
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [MenuComponent, TranslateModule, CommonModule],
+  imports: [MenuComponent, TranslateModule, CommonModule, LanguageSwitcherComponent],
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })
@@ -23,7 +24,6 @@ export class ImprintComponent implements OnDestroy {
   isVisible = false;
   @ViewChild('menu') menuRef!: ElementRef;
   @ViewChild('burger') burgerRef!: ElementRef;
-  currentLang: string = 'de';
 
 
   /**
@@ -34,28 +34,7 @@ export class ImprintComponent implements OnDestroy {
   }
 
 
-  /**
-   * Initializes the component and sets the default language.
-   * Uses the current language if available, otherwise falls back to German.
-   */
-  constructor(
-    private router: Router,
-    private translate: TranslateService
-  ) {
-    this.translate.setDefaultLang('de');
-    this.currentLang = this.translate.currentLang || 'de';
-    this.translate.use(this.currentLang);
-  }
-
-
-  /**
-   * Switches the application language.
-   * @param lang Language code (e.g. 'de', 'en')
-   */
-  switchLang(lang: string) {
-    this.currentLang = lang;
-    this.translate.use(lang);
-  }
+  constructor(private router: Router) { }
 
 
   /**
