@@ -1,18 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { LanguageSwitcherComponent } from '../../shared/language-switcher/language-switcher.component';
+import emailjs from '@emailjs/browser';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, RouterModule, ReactiveFormsModule, TranslateModule, HttpClientModule, LanguageSwitcherComponent],
+  imports: [
+    CommonModule,
+    RouterModule,
+    ReactiveFormsModule,
+    TranslateModule
+  ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -23,24 +25,12 @@ export class ContactComponent {
 
 
   /**
-   * Constructor for the ContactComponent.
-   * Sets the default language for the TranslateService to 'de' and uses it.
-   * Creates a form group for the contact form with the following fields:
-   *   name: required string
-   *   email: required string with the email pattern
-   *   message: required string
-   *   acceptPolicy: required boolean that must be true
-   * @param {Router} router - The Angular Router for navigating to different routes.
-   * @param {FormBuilder} fb - The FormBuilder for creating form groups and form controls.
-   * @param {HttpClient} http - The HttpClient for making HTTP requests.
+   * Initializes the contact form with validation rules.
    */
   constructor(
     private router: Router,
-    private fb: FormBuilder,
-    private http: HttpClient
-
+    private fb: FormBuilder
   ) {
-
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: [
@@ -58,10 +48,7 @@ export class ContactComponent {
 
 
   /**
-   * Submits the contact form and sends a POST request to the given API endpoint.
-   * If the form is invalid, marks all form controls as touched and returns.
-   * If the request is successful, displays an alert with a success message and resets the form.
-   * If the request fails, displays an alert with an error message.
+   * Sends the contact form via EmailJS.
    */
   onSubmit() {
     if (this.contactForm.invalid) {
@@ -69,41 +56,34 @@ export class ContactComponent {
       return;
     }
 
-    this.http.post('https://your-api.com/contact', this.contactForm.value)
-      .subscribe({
+    const form = this.contactForm.value;
 
-
-        /**
-         * Success callback for the HTTP POST request.
-         * Displays an alert with a success message and resets the contact form.
-         */
-        next: () => {
-          alert('Nachricht erfolgreich gesendet!');
-          this.contactForm.reset();
-        },
-
-
-        /**
-         * Error callback for the HTTP POST request.
-         * Logs the error to the console and displays an alert with an error message.
-         * @param {any} err - The error object from the failed request.
-         */
-        error: (err) => {
-          console.error(err);
-          alert('Fehler beim Senden der Nachricht');
-        }
+    emailjs.send(
+      'service_pt14vou',
+      'template_0s1qe7r',
+      {
+        name: form.name,
+        email: form.email,
+        message: form.message
+      },
+      'mb7tyX9XDp8u4Ht0l'
+    )
+      .then(() => {
+        alert('Nachricht erfolgreich gesendet!');
+        this.contactForm.reset();
+      })
+      .catch((err) => {
+        console.error(err);
+        alert('Fehler beim Senden der Nachricht');
       });
   }
 
 
   /**
-   * Scroll to the given element with the given id.
-   * @param {string} sectionId - The id of the element to scroll to.
+   * Scrolls smoothly to a section by ID.
    */
   scrollTo(sectionId: string) {
     const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
