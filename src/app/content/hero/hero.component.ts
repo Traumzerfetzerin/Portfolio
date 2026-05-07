@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ElementRef, ViewChild, HostListener } from '@angular/core';
 import { MenuComponent } from '../../shared/menu/menu.component';
+import { LanguageSwitcherComponent } from '../../shared/language-switcher/language-switcher.component';
 
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule, TranslateModule, MenuComponent],
+  imports: [CommonModule, TranslateModule, MenuComponent, LanguageSwitcherComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
@@ -22,31 +22,9 @@ export class HeroComponent {
   isVisible = false;
   @ViewChild('menu') menuRef!: ElementRef;
   @ViewChild('burger') burgerRef!: ElementRef;
-  currentLang: string = 'de';
 
 
-  /**
-   * Initializes the component and sets the default language.
-   * Uses the current language if available, otherwise falls back to German.
-   */
-  constructor(
-    private router: Router,
-    private translate: TranslateService
-  ) {
-    this.translate.setDefaultLang('de');
-    this.currentLang = this.translate.currentLang || 'de';
-    this.translate.use(this.currentLang);
-  }
-
-
-  /**
-   * Switches the application language.
-   * @param lang Language code (e.g. 'de', 'en')
-   */
-  switchLang(lang: string) {
-    this.currentLang = lang;
-    this.translate.use(lang);
-  }
+  constructor(private router: Router) { }
 
 
   /**
