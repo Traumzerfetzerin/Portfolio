@@ -2,6 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import AOS from 'aos';
+import { TranslateService } from '@ngx-translate/core';
 
 // shared
 import { FooterComponent } from './shared/footer/footer.component';
@@ -38,6 +39,18 @@ import { ProjectsComponent } from './content/projects/projects.component';
 
 export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
+
+  
+  /**
+ * Initializes the global application language.
+ */
+  constructor(private translate: TranslateService) {
+
+    const savedLang = localStorage.getItem('lang') || 'de';
+
+    this.translate.setDefaultLang('de');
+    this.translate.use(savedLang);
+  }
 
 
   /**
