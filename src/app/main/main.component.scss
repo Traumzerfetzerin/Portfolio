@@ -18,8 +18,13 @@
         display: none;
     }
 
-
     app-police app-imprint app-menu {
         display: block;
+    }
+
+    .main .gap {
+        gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
