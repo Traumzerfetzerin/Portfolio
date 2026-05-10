@@ -22,6 +22,8 @@ import emailjs from '@emailjs/browser';
 
 export class ContactComponent {
   contactForm: FormGroup;
+  showSuccessMessage = false;
+  showErrorMessage = false;
 
 
   /**
@@ -80,52 +82,46 @@ export class ContactComponent {
         'service_pt14vou',
         'template_0s1qe7r',
         {
-          // Form values
           name: form.name,
           email: form.email,
           message: form.message,
           lang: currentLang,
 
-          // Subject of the email you receive
           subject:
             currentLang === 'de'
               ? 'Neue Kontaktanfrage'
               : 'New Contact Request',
 
-          // Subject of the automatic reply to the sender
           autoReplySubject:
             currentLang === 'de'
               ? 'Ich habe deine Nachricht erhalten'
               : 'I have received your message',
 
-          // Content of the automatic reply
           autoReplyMessage:
             currentLang === 'de'
               ? `Hallo ${form.name},
 
-vielen Dank für deine Nachricht!
+                vielen Dank für deine Nachricht!
 
-Ich werde mich so schnell wie möglich bei dir melden.
+                Ich werde mich so schnell wie möglich bei dir melden.
 
-Liebe Grüße
-Nadja Petruck`
+                Liebe Grüße
+                Nadja Petruck`
               : `Hi ${form.name},
 
-Thank you for reaching out!
+                Thank you for reaching out!
 
-I'll get back to you as soon as possible.
+                I'll get back to you as soon as possible.
 
-Best regards,
-Nadja Petruck`
+                Best regards,
+                Nadja Petruck`
         },
         'mb7tyX9XDp8u4Ht0l'
       )
+
       .then(() => {
-        alert(
-          currentLang === 'de'
-            ? 'Nachricht erfolgreich gesendet!'
-            : 'Message sent successfully!'
-        );
+        this.showSuccessMessage = true;
+        this.showErrorMessage = false;
 
         this.contactForm.reset({
           name: '',
@@ -133,16 +129,11 @@ Nadja Petruck`
           message: '',
           acceptPolicy: false
         });
-      })
-      .catch((error) => {
-        console.error('EmailJS Error:', error);
 
-        alert(
-          currentLang === 'de'
-            ? 'Fehler beim Senden der Nachricht.'
-            : 'Error sending message.'
-        );
-      });
+        setTimeout(() => {
+          this.showSuccessMessage = false;
+        }, 4000);
+      })
   }
 
 

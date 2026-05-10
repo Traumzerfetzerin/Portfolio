@@ -278,6 +278,20 @@ textarea::placeholder {
 }
 
 
+.succesMessage,
+.errorMessageSendMail {
+    height: 50vh;
+    width: 100%;
+    background-color: #89BCD9;
+    border: 1px solid #F8F5EC;
+    border-radius: 10px;
+    padding: 24px;
+    z-index: 100;
+    position: absolute;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+
 
 // MEDIA QUERIES
 @media (max-width: 1130px) {

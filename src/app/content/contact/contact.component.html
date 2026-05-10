@@ -1,4 +1,13 @@
 <div class="flexColumn flexCenter contactContainer">
+
+    <div class="succesMessage josefinSansRegular400 colorF8F5EC flexCenter " *ngIf="showSuccessMessage">
+        {{ 'contact.successMessage' | translate }}
+    </div>
+
+    <div class="errorMessageSendMail josefinSansRegular400 colorF8F5EC flexCenter" *ngIf="showErrorMessage">
+        {{ 'contact.errorMessage' | translate }}
+    </div>
+
     <div class="contact">
         <h1 class="AntaRegular400 color89BCD9 flexCenter">{{ 'contact.h1' | translate }}</h1>
         <div class="contactContent flex">
@@ -6,7 +15,7 @@
                 <img src="assets/img/Arrow Up.png" alt="" data-aos="fade-up">
             </button>
 
-            <div class="contactDescription" >
+            <div class="contactDescription">
                 <span class="description josefinSansRegular400 colorF8F5EC flexCenter">
                     {{ 'contact.description' | translate }}
                 </span>
@@ -15,7 +24,7 @@
                 <span class="josefinSansRegular400 colorF8F5EC flexCenter">{{ 'contact.span' | translate }}</span>
             </div>
 
-            <div class="flexColumn contactInfo" >
+            <div class="flexColumn contactInfo">
                 <div class="mailSection cursorPointer">
                     <img class="mailImg" src="assets/img/contact/emailWhite.png" alt="">
                     <a href="mailto:nadjaparadiesvogel@gmail.com">

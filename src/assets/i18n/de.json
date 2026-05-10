@@ -79,7 +79,8 @@
         "checkboxStart": "Ich habe die",
         "privacy": "Datenschutzbestimmungen",
         "checkboxEnd": "gelesen und stimme der Verarbeitung meiner Daten zu, wie sie in der Datenschutzerklärung beschrieben sind.",
-        "sendButton": "Senden"
+        "sendButton": "Senden",
+        "successMessage": "Nachricht erfolgrich gesendet."
     },
     "policy": {
         "h1": "Datenschutzerklärung",
