@@ -1,3 +1,9 @@
+:host {
+    display: flex;
+    justify-content: center;
+}
+
+
 .me {
     h1 {
         font-size: clamp(32px, 5vw, 60px);

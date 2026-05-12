@@ -169,6 +169,7 @@
 .policy {
     align-items: center;
     margin: clamp(20px, 5vw, 50px);
+    padding-bottom: 10px;
 
     span {
         flex-wrap: wrap;
@@ -192,6 +193,7 @@
     color: #F8F5EC;
     cursor: not-allowed;
     transition: all 0.3s ease;
+    bottom: 10px;
 }
 
 
