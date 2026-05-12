@@ -60,6 +60,8 @@ h3 {
     width: clamp(250px, 40vw, 453.47px);
     height: clamp(180px, 30vw, 312px);
     border-radius: 30px;
+    object-fit: cover;
+    object-position: left;
 }
 
 
