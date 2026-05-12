@@ -20,7 +20,7 @@
     border-radius: 30px;
     border: 1px solid #89BCD9;
     background-color: transparent;
-    right: 0;
+    right: 10px;
     position: absolute;
 
     img {
@@ -42,7 +42,6 @@
 
 
 .description {
-    max-width: 429px;
     font-size: clamp(16px, 1.6vw, 20px);
 }
 
