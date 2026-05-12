@@ -4,6 +4,14 @@
     max-width: 1440px;
 }
 
+.projects {
+    padding: clamp(20px, 5vw, 50px);
+}
+
+.projectsDescription {
+    padding: 20px;
+}
+
 
 p {
     font-size: clamp(14px, 1.5vw, 18px);
@@ -68,6 +76,7 @@ h3 {
 .button,
 .buttonMobile {
     gap: 32px;
+    padding-bottom: 20px;
 }
 
 
@@ -112,11 +121,13 @@ a:-webkit-any-link {
 
 .projectsContent {
     background-color: #394b55;
-    padding: clamp(20px, 5vw, 50px);
     border-radius: 30px;
 
     .technologiesText {
         display: none;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -142,11 +153,6 @@ a:-webkit-any-link {
 
 .buttonMobile {
     display: none;
-}
-
-
-.projectsContent {
-    margin: 16px;
 }
 
 
