@@ -170,6 +170,10 @@ a:-webkit-any-link {
 
 
 @media (max-width: 600px) {
+    .projects {
+        padding: 0;
+    }
+
     .buttonMobile {
         display: flex;
         gap: 16px;
